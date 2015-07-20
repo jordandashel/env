@@ -18,12 +18,12 @@ Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 " Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+"Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 "Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
 
@@ -34,7 +34,7 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-dispatch'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-endwise'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-ruby/vim-ruby'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -227,6 +227,7 @@ let g:airline_powerline_fonts=1
 set guifont=LiberationMono
 "set guifont=Droid_Sans_Mono_for_Powerline:h10
 
+let g:airline_powerline_fonts = 1
 
 let mapleader=","
 set showcmd
