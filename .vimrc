@@ -238,7 +238,7 @@ set showcmd
 
 nnoremap <Space> :
 
-nnoremap <leader>nt :NERDTree C:\git<Enter>
+nnoremap <leader>nt :NERDTree /home/jdashel/devel/<Enter>
 
 :set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
