@@ -244,3 +244,9 @@ set showcmd
 nnoremap <Space> :
 
 nnoremap <leader>nt :NERDTree /home/jdashel/devel/<Enter>
+
+" Incremental search
+
+set ignorecase
+set smartcase
+set incsearch
