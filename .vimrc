@@ -186,14 +186,14 @@ set pastetoggle=<F11>
  
 " Indentation settings for using 4 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
-set shiftwidth=2
-set softtabstop=2
-set expandtab
+"set shiftwidth=2
+"set softtabstop=2
+"set expandtab
  
 " Indentation settings for using hard tabs for indent. Display tabs as
 " four characters wide.
-"set shiftwidth=4
-"set tabstop=4
+set shiftwidth=8
+set tabstop=8
  
  
 "------------------------------------------------------------
@@ -209,6 +209,11 @@ map Y y$
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
  
+nnoremap <C-H> <C-W>h
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-L> <C-W>l
+
 "------------------------------------------------------------
 
 set background=dark
@@ -239,7 +244,3 @@ set showcmd
 nnoremap <Space> :
 
 nnoremap <leader>nt :NERDTree /home/jdashel/devel/<Enter>
-
-:set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType erb set omnifunc=htmlcomplete#CompleteTags
