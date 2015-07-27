@@ -250,3 +250,5 @@ nnoremap <leader>nt :NERDTree /home/jdashel/devel/<Enter>
 set ignorecase
 set smartcase
 set incsearch
+
+let base16colorspace = 256
