@@ -87,3 +87,6 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 BASE16_SHELL="$HOME/.config/base16-shell/base16-chalk.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 let base16colorspace=256
+
+export HISTCONTROL=ignoredups
+export HISTSIZE=1000
