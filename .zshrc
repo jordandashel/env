@@ -49,7 +49,9 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler chucknorris command-not-found gem python randquote ruby sudo web-search)
+#
+# chucknorris not working -- invesigate
+plugins=(git bundler  command-not-found gem python randquote ruby sudo web-search)
 
 # User configuration
 
