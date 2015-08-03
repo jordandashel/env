@@ -234,7 +234,7 @@ set guifont=LiberationMono
 "set guifont=Droid_Sans_Mono_for_Powerline:h10
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme='wombat'
+let g:airline_theme='bubblegum'
 
 let mapleader=","
 set showcmd
@@ -254,3 +254,9 @@ set smartcase
 set incsearch
 
 let base16colorspace = 256
+
+" Show Whitespace
+set listchars=tab:▸\ ,eol:¬
+
+" WhiteSpace shortcut
+nmap <leader>l :set list!<CR>
