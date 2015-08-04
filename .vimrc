@@ -256,8 +256,8 @@ set incsearch
 let base16colorspace = 256
 
 " Show Whitespace
-set listchars=tab:\ \ ,eol:¬
-set list
+"set listchars=tab:\ \ ,eol:¬
+"set list
 
 " WhiteSpace shortcut
 nmap <leader>l :set list!<CR>
