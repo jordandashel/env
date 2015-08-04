@@ -35,6 +35,8 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'wikitopian/hardmode'
+Plugin 'tpope/vim-sleuth'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -256,7 +258,7 @@ set incsearch
 let base16colorspace = 256
 
 " Show Whitespace
-set listchars=tab:\ \ ,eol:¬
+set listchars=tab:\|\ ,eol:¬
 "set list
 
 " WhiteSpace shortcut
