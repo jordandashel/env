@@ -29,6 +29,7 @@ Plugin 'L9'
 
 Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-dispatch'
@@ -37,6 +38,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'wikitopian/hardmode'
 Plugin 'tpope/vim-sleuth'
+Plugin 'closetag.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -218,7 +220,8 @@ nnoremap <C-L> <C-W>l
 
 "------------------------------------------------------------
 
-set t_Co=256
+let base16colorspace=256
+
 set background=dark
 colorscheme base16-chalk
 
@@ -236,9 +239,9 @@ set guifont=LiberationMono
 "set guifont=Droid_Sans_Mono_for_Powerline:h10
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme='bubblegum'
+let g:airline_theme='base16'
 
-let mapleader=","
+let mapleader="\\"
 set showcmd
 
 " Amount of time after pressing leader in which another key can follow
@@ -255,7 +258,6 @@ set ignorecase
 set smartcase
 set incsearch
 
-let base16colorspace = 256
 
 " Show Whitespace
 set listchars=tab:\|\ ,eol:¬
@@ -263,3 +265,19 @@ set listchars=tab:\|\ ,eol:¬
 
 " WhiteSpace shortcut
 nmap <leader>l :set list!<CR>
+
+" Syntastic recommended settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Show registers
+nnoremap <C-g> :reg<CR>
+
+" command history
+nnoremap q<Space> q:

@@ -84,6 +84,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+
+# start tmux in 256
+alias tmux="TERM=screen-256color tmux"
 #
 # # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/base16-chalk.dark.sh"
@@ -94,3 +97,6 @@ export HISTCONTROL=ignoredups
 export HISTSIZE=1000
 
 setopt braceccl
+
+# add path to $PATH
+export PATH=~/bin:"$PATH"
