@@ -92,3 +92,5 @@ let base16colorspace=256
 
 export HISTCONTROL=ignoredups
 export HISTSIZE=1000
+
+setopt braceccl
