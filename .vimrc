@@ -39,6 +39,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'wikitopian/hardmode'
 Plugin 'tpope/vim-sleuth'
 Plugin 'closetag.vim'
+Plugin 'tpope/vim-unimpaired'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -260,7 +261,7 @@ set incsearch
 
 
 " Show Whitespace
-set listchars=tab:\|\ ,eol:¬
+set listchars=tab:\|.,eol:¬
 "set list
 
 " WhiteSpace shortcut
@@ -275,9 +276,14 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+" languages
+"let g:syntastic_javascript_checkers=['jshint']
 
 " Show registers
 nnoremap <C-g> :reg<CR>
 
 " command history
 nnoremap q<Space> q:
+
+" Undo settings
+set undofile "undo history persists across vim sessions
