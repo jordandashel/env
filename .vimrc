@@ -41,6 +41,8 @@ Plugin 'tpope/vim-sleuth'
 Plugin 'closetag.vim'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-commentary'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -236,11 +238,12 @@ set foldmethod=indent
 " Source vimrc
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
+set t_Co=256
 let base16colorspace=256
 
 set background=dark
-colorscheme base16-chalk
-" colorscheme zenburn
+" colorscheme base16-chalk
+colorscheme zenburn
 
 
 "Keeps visual selection after changing indent
@@ -256,7 +259,7 @@ set guifont=LiberationMono
 "set guifont=Droid_Sans_Mono_for_Powerline:h10
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme='base16'
+let g:airline_theme='bubblegum'
 
 let mapleader="\\"
 set showcmd
@@ -305,6 +308,4 @@ nnoremap q<Space> q:
 set undofile "undo history persists across vim sessions
 
 " Buffer work
-set wildchar=<Tab> wildmenu wildmode=full
-set wildcharm=<C-Z>
-nnoremap <F10> :b <C-Z>
+nnoremap <C-B> :buffers<CR>:b<Space>
