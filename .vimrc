@@ -40,6 +40,7 @@ Plugin 'wikitopian/hardmode'
 Plugin 'tpope/vim-sleuth'
 Plugin 'closetag.vim'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'flazz/vim-colorschemes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -79,8 +80,7 @@ set nocompatible
 filetype indent plugin on
  
 " Enable syntax highlighting
-syntax on
- 
+syntax on 
  
 "------------------------------------------------------------
 " Must have options {{{1
@@ -221,10 +221,26 @@ nnoremap <C-L> <C-W>l
 
 "------------------------------------------------------------
 
+" set line highlight
+set cursorline
+
+" redraw only when necessary (faster macros)
+set lazyredraw
+
+" enable folding
+set foldenable
+set foldlevelstart=99
+nnoremap <leader>z za
+set foldmethod=indent
+
+" Source vimrc
+nnoremap <leader>sv :source $MYVIMRC<CR>
+
 let base16colorspace=256
 
 set background=dark
 colorscheme base16-chalk
+" colorscheme zenburn
 
 
 "Keeps visual selection after changing indent
@@ -287,3 +303,8 @@ nnoremap q<Space> q:
 
 " Undo settings
 set undofile "undo history persists across vim sessions
+
+" Buffer work
+set wildchar=<Tab> wildmenu wildmode=full
+set wildcharm=<C-Z>
+nnoremap <F10> :b <C-Z>
