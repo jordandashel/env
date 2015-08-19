@@ -214,7 +214,7 @@ map Y y$
  
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
-nnoremap <C-L> :nohl<CR><C-L>
+nnoremap <C-N> :nohl<CR><C-L>
  
 nnoremap <C-H> <C-W>h
 nnoremap <C-J> <C-W>j
@@ -309,3 +309,4 @@ set undofile "undo history persists across vim sessions
 
 " Buffer work
 nnoremap <C-B> :buffers<CR>:b<Space>
+
