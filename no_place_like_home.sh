@@ -18,7 +18,7 @@ if [ -e tmux-2.0.tar.gz ]; then
   rm ~/tmux-2.0.tar.gz
 fi
 if [ -d tmux-2.0 ]; then 
-  rm -rf ~/rmux-2.0
+  rm -rf ~/tmux-2.0
 fi
 wget https://github.com/tmux/tmux/releases/download/2.0/tmux-2.0.tar.gz
 tar -zxvf tmux-2.0.tar.gz
