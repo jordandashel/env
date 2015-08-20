@@ -10,6 +10,9 @@ fi
 
 apt-get install build-essential
 apt-get install libevent-dev libncurses-dev curl zsh
+
+sh $OG_DIR/pl_fonts/install.sh
+
 cd ~/
 if [ -e tmux-2.0.tar.gz ]; then
   rm ~/tmux-2.0.tar.gz
@@ -46,7 +49,11 @@ fi
 if [ -e ~/.vimrc ]; then 
   rm ~/.vimrc
 fi
+if [ -e ~/.bashrc ]; then 
+  rm ~/.bashrc
+fi
 
 ln -s $OG_DIR/.tmux.conf ~/.tmux.conf
 ln -s $OG_DIR/.zshrc ~/.zshrc
 ln -s $OG_DIR/.vimrc ~/.vimrc
+ln -s $OG_DIR/.bashrc ~/.bashrc
