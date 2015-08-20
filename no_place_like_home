@@ -31,15 +31,15 @@ fi
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
-sh "$(curl -fsSL https://raw.github.com/robbyrussel/oh-my-zsh/master/tools/install.sh)"
+sh "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-if [[ -e ~/.tmux.conf ]]; then
+if [ -e ~/.tmux.conf ]; then
   rm ~/.tmux.conf
 fi
-if [[ -e ~/.zshrc ]]; then
+if [ -e ~/.zshrc ]; then
   rm ~/.tmux.conf
 fi
-if [[ -e ~/.vimrc ]]; then 
+if [ -e ~/.vimrc ]; then 
   rm ~/.vimrc
 fi
 
