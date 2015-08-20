@@ -2,21 +2,47 @@
 
 OG_DIR=$PWD
 
+if [[ $UID != 0 ]]; then
+  echo "sudo required"
+  echo "sudo $0 $*"
+  exit 1
+fi
+
 apt-get install build-essential
-apt-get install libevent-dev libncurses-dev
+apt-get install libevent-dev libncurses-dev curl
 cd ~/
+if [[ -e tmux-2.0.tar.gz ]]; then
+  rm ~/tmux-2.0.tar.gz
+fi
+if [[ -d tmux-2.0 ]]; then 
+  rm -rf ~/rmux-2.0
+fi
 wget https://github.com/tmux/tmux/releases/download/2.0/tmux-2.0.tar.gz
 tar -zxvf tmux-2.0.tar.gz
 cd tmux-2.0
 ./configure
 make
 make install
-ln -s $OG_DIR/.tmux.conf ~/.tmux.conf
 
-ln -s $OG_DIR/.vimrc ~/.vimrc
+if [[ -d ~/.vim/bundle/Vundle.vim ]]; then
+  rm -rf ~/.vim/bundle/
+fi
+
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
 sh "$(curl -fsSL https://raw.github.com/robbyrussel/oh-my-zsh/master/tools/install.sh)"
-rm ~/.zshrc
+
+if [[ -e ~/.tmux.conf ]]; then
+  rm ~/.tmux.conf
+fi
+if [[ -e ~/.zshrc ]]; then
+  rm ~/.tmux.conf
+fi
+if [[ -e ~/.vimrc ]]; then 
+  rm ~/.vimrc
+fi
+
+ln -s $OG_DIR/.tmux.conf ~/.tmux.conf
 ln -s $OG_DIR/.zshrc ~/.zshrc
+ln -s $OG_DIR/.vimrc ~/.vimrc
