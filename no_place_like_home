@@ -57,3 +57,5 @@ ln -s $OG_DIR/.tmux.conf ~/.tmux.conf
 ln -s $OG_DIR/.zshrc ~/.zshrc
 ln -s $OG_DIR/.vimrc ~/.vimrc
 ln -s $OG_DIR/.bashrc ~/.bashrc
+
+cd $OG_DIR
