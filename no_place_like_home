@@ -9,12 +9,12 @@ if [[ $UID != 0 ]]; then
 fi
 
 apt-get install build-essential
-apt-get install libevent-dev libncurses-dev curl
+apt-get install libevent-dev libncurses-dev curl zsh
 cd ~/
-if [[ -e tmux-2.0.tar.gz ]]; then
+if [ -e tmux-2.0.tar.gz ]; then
   rm ~/tmux-2.0.tar.gz
 fi
-if [[ -d tmux-2.0 ]]; then 
+if [ -d tmux-2.0 ]; then 
   rm -rf ~/rmux-2.0
 fi
 wget https://github.com/tmux/tmux/releases/download/2.0/tmux-2.0.tar.gz
@@ -24,7 +24,7 @@ cd tmux-2.0
 make
 make install
 
-if [[ -d ~/.vim/bundle/Vundle.vim ]]; then
+if [ -d ~/.vim/bundle/Vundle.vim ]; then
   rm -rf ~/.vim/bundle/
 fi
 
@@ -32,6 +32,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
 sh "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+chsh -s /bin/zsh
 
 if [ -e ~/.tmux.conf ]; then
   rm ~/.tmux.conf
