@@ -1,0 +1,22 @@
+#!/bin/bash
+
+OG_DIR=$PWD
+
+apt-get install build-essential
+apt-get install libevent-dev libncurses-dev
+cd ~/
+wget https://github.com/tmux/tmux/releases/download/2.0/tmux-2.0.tar.gz
+tar -zxvf tmux-2.0.tar.gz
+cd tmux-2.0
+./configure
+make
+make install
+ln -s $OG_DIR/.tmux.conf ~/.tmux.conf
+
+ln -s $OG_DIR/.vimrc ~/.vimrc
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+
+"$(curl -fsSL https://raw.github.com/robbyrussel/oh-my-zsh/master/tools/install.sh)"
+rm ~/.zshrc
+ln -s $OG_DIR/.zshrc ~/.zshrc
