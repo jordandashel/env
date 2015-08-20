@@ -33,14 +33,15 @@ if [ ! -d ~/.config/base16-shell ]; then
   git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 fi
 
-sh "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh > ./zsh_install.sh
+sh ./zsh_install.sh
 chsh -s /bin/zsh
 
 if [ -e ~/.tmux.conf ]; then
   rm ~/.tmux.conf
 fi
 if [ -e ~/.zshrc ]; then
-  rm ~/.tmux.conf
+  rm ~/.zshrc
 fi
 if [ -e ~/.vimrc ]; then 
   rm ~/.vimrc
