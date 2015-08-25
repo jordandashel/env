@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 #
 # chucknorris not working -- invesigate
-plugins=(git bundler chucknorris command-not-found gem python randquote ruby sudo web-search)
+plugins=(git bundler command-not-found gem python randquote ruby sudo web-search)
 
 # User configuration
 

@@ -9,7 +9,7 @@ if [[ $UID != 0 ]]; then
 fi
 
 apt-get install build-essential
-apt-get install libevent-dev libncurses-dev curl zsh
+apt-get install libevent-dev libncurses-dev curl zsh vim
 
 sh $OG_DIR/pl_fonts/install.sh
 
