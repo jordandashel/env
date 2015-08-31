@@ -11,6 +11,12 @@ fi
 apt-get install build-essential
 apt-get install libevent-dev libncurses-dev curl zsh vim
 
+# -- SETTINGS --
+
+git config merge.tool vimdiff
+git config merge.conflictstyle diff3
+git config mergetool.prompt false
+
 sh $OG_DIR/pl_fonts/install.sh
 
 cd ~/
