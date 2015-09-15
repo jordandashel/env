@@ -13,6 +13,12 @@ apt-get install libevent-dev libncurses-dev
 # my favorite/essential utilities
 apt-get install curl zsh vim pandoc
 
+# -- SETTINGS --
+
+git config merge.tool vimdiff
+git config merge.conflictstyle diff3
+git config mergetool.prompt false
+
 if [ -e ~/.tmux.conf ]; then
   rm ~/.tmux.conf
 fi

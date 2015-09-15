@@ -1,5 +1,5 @@
 # env
-My essential machine setup. Contains my dotfiles for:
+My essential machine setup. Contains dotfiles for:
 
 - vim
 - bash
