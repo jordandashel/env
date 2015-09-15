@@ -17,7 +17,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
-" Git plugin not hosted on GitHub
 "Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 "Plugin 'file:///home/gmarik/path/to/plugin'
@@ -286,15 +285,19 @@ set listchars=tab:\|.,eol:¬
 " WhiteSpace shortcut
 nmap <leader>l :set list!<CR>
 
-" Syntastic recommended settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+if &diff
+else
+	" Syntastic recommended settings
+	set statusline+=%#warningmsg#
+	set statusline+=%{SyntasticStatuslineFlag()}
+	set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+	let g:syntastic_always_populate_loc_list = 1
+	let g:syntastic_auto_loc_list = 1
+	let g:syntastic_check_on_open = 1
+	let g:syntastic_check_on_wq = 0
+endif
+
 " languages
 "let g:syntastic_javascript_checkers=['jshint']
 
@@ -305,8 +308,6 @@ nnoremap <C-g> :reg<CR>
 nnoremap q<Space> q:
 
 " Undo settings
-set undofile "undo history persists across vim sessions
-
-" Buffer work
+"set undofile "undo history persists across vim sessions " Buffer work
 nnoremap <C-B> :buffers<CR>:b<Space>
 

@@ -59,7 +59,7 @@ if [ ! -d ~/.config/base16-shell ]; then
 fi
 
 curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh > ~/.zsh_install.sh
-sh ~/.zsh_install.sh
+sh ~/zsh_install.sh
 
 if [ -e ~/.zshrc ]; then
   rm ~/.zshrc
