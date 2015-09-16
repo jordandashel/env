@@ -2,7 +2,7 @@
 
 OG_DIR=$PWD
 
-if [[ $UID != 0 ]]; then
+if [ "$(whoami)" != "root" ]; then
   echo "sudo required"
   echo "sudo $0 $*"
   exit 1
