@@ -118,3 +118,5 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-chalk.dark.sh"
 
 # add path to $PATH
 export PATH=~/bin:"$PATH"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
