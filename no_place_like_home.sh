@@ -3,7 +3,7 @@
 OG_DIR=$PWD
 
 if [ "$(whoami)" != "root" ]; then
-  echo "sudo required"
+  echo "sudo required:"
   echo "sudo $0 $*"
   exit 1
 fi
@@ -21,17 +21,17 @@ git config mergetool.prompt false
 
 if [ -e $HOME/.tmux.conf ]; then
   rm $HOME/.tmux.conf
+  ln -s $OG_DIR/.tmux.conf $HOME/.tmux.conf
 fi
 if [ -e $HOME/.vimrc ]; then 
   rm $HOME/.vimrc
+  ln -s $OG_DIR/.vimrc $HOME/.vimrc
 fi
 if [ -e $HOME/.bashrc ]; then 
   rm $HOME/.bashrc
+  ln -s $OG_DIR/.bashrc $HOME/.bashrc
 fi
 
-ln -s $OG_DIR/.tmux.conf $HOME/.tmux.conf
-ln -s $OG_DIR/.vimrc $HOME/.vimrc
-ln -s $OG_DIR/.bashrc $HOME/.bashrc
 sh $OG_DIR/pl_fonts/install.sh
 
 cd $HOME/
@@ -62,8 +62,7 @@ sh $HOME/zsh_install.sh
 
 if [ -e $HOME/.zshrc ]; then
   rm $HOME/.zshrc
+  ln -s $OG_DIR/.zshrc $HOME/.zshrc
 fi
-
-ln -s $OG_DIR/.zshrc $HOME/.zshrc
 
 cd $OG_DIR
