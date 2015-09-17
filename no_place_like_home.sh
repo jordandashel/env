@@ -65,6 +65,7 @@ install_oh_my_zsh(){
 }
 
 link_dot_files(){
+	echo "linking files"
 	if [ -e $HOME/.tmux.conf ]; then
 		rm $HOME/.tmux.conf
 		ln -s $OG_DIR/.tmux.conf $HOME/.tmux.conf
@@ -89,12 +90,20 @@ link_dot_files(){
 
 # configure
 
+echo "\n\n\nsubmodule populate\n\n\n"
 populate_submodule
+echo "\n\n\ninstall programs\n\n\n"
 apt_install_programs
+echo "\n\n\ninstall fonts\n\n\n"
 install_fonts
+echo "\n\n\ninstall tmux\n\n\n"
 install_tmux
+echo "\n\n\ninstall vundle\n\n\n"
 install_vundle_and_vim_plugins
-install _base16_shell
+echo "\n\n\ninstall base_16\n\n\n"
+install_base16_shell
+echo "\n\n\ninstall oh-my-zsh\n\n\n"
 install_oh_my_zsh
+echo "\n\n\nlink dot files\n\n\n"
 link_dot_files #must follow oh-my-zsh install or .zshrc will be clobbered 
 
