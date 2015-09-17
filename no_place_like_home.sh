@@ -10,6 +10,11 @@ fi
 
 # -- FUNCTIONS -- #
 
+populate_submodule(){
+	git submodule init
+	git submodule update
+}
+
 apt_install_programs(){
 	apt-get install --yes build-essential
 	apt-get install --yes libevent-dev libncurses-dev 
@@ -84,6 +89,7 @@ link_dot_files(){
 
 # configure
 
+populate_submodule
 apt_install_programs
 install_fonts
 install_tmux
