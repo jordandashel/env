@@ -3,7 +3,7 @@
 OG_DIR=$PWD
 
 if [ "$(whoami)" != "root" ]; then
-	echo "sudo required:"
+	echo "superuser status required:"
 	echo "sudo $0 $*"
 	exit 1
 fi
@@ -16,13 +16,6 @@ apt_install_programs(){
 	# my favorite/essential utilities
 	apt-get install --yes curl zsh vim pandoc
 }
-
-configure_git(){
-	git config merge.tool vimdiff
-	git config merge.conflictstyle diff3
-	git config mergetool.prompt false
-}
-
 
 install_fonts(){
 	sh $OG_DIR/pl_fonts/install.sh
@@ -92,7 +85,6 @@ link_dot_files(){
 # configure
 
 apt_install_programs
-configure_git
 install_fonts
 install_tmux
 install_vundle_and_vim_plugins
