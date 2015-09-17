@@ -83,6 +83,10 @@ link_dot_files(){
 		rm $HOME/.zshrc
 		ln -s $OG_DIR/.zshrc $HOME/.zshrc
 	fi
+	if [ -e $HOME/.gitconfig ]; then
+		rm $HOME/.gitconfig
+		ln -s $OG_DIR/.gitconfig $HOME/.gitconfig
+	fi
 }
 
 # configure
@@ -95,3 +99,4 @@ install_vundle_and_vim_plugins
 install _base16_shell
 install_oh_my_zsh
 link_dot_files #must follow oh-my-zsh install or .zshrc will be clobbered 
+
