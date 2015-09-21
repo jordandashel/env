@@ -88,9 +88,6 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 # start tmux in 256
 alias tmux="TERM=screen-256color tmux"
 
-# for launching chef-menu
-alias launch="gulp && bundle exec rackup"
-
 # # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/base16-chalk.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
