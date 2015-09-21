@@ -59,8 +59,7 @@ install_base16_shell(){
 }
 
 install_oh_my_zsh(){
-	curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh > $HOME/zsh_install.sh
-	sh $HOME/zsh_install.sh
+	sh $OG_DIR/oh-my-zsh_install.sh
 
 }
 
@@ -105,5 +104,5 @@ install_base16_shell && \
 echo "\n\n\ninstall oh-my-zsh\n\n\n" && \
 install_oh_my_zsh && \
 echo "\n\n\nlink dot files\n\n\n" && \
-link_dot_files #must follow oh-my-zsh install or .zshrc will be clobbered 
+link_dot_files 
 
