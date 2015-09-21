@@ -59,32 +59,35 @@ install_base16_shell(){
 }
 
 install_oh_my_zsh(){
-	sh $OG_DIR/oh-my-zsh_install.sh
-
+	if [ ! -d $HOME/.oh-my-zsh ]; then
+		git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
+	fi
+	chsh -s /bin/zsh
 }
 
 link_dot_files(){
 	echo "linking files"
 	if [ -e $HOME/.tmux.conf ]; then
 		rm $HOME/.tmux.conf
-		ln -s $OG_DIR/.tmux.conf $HOME/.tmux.conf
 	fi
 	if [ -e $HOME/.vimrc ]; then 
 		rm $HOME/.vimrc
-		ln -s $OG_DIR/.vimrc $HOME/.vimrc
 	fi
 	if [ -e $HOME/.bashrc ]; then 
 		rm $HOME/.bashrc
-		ln -s $OG_DIR/.bashrc $HOME/.bashrc
 	fi
 	if [ -e $HOME/.zshrc ]; then
 		rm $HOME/.zshrc
-		ln -s $OG_DIR/.zshrc $HOME/.zshrc
 	fi
 	if [ -e $HOME/.gitconfig ]; then
 		rm $HOME/.gitconfig
-		ln -s $OG_DIR/.gitconfig $HOME/.gitconfig
 	fi
+
+	ln -s $OG_DIR/.tmux.conf $HOME/.tmux.conf
+	ln -s $OG_DIR/.vimrc $HOME/.vimrc
+	ln -s $OG_DIR/.bashrc $HOME/.bashrc
+	ln -s $OG_DIR/.zshrc $HOME/.zshrc
+	ln -s $OG_DIR/.gitconfig $HOME/.gitconfig
 }
 
 # configure
