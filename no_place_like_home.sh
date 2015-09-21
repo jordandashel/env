@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Setup script for a fresh debian-based machine.
+# 
+# Installs all my favorite programs and links my dotfiles.
+#
+# TODO: add support for RPM and pkg
+# TODO: don't clobber existing dotfiles
+# TODO: don't reinstall tmux _every_ time
+# TODO: COLORS!
+
 OG_DIR=$PWD
 
 if [ "$(whoami)" != "root" ]; then
@@ -19,7 +28,7 @@ apt_install_programs(){
 	apt-get install --yes build-essential
 	apt-get install --yes libevent-dev libncurses-dev 
 	# my favorite/essential utilities
-	apt-get install --yes curl zsh vim pandoc gnome-session-flashback
+	apt-get install --yes curl zsh vim pandoc gnome-session-flashback lynx
 }
 
 install_fonts(){
@@ -45,11 +54,10 @@ install_tmux(){
 	cd $OG_DIR
 }
 
-install_vundle_and_vim_plugins(){
+install_vundle(){
 	if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then
 		git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 	fi
-	vim +PluginInstall +qall
 }
 
 install_base16_shell(){
@@ -101,11 +109,11 @@ install_fonts && \
 echo "\n\n\ninstall tmux\n\n\n" && \
 install_tmux && \
 echo "\n\n\ninstall vundle\n\n\n" && \
-install_vundle_and_vim_plugins && \
+install_vundle && \
+vim +PluginInstall +qall && \
 echo "\n\n\ninstall base_16\n\n\n" && \
 install_base16_shell && \
 echo "\n\n\ninstall oh-my-zsh\n\n\n" && \
 install_oh_my_zsh && \
 echo "\n\n\nlink dot files\n\n\n" && \
 link_dot_files 
-
