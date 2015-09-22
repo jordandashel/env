@@ -242,7 +242,7 @@ let base16colorspace=256
 
 set background=dark
 " colorscheme base16-chalk
-colorscheme zenburn
+colorscheme Tomorrow-Night-Eighties
 
 
 "Keeps visual selection after changing indent
