@@ -28,7 +28,7 @@ apt_install_programs(){
 	apt-get install --yes build-essential
 	apt-get install --yes libevent-dev libncurses-dev 
 	# my favorite/essential utilities
-	apt-get install --yes curl zsh vim pandoc gnome-session-flashback lynx
+	apt-get install --yes curl zsh vim pandoc gnome-session-flashback lynx guake
 }
 
 install_fonts(){
