@@ -6,4 +6,4 @@ My essential machine setup. Contains dotfiles for:
 - zsh
 - tmux
 
-Also has a rough setup script that is a work in progress.
+Also has an awesome setup script that is a work in progress.
