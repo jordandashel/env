@@ -25,10 +25,12 @@ populate_submodule(){
 }
 
 apt_install_programs(){
+	apt-get --yes update
+	apt-get --yes upgrade
 	apt-get install --yes build-essential
 	apt-get install --yes libevent-dev libncurses-dev 
 	# my favorite/essential utilities
-	apt-get install --yes curl zsh vim vim-gnome pandoc gnome-session-flashback lynx guake
+	apt-get install --yes curl zsh vim vim-gnome pandoc gnome-session-fallback lynx guake
 }
 
 install_fonts(){
