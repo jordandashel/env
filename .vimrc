@@ -225,6 +225,10 @@ nnoremap `` ``zz
 
 "------------------------------------------------------------
 
+" Filetype specific indentation
+filetype plugin indent on
+
+
 " set line highlight
 set cursorline
 
