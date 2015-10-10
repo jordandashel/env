@@ -55,6 +55,9 @@ plugins=(git bundler command-not-found gem python randquote ruby sudo web-search
 
 # User configuration
 
+# use virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh
+
 export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -111,3 +114,15 @@ export PIP_REQUIRE_VIRTUALENV=true
 gpip(){
 	   PIP_REQUIRE_VIRTUALENV="" pip "$@"
 }
+
+# zsh Powerline
+# decided I don't really care for powerline in the shell. Might go back someday
+
+# function _update_ps1()
+# {
+# 	export PROMPT="$(~/.powerline-zsh.py -m konsole $?)"
+# }
+# precmd()
+# {
+# 	_update_ps1
+# }
