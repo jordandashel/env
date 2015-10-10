@@ -126,3 +126,6 @@ gpip(){
 # {
 # 	_update_ps1
 # }
+
+# add virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh
