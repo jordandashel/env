@@ -69,6 +69,10 @@ install_base16_shell(){
 	fi
 }
 
+install_powerline_for_zsh(){
+	ln -s $OG_DIR/powerline-zsh/powerline-zsh.py $USER_HOME/.powerline-zsh.py
+}
+
 install_oh_my_zsh(){
 	if [ ! -d $USER_HOME/.oh-my-zsh ]; then
 		git clone git://github.com/robbyrussell/oh-my-zsh.git $USER_HOME/.oh-my-zsh
@@ -98,7 +102,7 @@ link_ftplugin_files(){
 }
 
 print_yellow(){
-	echo -e "\e[93m$1\e[0m"
+	echo -e "\033[93m$1\033[0m"
 }
 
 # configure
