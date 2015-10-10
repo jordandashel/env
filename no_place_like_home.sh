@@ -77,28 +77,17 @@ install_oh_my_zsh(){
 }
 
 link_dot_files(){
-	echo "linking files"
-	if [ -e $USER_HOME/.tmux.conf ]; then
-		rm $USER_HOME/.tmux.conf
-	fi
-	if [ -e $USER_HOME/.vimrc ]; then 
-		rm $USER_HOME/.vimrc
-	fi
-	if [ -e $USER_HOME/.bashrc ]; then 
-		rm $USER_HOME/.bashrc
-	fi
-	if [ -e $USER_HOME/.zshrc ]; then
-		rm $USER_HOME/.zshrc
-	fi
-	if [ -e $USER_HOME/.gitconfig ]; then
-		rm $USER_HOME/.gitconfig
-	fi
 
-	ln -s $OG_DIR/.tmux.conf $USER_HOME/.tmux.conf
-	ln -s $OG_DIR/.vimrc $USER_HOME/.vimrc
-	ln -s $OG_DIR/.bashrc $USER_HOME/.bashrc
-	ln -s $OG_DIR/.zshrc $USER_HOME/.zshrc
-	ln -s $OG_DIR/.gitconfig $USER_HOME/.gitconfig
+	dotfiles=( .tmux.conf .vimrc .bashrc .zshrc .gitconfig )
+
+	for file in "${dotfiles[@]}"
+	do
+		if [ -e $USER_HOME/$file ]; then
+			rm $USER_HOME/$file
+		fi
+
+		ln -s $OG_DIR/$file $USER_HOME/$file
+	done
 }
 
 link_ftplugin_files(){
@@ -110,20 +99,20 @@ link_ftplugin_files(){
 
 # configure
 
-echo "\n\n\nsubmodule populate\n\n\n" && \
+echo "submodule populate" && \
 populate_submodule && \
-echo "\n\n\ninstall programs\n\n\n" && \
+echo "install programs" && \
 apt_install_programs && \
-echo "\n\n\ninstall fonts\n\n\n" && \
+echo "install fonts" && \
 install_fonts && \
-echo "\n\n\ninstall tmux\n\n\n" && \
+echo "install tmux" && \
 install_tmux && \
-echo "\n\n\ninstall vundle\n\n\n" && \
+echo "install vundle" && \
 install_vundle && \
 vim +PluginInstall +qall && \
-echo "\n\n\ninstall base_16\n\n\n" && \
+echo "install base_16" && \
 install_base16_shell && \
-echo "\n\n\ninstall oh-my-zsh\n\n\n" && \
+echo "install oh-my-zsh" && \
 install_oh_my_zsh && \
-echo "\n\n\nlink dot files\n\n\n" && \
+echo "link dot files" && \
 link_dot_files 
