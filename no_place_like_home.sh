@@ -10,6 +10,7 @@
 # TODO: COLORS!
 
 OG_DIR=$PWD
+USER_HOME=$(eval echo ~$SUDO_USER)
 
 if [ "$(whoami)" != "root" ]; then
 	echo "superuser status required:"
@@ -38,13 +39,13 @@ install_fonts(){
 }
 
 install_tmux(){
-	cd $HOME/
+	cd $USER_HOME/
 
 	if [ -e tmux-2.0.tar.gz ]; then
-		rm $HOME/tmux-2.0.tar.gz
+		rm $USER_HOME/tmux-2.0.tar.gz
 	fi
 	if [ -d tmux-2.0 ]; then 
-		rm -rf $HOME/tmux-2.0
+		rm -rf $USER_HOME/tmux-2.0
 	fi
 	wget https://github.com/tmux/tmux/releases/download/2.0/tmux-2.0.tar.gz && \
 	tar -zxvf tmux-2.0.tar.gz && \
@@ -57,47 +58,47 @@ install_tmux(){
 }
 
 install_vundle(){
-	if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then
-		git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+	if [ ! -d $USER_HOME/.vim/bundle/Vundle.vim ]; then
+		git clone https://github.com/VundleVim/Vundle.vim.git $USER_HOME/.vim/bundle/Vundle.vim
 	fi
 }
 
 install_base16_shell(){
-	if [ ! -d $HOME/.config/base16-shell ]; then
-		git clone https://github.com/chriskempson/base16-shell.git $HOME/.config/base16-shell
+	if [ ! -d $USER_HOME/.config/base16-shell ]; then
+		git clone https://github.com/chriskempson/base16-shell.git $USER_HOME/.config/base16-shell
 	fi
 }
 
 install_oh_my_zsh(){
-	if [ ! -d $HOME/.oh-my-zsh ]; then
-		git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
+	if [ ! -d $USER_HOME/.oh-my-zsh ]; then
+		git clone git://github.com/robbyrussell/oh-my-zsh.git $USER_HOME/.oh-my-zsh
 	fi
 	chsh -s /bin/zsh
 }
 
 link_dot_files(){
 	echo "linking files"
-	if [ -e $HOME/.tmux.conf ]; then
-		rm $HOME/.tmux.conf
+	if [ -e $USER_HOME/.tmux.conf ]; then
+		rm $USER_HOME/.tmux.conf
 	fi
-	if [ -e $HOME/.vimrc ]; then 
-		rm $HOME/.vimrc
+	if [ -e $USER_HOME/.vimrc ]; then 
+		rm $USER_HOME/.vimrc
 	fi
-	if [ -e $HOME/.bashrc ]; then 
-		rm $HOME/.bashrc
+	if [ -e $USER_HOME/.bashrc ]; then 
+		rm $USER_HOME/.bashrc
 	fi
-	if [ -e $HOME/.zshrc ]; then
-		rm $HOME/.zshrc
+	if [ -e $USER_HOME/.zshrc ]; then
+		rm $USER_HOME/.zshrc
 	fi
-	if [ -e $HOME/.gitconfig ]; then
-		rm $HOME/.gitconfig
+	if [ -e $USER_HOME/.gitconfig ]; then
+		rm $USER_HOME/.gitconfig
 	fi
 
-	ln -s $OG_DIR/.tmux.conf $HOME/.tmux.conf
-	ln -s $OG_DIR/.vimrc $HOME/.vimrc
-	ln -s $OG_DIR/.bashrc $HOME/.bashrc
-	ln -s $OG_DIR/.zshrc $HOME/.zshrc
-	ln -s $OG_DIR/.gitconfig $HOME/.gitconfig
+	ln -s $OG_DIR/.tmux.conf $USER_HOME/.tmux.conf
+	ln -s $OG_DIR/.vimrc $USER_HOME/.vimrc
+	ln -s $OG_DIR/.bashrc $USER_HOME/.bashrc
+	ln -s $OG_DIR/.zshrc $USER_HOME/.zshrc
+	ln -s $OG_DIR/.gitconfig $USER_HOME/.gitconfig
 }
 
 # configure
