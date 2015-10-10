@@ -227,9 +227,11 @@ nnoremap `` ``zz
 
 " Filetype specific indentation
 filetype plugin indent on
-autocmd FileType python setlocal shiftwidth=4 tabstop=4 expandtab
-autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 noexpandtab
-autocmd FileType html setlocal shiftwidth=2 tabstop=2 noexpandtab
+
+" using ftplugin folder
+" autocmd FileType python setlocal shiftwidth=4 tabstop=4 expandtab
+" autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 noexpandtab
+" autocmd FileType html setlocal shiftwidth=2 tabstop=2 noexpandtab
 
 
 " set line highlight

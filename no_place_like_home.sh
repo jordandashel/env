@@ -101,6 +101,13 @@ link_dot_files(){
 	ln -s $OG_DIR/.gitconfig $USER_HOME/.gitconfig
 }
 
+link_ftplugin_files(){
+	FTPLUGIN_PATH=$USER_HOME/.vim/after/ftplugin
+	mkdir --parents $FTPLUGIN_PATH 
+	rm $FTPLUGIN_PATH/*
+	ln -s $OG_DIR/* $FTPLUGIN_PATH/
+}
+
 # configure
 
 echo "\n\n\nsubmodule populate\n\n\n" && \
