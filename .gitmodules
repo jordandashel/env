@@ -1,3 +1,6 @@
 [submodule "gitignore"]
 	path = gitignore
 	url = https://github.com/github/gitignore
+[submodule "powerline-zsh"]
+	path = powerline-zsh
+	url = https://github.com/carlcarl/powerline-zsh
