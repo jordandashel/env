@@ -102,3 +102,12 @@ setopt braceccl
 export PATH=~/bin:"$PATH"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+
+# Use virtualenv for pip
+export PIP_REQUIRE_VIRTUALENV=true
+
+# Add global pip
+gpip(){
+	   PIP_REQUIRE_VIRTUALENV="" pip "$@"
+}
