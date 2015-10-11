@@ -101,7 +101,7 @@ link_ftplugin_files(){
 }
 
 print_yellow(){
-	echo -e "\033[93m$1\033[0m"
+	echo -e "\033[1;34m$1\033[0m"
 }
 
 # configure
@@ -120,6 +120,9 @@ install_tmux
 
 print_yellow "link dot files" 
 link_dot_files 
+
+print_yellow "link ftplugin" 
+link_ftplugin_files
 
 print_yellow "install vundle" 
 install_vundle 
