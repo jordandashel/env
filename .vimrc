@@ -233,6 +233,11 @@ filetype plugin indent on
 " autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 noexpandtab
 " autocmd FileType html setlocal shiftwidth=2 tabstop=2 noexpandtab
 
+" Dispatch file associations
+autocmd FileType python let b:dispatch='python3 -m unittest %'
+
+" Kick off dispatch
+nnoremap <F9> :Dispatch<CR>
 
 " set line highlight
 set cursorline
