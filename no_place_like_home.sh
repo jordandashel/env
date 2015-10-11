@@ -77,7 +77,6 @@ install_oh_my_zsh(){
 	if [ ! -d $USER_HOME/.oh-my-zsh ]; then
 		git clone git://github.com/robbyrussell/oh-my-zsh.git $USER_HOME/.oh-my-zsh
 	fi
-	chsh -s /bin/zsh
 }
 
 link_dot_files(){
@@ -119,6 +118,9 @@ install_fonts
 print_yellow "install tmux" 
 install_tmux 
 
+print_yellow "link dot files" 
+link_dot_files 
+
 print_yellow "install vundle" 
 install_vundle 
 vim +PluginInstall +qall 
@@ -128,6 +130,4 @@ install_base16_shell
 
 print_yellow "install oh-my-zsh" 
 install_oh_my_zsh 
-
-print_yellow "link dot files" 
-link_dot_files 
+chsh -s /bin/zsh
