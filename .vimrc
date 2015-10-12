@@ -42,6 +42,8 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-commentary'
+Plugin 'klen/python-mode'
+Plugin 'davidhalter/jedi-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -234,7 +236,7 @@ filetype plugin indent on
 " autocmd FileType html setlocal shiftwidth=2 tabstop=2 noexpandtab
 
 " Dispatch file associations
-autocmd FileType python let b:dispatch='python3 -m unittest %'
+autocmd FileType python let b:dispatch='python -m "nose"'
 
 " Kick off dispatch
 nnoremap <F9> :Dispatch<CR>
@@ -286,7 +288,7 @@ set showcmd
 
 nnoremap <Space> :
 
-nnoremap <leader>nt :NERDTree /home/jdashel/devel/<Enter>
+nnoremap <leader>nt :NERDTree /$HOME/devel/<Enter>
 
 " Incremental search
 
@@ -328,3 +330,8 @@ nnoremap q<Space> q:
 "set undofile "undo history persists across vim sessions " Buffer work
 nnoremap <C-B> :buffers<CR>:b<Space>
 
+" Easy close 
+nnoremap <F10> :cclose<CR>
+
+" python-syntax settings
+let python_highlight_all=1
