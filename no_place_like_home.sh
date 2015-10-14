@@ -31,7 +31,11 @@ apt_install_programs(){
 	apt-get install --yes build-essential
 	apt-get install --yes libevent-dev libncurses-dev 
 	# my favorite/essential utilities
-	apt-get install --yes curl zsh vim vim-gnome pandoc gnome-session-fallback lynx guake
+	apt-get install --yes curl zsh vim vim-gnome pandoc gnome-session-fallback lynx guake python3 python-pip
+}
+
+pip_installs(){
+	pip install virtualenv virtualenvwrapper
 }
 
 install_fonts(){
@@ -94,7 +98,7 @@ link_dot_files(){
 }
 
 link_ftplugin_files(){
-	FTPLUGIN_PATH=$USER_HOME/.vim/after/ftplugin
+	FTPLUGIN_PATH=$USER_HOME/.vim/ftplugin
 	mkdir --parents $FTPLUGIN_PATH 
 	rm $FTPLUGIN_PATH/*
 	ln -s $OG_DIR/* $FTPLUGIN_PATH/
@@ -111,6 +115,9 @@ populate_submodule
 
 print_yellow "install programs" 
 apt_install_programs 
+
+print_yellow "global pip installations"
+pip_installs
 
 print_yellow "install fonts" 
 install_fonts 
@@ -133,4 +140,4 @@ install_base16_shell
 
 print_yellow "install oh-my-zsh" 
 install_oh_my_zsh 
-chsh -s /bin/zsh
+chsh $SUDO_USER -s /bin/zsh
