@@ -35,7 +35,7 @@ apt_install_programs(){
 }
 
 pip_installs(){
-	pip install virtualenv virtualenvwrapper
+	pip install virtualenv virtualenvwrapper rope
 }
 
 install_fonts(){
