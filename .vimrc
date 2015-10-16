@@ -43,7 +43,6 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-commentary'
 Plugin 'klen/python-mode'
-Plugin 'davidhalter/jedi-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -333,5 +332,63 @@ nnoremap <C-B> :buffers<CR>:b<Space>
 " Easy close 
 nnoremap <F10> :cclose<CR>
 
-" python-syntax settings
-let python_highlight_all=1
+" -------------- python-mode settings ------------------
+
+" Turn on python-mode
+let g:pymode = 1
+" Use python3
+let g:pymode_python = 'python3'
+" Trim whitespace
+let g:pymode_trim_whitespaces = 1
+" Standard options
+let g:pymode_options = 1
+" line length limit
+let g:pymode_options_max_line_length = 79
+" visual marker for 80 col
+let g:pymode_options_colorcolumn = 1
+" quickfix window
+let g:pymode_quickfix_minheight = 3
+let g:pymode_quickfix_maxheight = 6
+" Don't really know what pymode indent does, but it might interfere with
+" ftplugin so I'm going to disable it
+let g:pymode_indent = 0
+" folding on
+let g:pymode_folding = 1
+" enable python motion
+let g:pymode_motion = 1
+" python documentation plugin, and bind it to 'K'
+let g:pymode_doc = 1
+let g:pymode_doc_bind = 'K'
+" python virtual env cooperation
+let g:pymode_virtualenv = 1
+" run current buffer/selection with <leader>p
+let g:pymode_run = 1
+let g:pymode_run_bind = '<leader>p'
+" allow breakpoint setting
+let g:pymode_breakpoint = 1
+let g:pymode_breakpoint_bind = '<leader>b'
+let g:pymode_breakpoint_cmd = ''
+" disable lint because I use syntastic
+let g:pymode_lint = 0
+" rope support
+let g:pymode_rope = 1
+let g:pymode_rope_regenerate_on_write = 1
+" don't need any completion
+let g:pymode_rope_completion = 0
+" go to definition
+let g:pymode_rope_goto_definition_bind = '<C-c>g'
+let g:pymode_rope_goto_definition_cmd = 'vnew'
+" refactoring
+let g:pymode_rope_rename_bind = '<C-c>rr'
+let g:pymode_rope_rename_module_bind = '<C-c>r1r'
+"organise imports
+let g:pymode_rope_organize_imports_bind = '<C-c>ro'
+" extract method/variable
+let g:pymode_rope_extract_method_bind = '<C-c>rm'
+let g:pymode_rope_extract_variable_bind = '<C-c>rl'
+" rename signature
+let g:pymode_rope_change_signature_bind = '<C-c>rs'
+" Python syntax
+let g:pymode_syntax = 1
+
+
