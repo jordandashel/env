@@ -372,7 +372,7 @@ let g:pymode_breakpoint_cmd = ''
 let g:pymode_lint = 0
 " rope support
 let g:pymode_rope = 1
-let g:pymode_rope_regenerate_on_write = 1
+let g:pymode_rope_regenerate_on_write = 0
 " don't need any completion
 let g:pymode_rope_completion = 0
 " go to definition
