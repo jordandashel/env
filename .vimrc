@@ -394,3 +394,7 @@ let g:pymode_syntax = 1
 
 " Scratch set to markdown for fenced highlighting
 let g:scratch_filetype = 'markdown'
+
+" markdown fencing
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+let g:markdown_fenced_languages = ['c', 'python', 'javascript']
