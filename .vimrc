@@ -392,4 +392,5 @@ let g:pymode_rope_change_signature_bind = '<C-c>rs'
 " Python syntax
 let g:pymode_syntax = 1
 
-
+" Scratch set to markdown for fenced highlighting
+let g:scratch_filetype = 'markdown'
