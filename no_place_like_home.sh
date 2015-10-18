@@ -35,7 +35,7 @@ apt_install_programs(){
 }
 
 pip_installs(){
-	pip install virtualenv virtualenvwrapper rope
+	pip install virtualenv virtualenvwrapper rope ipython ipdb
 }
 
 install_fonts(){
