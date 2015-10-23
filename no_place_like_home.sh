@@ -32,7 +32,7 @@ apt_install_programs(){
 	apt-get install --yes libevent-dev libncurses-dev 
 	# my favorite/essential utilities
 	# installing each individually in case one fails
-	programs=(curl zsh vim vim-gnome pandoc gnome-session-flashback lynx guake python3 python-pip)
+	programs=(curl zsh vim vim-gnome pandoc gnome-session-flashback lynx guake python3 python-pip gnome-tweak-tool)
 
 	for program in "${programs[@]}"
 	do
