@@ -31,7 +31,13 @@ apt_install_programs(){
 	apt-get install --yes build-essential
 	apt-get install --yes libevent-dev libncurses-dev 
 	# my favorite/essential utilities
-	apt-get install --yes curl zsh vim vim-gnome pandoc gnome-session-fallback lynx guake python3 python-pip
+	# installing each individually in case one fails
+	programs=(curl zsh vim vim-gnome pandoc gnome-session-flashback lynx guake python3 python-pip)
+
+	for program in "${programs[@]}"
+	do
+		apt-get install --yes program
+	done
 }
 
 pip_installs(){
