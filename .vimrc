@@ -398,3 +398,6 @@ let g:scratch_filetype = 'markdown'
 " markdown fencing
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 let g:markdown_fenced_languages = ['c', 'python', 'javascript']
+
+" automatically change window's cwd to file's dir
+set autochdir
