@@ -225,6 +225,10 @@ nnoremap <C-L> <C-W>l
 " jump to last position and bring it to the middle of the screen
 nnoremap `` ``zz
 
+" finally added multiline traversal
+nnoremap j gj
+nnoremap k gk
+
 "------------------------------------------------------------
 
 " Filetype specific indentation
