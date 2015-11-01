@@ -321,6 +321,9 @@ else
 	let g:syntastic_check_on_wq = 0
 endif
 
+" display syntastic errors
+nnoremap <F8> :Errors<CR>
+
 " languages
 "let g:syntastic_javascript_checkers=['jshint']
 
