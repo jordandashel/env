@@ -257,6 +257,15 @@ set foldlevelstart=99
 nnoremap <leader>z za
 set foldmethod=indent
 
+" open splits below and to the right
+set splitbelow
+set splitright
+
+" decent swapfile handling
+set swapfile
+set directory=~/tmp,.
+set backupdir=~/tmp,.
+
 " Source vimrc
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
@@ -326,6 +335,8 @@ nnoremap <F8> :Errors<CR>
 
 " languages
 "let g:syntastic_javascript_checkers=['jshint']
+" let g:syntastic_python_checkers=['python3']
+" let g:syntastic_python_python_exec = '/usr/local/bin/python3'
 
 " Show registers
 nnoremap <C-g> :reg<CR>
