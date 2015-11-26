@@ -44,6 +44,8 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-commentary'
 Plugin 'klen/python-mode'
 Plugin 'mtth/scratch.vim'
+Plugin 'tpope/vim-speeddating'
+Plugin 'majutsushi/tagbar'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -312,7 +314,7 @@ set listchars=tab:\|.,eol:¬
 "set list
 
 " WhiteSpace shortcut
-nmap <leader>l :set list!<CR>
+nmap <leader>w :set list!<CR>
 
 if &diff
 else
@@ -409,6 +411,8 @@ let g:pymode_syntax = 1
 
 " Scratch set to markdown for fenced highlighting
 let g:scratch_filetype = 'markdown'
+let g:scratch_no_mappings = 1
+nnoremap gs :Scratch<CR>
 
 " markdown fencing
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
@@ -416,3 +420,6 @@ let g:markdown_fenced_languages = ['c', 'python', 'javascript']
 
 " automatically change window's cwd to file's dir
 set autochdir
+
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
