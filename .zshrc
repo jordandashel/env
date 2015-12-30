@@ -107,20 +107,20 @@ export PATH=~/bin:"$PATH"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 
-# Use virtualenv for pip
-export PIP_REQUIRE_VIRTUALENV=true
+# # use virtualenv for pip
+# export pip_require_virtualenv=true
 
-# Add global pip
-gpip(){
-	   PIP_REQUIRE_VIRTUALENV="" pip "$@"
-}
+# # add global pip
+# gpip(){
+# 	   pip_require_virtualenv="" pip "$@"
+# }
 
-# zsh Powerline
-# decided I don't really care for powerline in the shell. Might go back someday
+# zsh powerline
+# decided i don't really care for powerline in the shell. might go back someday
 
 # function _update_ps1()
 # {
-# 	export PROMPT="$(~/.powerline-zsh.py -m konsole $?)"
+# 	export prompt="$(~/.powerline-zsh.py -m konsole $?)"
 # }
 # precmd()
 # {
