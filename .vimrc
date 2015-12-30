@@ -284,9 +284,17 @@ vmap < <gv
 
 let g:airline_powerline_fonts=1
 
-
-set guifont=LiberationMono
-"set guifont=Droid_Sans_Mono_for_Powerline:h10
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 12
+  elseif has("gui_macvim")
+    set guifont=Meslo\ LG\ S\ for\ Powerline:h11
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+else
+  set guifont=LiberationMono
+endif
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme='bubblegum'
@@ -423,3 +431,5 @@ set autochdir
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
+
+nnoremap <leader>l :colorscheme PaperColor<CR>:AirlineTheme tomorrow<CR>
