@@ -129,3 +129,18 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # add virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper.sh
+
+# Let's try vi motions on the command line
+bindkey -v
+# keep ^R
+bindkey '^r' history-incremental-search-backward
+# Indicate vi-mode on prompt
+function zle-line-init zle-keymap-select {
+	VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
+	RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $EPS1"
+	zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
+# And no lag please
+export KEYTIMEOUT=1
