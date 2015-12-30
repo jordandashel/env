@@ -92,6 +92,16 @@ link_dot_files(){
 
 		ln -s $OG_DIR/$file $USER_HOME/$file
 	done
+
+	dotdirectories=( .emacs.d .ssh )
+	for dir in "${dotdirectories[@]}"
+	do
+		if [ -d $USER_HOME/$dir ]; then
+			rm -rf $USER_HOME/$dir
+		fi
+
+		ln -s $OG_DIR/$dir $USER_HOME/$dir
+	done
 }
 
 link_ftplugin_files(){
