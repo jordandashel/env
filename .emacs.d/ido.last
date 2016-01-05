@@ -2,31 +2,30 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/Users/" . "jdashel/")
- ("/" . "Users/")
- ("/Users/jdashel/devel/" . "env/")
+ ("/Users/jdashel/" . ".org/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/jdashel/.org/"
  "/Users/jdashel/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "OrgTutorial.org"
  ".emacs"
- "core-emacs"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/jdashel/" (22141 56696 0 0) "tmux-2.0.tar.gz" "tmux-2.0/" "tmp" "stranger~" "stranger" "roswell/" "Public/" "Pictures/" "notes" "Music/" "Movies/" "Library/" "edu/" "Dropbox/" "Downloads/" "Documents/" "devel/" "Desktop/" "core-emacs~" "core-emacs" "Applications/" ".zshrc" ".zsh_history" ".zprofile" ".zcompdump-Jordan’s MacBook Pro-5.0.8" ".virtualenvs/" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".tmux.conf" ".subversion/" ".ssh/" ".python_history" ".oh-my-zsh/" ".lesshst" ".ispell_english" ".ipython/" ".idlerc/" ".gitignore" ".gitconfig" ".gem/" ".emacs~" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".abbrev_defs" ".#core-emacs" "#core-emacs#" "../" "./")
+ ("/Users/jdashel/.org/" (22154 59080 0 0) "OrgTutorial.org" "../" "./")
 
- ("/Users/" (22034 557 0 0) "Shared/" "jdashel/" "Guest/" ".localized" "../" "./")
+ ("/Users/jdashel/devel/" (22148 18517 0 0) "pyker/" "linux-2.6.32.69.tar.xz" "linux-2.6.32.69/" "env/" "base16-iterm2/" "../" "./")
 
- ("/Users/jdashel/devel/env/" (22140 54213 0 0) "setup_functions.sh" "README.md" "powerline-zsh/" "pl_fonts/" "no_place_like_home.sh" "gitignore/" "ftplugin/" "colortest" ".zshrc" ".vimrc.swp" ".vimrc" ".tmux.conf" ".ipython/" ".gitmodules" ".gitignore" ".gitconfig" ".git/" ".emacs~" ".emacs" ".bashrc" ".abbrev_defs" "../" "./")
+ ("/Users/jdashel/devel/env/" (22155 10781 0 0) "setup_functions.sh" "README.md" "powerline-zsh/" "pl_fonts/" "no_place_like_home.sh" "gitignore/" "ftplugin/" "colortest" ".zshrc" ".vimrc.swp" ".vimrc" ".tmux.conf" ".ssh/" ".org/" ".ipython/" ".gitmodules" ".gitignore" ".gitconfig" ".git/" ".emacs~" ".emacs.swp" ".emacs" ".bashrc" ".abbrev_defs" "../" "./")
 
- ("/Users/jdashel/devel/" (22040 60647 0 0) "pyker/" "env/" "base16-iterm2/" "../" "./")
+ ("/Users/jdashel/" (22155 10474 0 0) "tmux-2.0.tar.gz" "tmux-2.0/" "tmp" "stranger~" "stranger" "roswell/" "Public/" "Pictures/" "notes" "Music/" "Movies/" "Library/" "edu/" "Dropbox/" "Downloads/" "Documents/" "devel/" "Desktop/" "core-emacs~" "core-emacs" "Applications/" ".zshrc" ".zsh_history" ".zprofile" ".zcompdump-Jordan’s MacBook Pro-5.0.8" ".virtualenvs/" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".tmux.conf" ".subversion/" ".ssh/" ".python_history" ".org/" ".oh-my-zsh/" ".lesshst" ".ispell_english" ".ipython/" ".idlerc/" ".gitignore" ".gitconfig" ".gem/" ".emacs~" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".abbrev_defs" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----
