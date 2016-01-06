@@ -12,10 +12,12 @@
  '(cua-normal-cursor-color "#839496")
  '(cua-overwrite-cursor-color "#b58900")
  '(cua-read-only-cursor-color "#859900")
- '(custom-enabled-themes (quote (misterioso)))
+ '(custom-enabled-themes (quote (tango-dark)))
  '(custom-safe-themes
    (quote
-    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "8577da1641ed4bdf255341ca92e3d0e49c9f4d574458f09ce78159690442cade" "405b0ac2ac4667c5dab77b36e3dd87a603ea4717914e30fcf334983f79cfd87e" "38ba6a938d67a452aeb1dada9d7cdeca4d9f18114e9fc8ed2b972573138d4664" "cdd26fa6a8c6706c9009db659d2dffd7f4b0350f9cc94e5df657fa295fffec71" "dd4db38519d2ad7eb9e2f30bc03fba61a7af49a185edfd44e020aa5345e3dca7" "0fb6369323495c40b31820ec59167ac4c40773c3b952c264dd8651a3b704f6b5" default)))
+    ("df3e05e16180d77732ceab47a43f2fcdb099714c1c47e91e8089d2fcf5882ea3" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "8577da1641ed4bdf255341ca92e3d0e49c9f4d574458f09ce78159690442cade" "405b0ac2ac4667c5dab77b36e3dd87a603ea4717914e30fcf334983f79cfd87e" "38ba6a938d67a452aeb1dada9d7cdeca4d9f18114e9fc8ed2b972573138d4664" "cdd26fa6a8c6706c9009db659d2dffd7f4b0350f9cc94e5df657fa295fffec71" "dd4db38519d2ad7eb9e2f30bc03fba61a7af49a185edfd44e020aa5345e3dca7" "0fb6369323495c40b31820ec59167ac4c40773c3b952c264dd8651a3b704f6b5" default)))
+ '(evil-want-C-u-scroll t)
+ '(evil-want-Y-yank-to-eol t)
  '(fci-rule-color "#49483E")
  '(highlight-changes-colors (quote ("#FD5FF0" "#AE81FF")))
  '(highlight-symbol-colors
@@ -86,7 +88,7 @@
 	 (quote ansi-term-color-vector)))
        (not
 	(facep
-	 (aref ansi-term-color-vector 0)))))
+	 (aref ansi-term-color-vector 0)))) t)
  '(winner-mode t)
  '(xterm-color-names
    ["#073642" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#eee8d5"])
@@ -172,8 +174,37 @@
 (require 'powerline)
 (powerline-default-theme)
 
+;; Theme
+(require 'farmhouse-dark-theme)
+
 ;; Org-mode shortcuts courtesy David O'Toole
 (require 'org)
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-long-done t)
+
+;; Re-builder
+;(require 're-builder)
+;(setq reb-re-syntax 'string)
+
+;; Evil customizations
+(setq evil-default-cursor 'box)
+(setq evil-insert-state-cursor 'box)
+(define-key evil-normal-state-map " " 'evil-ex)
+;; Evil modes
+(cl-loop for (mode . state) in '((inferior-emacs-lisp-mode . emacs)
+			      (markdown-mode . normal)
+			      (git-commit-mode . insert)
+			      (shell-mode . emacs)
+			      (term-mode . emacs)
+			      (help-mode . emacs)
+			      (dired-mode . emacs))
+      do (evil-set-initial-state mode state))
+(require 'evil-surround)
+(require 'evil)
+(evil-mode 1)
+
+;; Enable magit
+(require 'magit)
+;; Chord for magit-status
+(global-set-key (kbd "C-x G") 'magit-status)
