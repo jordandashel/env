@@ -7,15 +7,23 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
+ '(c-basic-offset 8)
+ '(c-default-style
+   (quote
+    ((c-mode . "k&r")
+     (java-mode . "java")
+     (awk-mode . "awk")
+     (other . "gnu"))))
+ '(c-tab-always-indent nil)
  '(compilation-message-face (quote default))
  '(cua-global-mark-cursor-color "#2aa198")
  '(cua-normal-cursor-color "#839496")
  '(cua-overwrite-cursor-color "#b58900")
  '(cua-read-only-cursor-color "#859900")
- '(custom-enabled-themes (quote (tango-dark)))
+ '(custom-enabled-themes nil)
  '(custom-safe-themes
    (quote
-    ("df3e05e16180d77732ceab47a43f2fcdb099714c1c47e91e8089d2fcf5882ea3" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "8577da1641ed4bdf255341ca92e3d0e49c9f4d574458f09ce78159690442cade" "405b0ac2ac4667c5dab77b36e3dd87a603ea4717914e30fcf334983f79cfd87e" "38ba6a938d67a452aeb1dada9d7cdeca4d9f18114e9fc8ed2b972573138d4664" "cdd26fa6a8c6706c9009db659d2dffd7f4b0350f9cc94e5df657fa295fffec71" "dd4db38519d2ad7eb9e2f30bc03fba61a7af49a185edfd44e020aa5345e3dca7" "0fb6369323495c40b31820ec59167ac4c40773c3b952c264dd8651a3b704f6b5" default)))
+    ("a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "e8825f26af32403c5ad8bc983f8610a4a4786eb55e3a363fa9acb48e0677fe7e" "df3e05e16180d77732ceab47a43f2fcdb099714c1c47e91e8089d2fcf5882ea3" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "8577da1641ed4bdf255341ca92e3d0e49c9f4d574458f09ce78159690442cade" "405b0ac2ac4667c5dab77b36e3dd87a603ea4717914e30fcf334983f79cfd87e" "38ba6a938d67a452aeb1dada9d7cdeca4d9f18114e9fc8ed2b972573138d4664" "cdd26fa6a8c6706c9009db659d2dffd7f4b0350f9cc94e5df657fa295fffec71" "dd4db38519d2ad7eb9e2f30bc03fba61a7af49a185edfd44e020aa5345e3dca7" "0fb6369323495c40b31820ec59167ac4c40773c3b952c264dd8651a3b704f6b5" default)))
  '(evil-want-C-u-scroll t)
  '(evil-want-Y-yank-to-eol t)
  '(fci-rule-color "#49483E")
@@ -53,6 +61,7 @@
  '(sentence-end-double-space nil)
  '(shift-select-mode nil)
  '(smartrep-mode-line-active-bg (solarized-color-blend "#859900" "#073642" 0.2))
+ '(tab-always-indent nil)
  '(term-default-bg-color "#002b36")
  '(term-default-fg-color "#839496")
  '(tool-bar-mode nil)
@@ -134,6 +143,8 @@
 ;; Sort the results of apropos by relevance
 ;(setq apropos-sort-by-scores t)
 
+(require 'cc-mode)
+
 ;; Enable ido
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
@@ -175,7 +186,7 @@
 (powerline-default-theme)
 
 ;; Theme
-(require 'farmhouse-dark-theme)
+;(require 'farmhouse-dark-theme)
 
 ;; Org-mode shortcuts courtesy David O'Toole
 (require 'org)
@@ -188,8 +199,10 @@
 ;(setq reb-re-syntax 'string)
 
 ;; Evil customizations
+(setq evil-shift-width 8)
 (setq evil-default-cursor 'box)
 (setq evil-insert-state-cursor 'box)
+(require 'evil)
 (define-key evil-normal-state-map " " 'evil-ex)
 ;; Evil modes
 (cl-loop for (mode . state) in '((inferior-emacs-lisp-mode . emacs)
@@ -201,10 +214,37 @@
 			      (dired-mode . emacs))
       do (evil-set-initial-state mode state))
 (require 'evil-surround)
-(require 'evil)
+(global-evil-surround-mode 1)
 (evil-mode 1)
 
 ;; Enable magit
 (require 'magit)
 ;; Chord for magit-status
 (global-set-key (kbd "C-x G") 'magit-status)
+
+;; Follow sym-links to git repositories automatically
+(setq vc-follow-symlinks t)
+
+;; Markdown highlighting
+(require 'mmm-mode)
+(defun my-mmm-markdown-auto-class (lang &optional submode)
+  "Define a mmm-mode class for LANG in `markdown-mode' using SUBMODE.
+If SUBMODE is not provided, use `LANG-mode' by default."
+  (let ((class (intern (concat "markdown-" lang)))
+	(submode (or submode (intern (concat lang "-mode"))))
+	(front (concat "^```" lang "[\n\r]+"))
+	(back "^```"))
+    (mmm-add-classes (list (list class :submode submode :front front :back back)))
+    (mmm-add-mode-ext-class 'markdown-mode nil class)))
+
+;; Mode names that derive directly from the language name
+(mapc 'my-mmm-markdown-auto-class
+      '("awk" "bibtex" "c" "cpp" "css" "html" "latex" "lisp" "makefile"
+	"markdown" "python" "r" "ruby" "sql" "stata" "xml"))
+
+(global-set-key (kbd "C-c c") 'compile)
+(global-set-key (kbd "C-c r") 'recompile)
+
+
+;; Theme
+(require 'monokai-theme)

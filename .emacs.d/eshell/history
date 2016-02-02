@@ -1,0 +1,64 @@
+ls
+./a.out 
+ls
+./a.out 
+ls
+pwd
+cd edu/books/
+cd The_C_Programming_Language/
+cd ch-03_ControlFlow/
+ls
+cd programs/
+ls
+./a.out 
+rm a.out 
+ls
+ls
+./a.out 
+ls
+./a.out 
+./a.out 
+./a.out 
+ls
+./a.out 
+./a.out 
+ls
+./a.out 
+./a.out 
+./a.out 
+ls
+ls
+pcalc
+./pcalc 
+./pcalc 
+./pcalc 
+clear
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 
+./pcalc 

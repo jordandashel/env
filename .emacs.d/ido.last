@@ -2,37 +2,90 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/programs/" . "calc/")
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/" . "programs/")
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-02_TypesOperatorsAndExpressions/" . "notes/")
+ ("/" . "Users/")
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/" . "notes/")
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/" . "ch-04_FunctionsAndProgramStructure/")
+ ("/Users/jdashel/edu/books/" . "The_C_Programming_Language/")
+ ("/Users/jdashel/edu/" . "books/")
  ("/Users/" . "jdashel/")
- ("/Users/jdashel/" . "org/")
+ ("/Users/jdashel/" . "edu/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
  "/Users/jdashel/"
+ "/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/programs/calc/"
+ "/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/notes/"
+ "/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/programs/"
+ "/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/notes/"
+ "/Users/jdashel/edu/books/The_C_Programming_Language/ch-02_TypesOperatorsAndExpressions/notes/"
+ "/Users/jdashel/roswell/"
  "/Users/jdashel/org/"
  "/Users/jdashel/.org/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- ".emacs"
- "OrgTutorial.org"
  "core-emacs"
+ "getop.c"
+ ".emacs"
+ "pcalc.c"
+ "getch.c"
+ "stack.c"
+ "4.03-ExternalVariables.md"
+ "4.02-FunctionReturningNonIntegers.md"
+ "4.01-BasicsOfFunctions.md"
+ "ex_3-03.c"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/jdashel/" (22157 24081 0 0) "tmux-2.0.tar.gz" "tmux-2.0/" "tmp" "stranger~" "stranger" "roswell/" "Public/" "Pictures/" "org/" "notes" "Music/" "Movies/" "Library/" "edu/" "Dropbox/" "Downloads/" "Documents/" "devel/" "Desktop/" "core-emacs~" "core-emacs" "Applications/" ".zshrc" ".zsh_history" ".zprofile" ".zcompdump-Jordan’s MacBook Pro-5.0.8" ".virtualenvs/" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".tmux.conf" ".subversion/" ".ssh/" ".python_history" ".oh-my-zsh/" ".lesshst" ".ispell_english" ".ipython/" ".idlerc/" ".gitignore" ".gitconfig" ".gem/" ".emacs~" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".abbrev_defs" "../" "./")
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/programs/calc/" (22178 54053 0 0) "stack.c~" "stack.c" "pcalc.c~" "pcalc.c" "pcalc" "getop.c~" "getop.c" "getch.c~" "getch.c" "../" "./")
 
- ("/Users/jdashel/devel/env/" (22156 47091 0 0) "setup_functions.sh" "README.md" "powerline-zsh/" "pl_fonts/" "org/" "no_place_like_home.sh" "gitignore/" "ftplugin/" "colortest" ".zshrc" ".vimrc" ".tmux.conf" ".ssh/" ".ipython/" ".gitmodules" ".gitignore" ".gitconfig" ".git/" ".emacs~" ".emacs.swp" ".emacs.d/" ".emacs" ".bashrc" ".abbrev_defs" ".#.emacs" "#.emacs#" "../" "./")
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/programs/" (22176 12712 0 0) "calc/" "../" "./")
 
- ("/Users/jdashel/org/" (22155 11695 0 0) "OrgTutorial.org~" "OrgTutorial.org" "../" "./")
+ ("/Users/jdashel/" (22176 10026 0 0) "VirtualBox VMs/" "tmux-2.0.tar.gz" "tmux-2.0/" "tmp" "stranger~" "stranger" "sample.md~" "sample.md" "roswell/" "Public/" "Pictures/" "org/" "notes" "Music/" "Movies/" "Library/" "edu/" "Dropbox/" "Downloads/" "Documents/" "devel/" "Desktop/" "core-emacs~" "core-emacs" "Applications/" ".zshrc" ".zsh_history" ".zprofile" ".zcompdump-Jordan’s MacBook Pro-5.0.8" ".virtualenvs/" ".vimrc" ".viminfo" ".vimgolf/" ".vim/" ".Trash/" ".tmux.conf" ".subversion/" ".ssh/" ".python_history" ".oh-my-zsh/" ".lesshst" ".ispell_english" ".ipython/" ".idlerc/" ".gitignore" ".gitconfig" ".gem/" ".emacs~" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".abbrev_defs" "#sample.md#" "../" "./")
+
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/notes/" (22176 12696 0 0) "4.03-ExternalVariables.md" "4.02-FunctionReturningNonIntegers.md~" "4.02-FunctionReturningNonIntegers.md" "4.01-BasicsOfFunctions.md~" "4.01-BasicsOfFunctions.md" "../" "./")
+
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/" (22169 47429 0 0) "programs/" "notes/" "../" "./")
+
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/" (22169 47418 0 0) "thoughts.txt" "ch-04_FunctionsAndProgramStructure/" "ch-03_ControlFlow/" "ch-02_TypesOperatorsAndExpressions/" "ch-01_ATutorialIntroduction/" "../" "./")
+
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/programs/" (22169 24069 0 0) "revised" "ex_3-03.c~" "ex_3-03.c" "ex_3-02.c~" "ex_3-02.c" "ex_3-01__revised.c" "ex_3-01__classic.c" "ex_3-01.c" "classic" "a.out" "../" "./")
+
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/notes/" (22169 22620 0 0) "3.05-Loops.md~" "3.05-Loops.md" "3.04-Switch.md~" "3.04-Switch.md" "3.03-ElseIf.md" "3.02-IfElse.md" "3.01-StatementsAndBlocks.md" "../" "./")
+
+ ("/Users/jdashel/devel/env/" (22160 10195 0 0) "setup_functions.sh" "README.md" "powerline-zsh/" "pl_fonts/" "org/" "no_place_like_home.sh" "gitignore/" "ftplugin/" "colortest" ".zshrc" ".vimrc" ".tmux.conf" ".ssh/" ".ipython/" ".gitmodules" ".gitignore" ".gitconfig" ".git/" ".emacs~" ".emacs.d/" ".emacs" ".bashrc" ".abbrev_defs" "../" "./")
+
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-02_TypesOperatorsAndExpressions/notes/" (22145 53011 0 0) "2.12-PrecedenceAndOrderOfEvaluation.md" "2.11-ConditionalExpressions.md" "2.10-AssignmentOperatorsAndExpressions.md" "2.09-BitwiseOperators.md" "2.08-IncrementAndDecrementOperators.md" "2.07-TypeConversions.md" "2.06-RelationalAndLogicalOperators.md" "2.05-ArithmeticOperators.md" "2.04-Declarations.md" "2.03-Constants.md" "2.02-DataTypesAndSizes.md" "2.01-VariableNames.md" "../" "./")
+
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-02_TypesOperatorsAndExpressions/" (22120 36198 0 0) "programs/" "notes/" "../" "./")
+
+ ("/Users/jdashel/devel/" (22159 64966 0 0) "pyker/" "linux-2.6.32.69.tar.xz" "linux-2.6.32.69/" "env/" "base16-iterm2/" "../" "./")
+
+ ("/Users/jdashel/org/" (22155 12896 0 0) "OrgTutorial.org~" "OrgTutorial.org" "../" "./")
+
+ ("/Users/jdashel/roswell/" (22157 31599 0 0) "whoisit" "who_sudod.sh" "who_funcd_again" "who_funcd" "what_is_constant.c" "valgrind/" "try_not_super.sh" "truth.c~" "truth.c" "terminated.c" "sudo_touch.sh" "su_func.sh" "ssh_login" "root_file" "nothing" "funcs.sh" "django/" "#terminated.c#" "../" "./")
+
+ ("/Users/jdashel/edu/" (22157 29276 0 0) "README.md" "books/" ".git/" "../" "./")
+
+ ("/Users/jdashel/.emacs.d/" (22157 24969 0 0) "ido.last~" "ido.last" "elpa/" "auto-save-list/" "../" "./")
+
+ ("/Users/jdashel/.emacs.d/elpa/" (22157 27943 0 0) "zenburn-theme-20160103.1612/" "with-editor-20160101.32/" "undo-tree-20140509.522/" "solarized-theme-20160103.1614/" "powerline-20151008.1449/" "mustard-theme-20141115.2302/" "monokai-theme-20160104.1312/" "mmm-mode-20150828.1716/" "markdown-mode-20160105.2049/" "makey-20131231.630/" "magit-readme.txt" "magit-popup-20160101.32/" "magit-20160105.1035/" "helm-core-20151231.1143/" "helm-20160103.2317/" "goto-chg-20131228.659/" "git-commit-20160101.32/" "farmhouse-theme-20150506.2127/" "evil-visual-mark-mode-20150202.1000/" "evil-surround-20151210.1218/" "evil-20151128.1102/" "dracula-theme-20151109.845/" "discover-20140103.1339/" "dash-20151216.1315/" "async-20151228.2255/" "archives/" "../" "./")
+
+ ("/Users/jdashel/.emacs.d/elpa/mmm-mode-20150828.1716/" (22157 27948 0 0) "mmm.info" "mmm-vars.elc" "mmm-vars.el" "mmm-utils.elc" "mmm-utils.el" "mmm-univ.elc" "mmm-univ.el" "mmm-sample.elc" "mmm-sample.el" "mmm-rpm.elc" "mmm-rpm.el" "mmm-region.elc" "mmm-region.el" "mmm-noweb.elc" "mmm-noweb.el" "mmm-myghty.elc" "mmm-myghty.el" "mmm-mode.elc" "mmm-mode.el" "mmm-mode-pkg.el" "mmm-mode-autoloads.el~" "mmm-mode-autoloads.el" "mmm-mason.elc" "mmm-mason.el" "mmm-erb.elc" "mmm-erb.el" "mmm-defaults.elc" "mmm-defaults.el" "mmm-cweb.elc" "mmm-cweb.el" "mmm-compat.elc" "mmm-compat.el" "mmm-cmds.elc" "mmm-cmds.el" "mmm-class.elc" "mmm-class.el" "mmm-auto.elc" "mmm-auto.el" "dir" "../" "./")
+
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/" (22146 55268 0 0) "programs/" "notes/" "../" "./")
+
+ ("/Users/jdashel/edu/books/" (22082 16851 0 0) "The_C_Programming_Language/" "../" "./")
 
  ("/Users/" (22034 557 0 0) "Shared/" "jdashel/" "Guest/" ".localized" "../" "./")
 
  ("/Users/jdashel/.org/" (22155 11018 0 0) "OrgTutorial.org" "#OrgTutorial.org#" "../" "./")
-
- ("/Users/jdashel/devel/" (22148 18517 0 0) "pyker/" "linux-2.6.32.69.tar.xz" "linux-2.6.32.69/" "env/" "base16-iterm2/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----
