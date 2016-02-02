@@ -1,0 +1,19 @@
+#! /bin/bash
+
+if [[ -d ~/.emacs.d && -d ~/.emacs.d_bac ]]; then
+    mv ~/.emacs.d_bac ~/.emacs.d_bac_tmp
+    mv ~/.emacs.d ~/.emacs.d_bac
+    mv ~/.emacs.d_bac_tmp ~/.emacs.d
+else
+    echo "no macs to switch"
+    exit
+fi
+
+if [[ -e ~/.emacs ]]; then
+    mv ~/.emacs ~/.emacs_bac
+    echo "going spacey"
+elif [[ -e ~/.emacs_bac ]]; then
+    mv ~/.emacs_bac ~/.emacs
+    echo "going vanilla"
+fi
+echo "macs switched!"
