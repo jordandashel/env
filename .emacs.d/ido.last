@@ -2,6 +2,17 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/jdashel/devel/tree_review/trees/" . "templates/")
+ ("/Users/jdashel/devel/tree_review/" . "trees/")
+ ("/Users/jdashel/devel/k+r/" . "ch_5/")
+ ("/Users/jdashel/devel/homepage/me/static/" . "css/")
+ ("/Users/jdashel/devel/superlists/lists/" . "templates/")
+ ("/Users/jdashel/devel/homepage/me/" . "templates/")
+ ("/Users/jdashel/djangotut/mysite/" . "polls/")
+ ("/Users/jdashel/djangotut/" . "mysite/")
+ ("/Users/jdashel/devel/superlists/" . "lists/")
+ ("/Users/jdashel/devel/homepage/" . "me/")
+ ("/Users/jdashel/devel/" . "homepage/")
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/programs/" . "calc/")
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/" . "programs/")
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-02_TypesOperatorsAndExpressions/" . "notes/")
@@ -11,43 +22,116 @@
  ("/Users/jdashel/edu/books/" . "The_C_Programming_Language/")
  ("/Users/jdashel/edu/" . "books/")
  ("/Users/" . "jdashel/")
- ("/Users/jdashel/" . "edu/")
+ ("/Users/jdashel/" . "org/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
  "/Users/jdashel/"
+ "/Users/jdashel/org/"
+ "/Users/jdashel/devel/homepage/me/templates/"
+ "/Users/jdashel/devel/tree_review/trees/templates/"
+ "/Users/jdashel/devel/homepage/me/"
+ "/Users/jdashel/devel/homepage/"
+ "/Users/jdashel/devel/tree_review/trees/"
+ "/Users/jdashel/devel/homepage/homepage/"
+ "/Users/jdashel/devel/tree_review/tree_review/"
+ "/Users/jdashel/devel/k+r/ch_5/"
+ "/Users/jdashel/devel/homepage/deploy_tools/"
+ "/Users/jdashel/devel/homepage/functional_tests/"
+ "/Users/jdashel/devel/homepage/me/static/css/"
+ "/Users/jdashel/devel/superlists/lists/templates/"
+ "/Users/jdashel/devel/superlists/lists/"
+ "/Users/jdashel/devel/superlists/functional_tests/"
+ "/Users/jdashel/devel/superlists/superlists/"
+ "/Users/jdashel/djangotut/mysite/polls/"
+ "/Users/jdashel/djangotut/mysite/mysite/"
  "/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/programs/calc/"
  "/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/notes/"
  "/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/programs/"
  "/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/notes/"
  "/Users/jdashel/edu/books/The_C_Programming_Language/ch-02_TypesOperatorsAndExpressions/notes/"
  "/Users/jdashel/roswell/"
- "/Users/jdashel/org/"
  "/Users/jdashel/.org/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "core-emacs"
- "getop.c"
+ "huntsman.txt"
  ".emacs"
- "pcalc.c"
- "getch.c"
- "stack.c"
- "4.03-ExternalVariables.md"
- "4.02-FunctionReturningNonIntegers.md"
- "4.01-BasicsOfFunctions.md"
- "ex_3-03.c"
+ "general.org"
+ "about-me.html"
+ "index.html"
+ "views.py"
+ "admin.py"
+ "manage.py"
+ "settings.py"
+ "__init__.py"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/programs/calc/" (22178 54053 0 0) "stack.c~" "stack.c" "pcalc.c~" "pcalc.c" "pcalc" "getop.c~" "getop.c" "getch.c~" "getch.c" "../" "./")
+ ("/Users/jdashel/" (22295 4317 0 0) "VirtualBox VMs/" "tmux-2.0.tar.gz" "tmux-2.0/" "tmp" "stranger~" "stranger" "sample.md~" "sample.md" "roswell/" "Public/" "Pictures/" "org/" "notes" "Music/" "Movies/" "Library/" "huntsman.txt~" "huntsman.txt" "homepage_settings.py" "emacs-ref" "edu/" "Dropbox/" "Downloads/" "Documents/" "djangotut/" "devel/" "Desktop/" "core-emacs~" "Applications/" "__pycache__/" ".zshrc" ".zsh_history" ".zprofile" ".zcompdump-Jordan’s MacBook Pro-5.0.8" ".virtualenvs/" ".vimrc" ".viminfo" ".vimgolf/" ".vim/" ".Trash/" ".tmux.conf" ".subversion/" ".ssh/" ".sqlite_history" ".spacemacs" ".slime/" ".python_history" ".oracle_jre_usage/" ".oh-my-zsh/" ".lesshst" ".ispell_english" ".ipython/" ".idlerc/" ".gitignore" ".gitconfig" ".gem/" ".fontconfig/" ".emacs~" ".emacs.d_bac/" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".abbrev_defs" "#sample.md#" "../" "./")
+
+ ("/Users/jdashel/devel/env/" (22295 3799 0 0) "switchmacs" "setup_functions.sh" "README.md" "powerline-zsh/" "pl_fonts/" "no_place_like_home.sh" "gitignore/" "ftplugin/" "emacs-ref" "colortest" ".zshrc" ".vimrc" ".tmux.conf" ".ssh/" ".ipython/" ".gitmodules" ".gitignore" ".gitconfig" ".git/" ".emacs~" ".emacs.d/" ".emacs" ".bashrc" ".abbrev_defs" "../" "./")
+
+ ("/Users/jdashel/devel/k+r/ch_5/" (22294 47074 0 0) "strutils" "strend" "strcat" "expr" "ex_5-10.c~" "ex_5-10.c" "ex_5-05.c~" "ex_5-05.c" "ex_5-04.c~" "ex_5-04.c" "ex_5-03.c~" "ex_5-03.c" "../" "./")
+
+ ("/Users/jdashel/devel/tree_review/trees/" (22278 42159 0 0) "views.py" "tests.py" "templates/" "models.py" "migrations/" "apps.py" "admin.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/tree_review/trees/templates/" (22276 33431 0 0) "index.html" "home.html" "../" "./")
+
+ ("/Users/jdashel/org/" (22284 8570 0 0) "org-mode-map.xcf" "org-mode-map.png" "homepage.org~" "homepage.org" "general.org~" "general.org" "../" "./")
+
+ ("/Users/jdashel/devel/tree_review/" (22276 32629 0 0) "trees/" "tree_review/" "static/" "README.md" "manage.py" "db.sqlite3" ".git/" "../" "./")
+
+ ("/Users/jdashel/devel/tree_review/tree_review/" (22276 32588 0 0) "wsgi.py" "urls.py" "settings.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/" (22276 29134 0 0) "tree_review/" "TDDpy/" "superlists/" "static/" "pyker/" "linux-2.6.32.69.tar.xz" "linux-2.6.32.69/" "k+r/" "homepage/" "env/" "database/" "base16-iterm2/" "../" "./")
+
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/programs/" (22265 60607 0 0) "revised" "ex_3-03.c" "ex_3-02.c" "ex_3-01__revised.c" "ex_3-01__classic.c" "ex_3-01.c" "classic" "../" "./")
+
+ ("/Users/jdashel/devel/homepage/" (22261 29229 0 0) "static/" "requirements.txt" "me/" "manage.py" "homepage/" "functional_tests/" "deploy_tools/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/jdashel/devel/homepage/me/" (22261 52200 0 0) "views.py~" "views.py" "tests.py~" "tests.py" "templates/" "static/" "models.py" "migrations/" "forms.py~" "forms.py" "exp.py" "apps.py" "admin.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/homepage/me/templates/" (22261 65248 0 0) "home.html~" "home.html" "experience.html~" "experience.html" "contact_template.txt~" "contact_template.txt" "contact.html~" "contact.html" "contact-success.html~" "contact-success.html" "about-me.html~" "about-me.html" "../" "./")
+
+ ("/Users/jdashel/devel/homepage/me/static/css/" (22261 52757 0 0) "home.css~" "home.css" "general.css~" "general.css" "experience.css" "contact.css" "about-me.css~" "about-me.css" "../" "./")
+
+ ("/Users/jdashel/devel/homepage/functional_tests/" (22239 7679 0 0) "tests.py~" "tests.py" "__pycache__/" "../" "./")
+
+ ("/Users/jdashel/devel/homepage/homepage/" (22261 52744 0 0) "wsgi.py" "urls.py" "settings.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/homepage/deploy_tools/" (22242 17421 0 0) "fabfile.pyc" "fabfile.py" "../" "./")
+
+ ("/Users/jdashel/devel/k+r/ch_1/" (22265 60906 0 0) "samplefiles/" "ex_1-24.c" "ex_1-23.c" "ex_1-22.c" "ex_1-21.c" "ex_1-20.c" "ex_1-19.c" "ex_1-18.c" "ex_1-17.c" "ex_1-16.c" "ex_1-15.c" "ex_1-14.c" "ex_1-13_vert.c" "ex_1-13_horiz.c" "ex_1-12.c" "ex_1-10.c" "ex_1-09.c" "ex_1-08.c" "ex_1-07.c" "ex_1-06.c" "ex_1-05.c" "ex_1-04.c" "ex_1-03.c" "ex_1-01.c" "a.out" "../" "./")
+
+ ("/Users/jdashel/devel/k+r/" (22265 60976 0 0) "ch_5/" "ch_4/" "ch_3/" "ch_2/" "ch_1/" ".git/" "../" "./")
+
+ ("/Users/jdashel/devel/homepage/me/static/" (22223 62977 0 0) "css/" "bootstrap/" "../" "./")
+
+ ("/Users/jdashel/devel/superlists/lists/templates/" (22213 29263 0 0) "list.html" "home.html" "../" "./")
+
+ ("/Users/jdashel/devel/superlists/functional_tests/" (22221 20221 0 0) "tests.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/programs/calc/" (22195 60670 0 0) "stack.c~" "stack.c" "pcalc.c~" "pcalc.c" "pcalc" "getop.c~" "getop.c" "getch.c~" "getch.c" "a.out" "../" "./")
+
+ ("/Users/jdashel/djangotut/mysite/polls/" (22208 8489 0 0) "views.py" "urls.py" "tests.py" "templates/" "static/" "models.py" "migrations/" "apps.py" "admin.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/superlists/lists/" (22213 27947 0 0) "views.py" "tests.py" "templates/" "models.py" "migrations/" "apps.py" "admin.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/djangotut/mysite/mysite/" (22208 8540 0 0) "wsgi.py" "urls.py" "settings.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/djangotut/mysite/" (22208 8894 0 0) "polls/" "mysite/" "manage.py" "db.sqlite3" "../" "./")
+
+ ("/Users/jdashel/djangotut/" (22208 9565 0 0) "mysite/" ".DS_Store" "../" "./")
+
+ ("/Users/jdashel/devel/superlists/superlists/" (22213 28886 0 0) "wsgi.py" "urls.py" "settings.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/superlists/" (22213 19155 0 0) "superlists/" "manage.py" "lists/" "functional_tests/" "db.sqlite3" ".gitignore" ".git/" "../" "./")
 
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/programs/" (22176 12712 0 0) "calc/" "../" "./")
-
- ("/Users/jdashel/" (22176 10026 0 0) "VirtualBox VMs/" "tmux-2.0.tar.gz" "tmux-2.0/" "tmp" "stranger~" "stranger" "sample.md~" "sample.md" "roswell/" "Public/" "Pictures/" "org/" "notes" "Music/" "Movies/" "Library/" "edu/" "Dropbox/" "Downloads/" "Documents/" "devel/" "Desktop/" "core-emacs~" "core-emacs" "Applications/" ".zshrc" ".zsh_history" ".zprofile" ".zcompdump-Jordan’s MacBook Pro-5.0.8" ".virtualenvs/" ".vimrc" ".viminfo" ".vimgolf/" ".vim/" ".Trash/" ".tmux.conf" ".subversion/" ".ssh/" ".python_history" ".oh-my-zsh/" ".lesshst" ".ispell_english" ".ipython/" ".idlerc/" ".gitignore" ".gitconfig" ".gem/" ".emacs~" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".abbrev_defs" "#sample.md#" "../" "./")
 
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/notes/" (22176 12696 0 0) "4.03-ExternalVariables.md" "4.02-FunctionReturningNonIntegers.md~" "4.02-FunctionReturningNonIntegers.md" "4.01-BasicsOfFunctions.md~" "4.01-BasicsOfFunctions.md" "../" "./")
 
@@ -55,19 +139,11 @@
 
  ("/Users/jdashel/edu/books/The_C_Programming_Language/" (22169 47418 0 0) "thoughts.txt" "ch-04_FunctionsAndProgramStructure/" "ch-03_ControlFlow/" "ch-02_TypesOperatorsAndExpressions/" "ch-01_ATutorialIntroduction/" "../" "./")
 
- ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/programs/" (22169 24069 0 0) "revised" "ex_3-03.c~" "ex_3-03.c" "ex_3-02.c~" "ex_3-02.c" "ex_3-01__revised.c" "ex_3-01__classic.c" "ex_3-01.c" "classic" "a.out" "../" "./")
-
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/notes/" (22169 22620 0 0) "3.05-Loops.md~" "3.05-Loops.md" "3.04-Switch.md~" "3.04-Switch.md" "3.03-ElseIf.md" "3.02-IfElse.md" "3.01-StatementsAndBlocks.md" "../" "./")
-
- ("/Users/jdashel/devel/env/" (22160 10195 0 0) "setup_functions.sh" "README.md" "powerline-zsh/" "pl_fonts/" "org/" "no_place_like_home.sh" "gitignore/" "ftplugin/" "colortest" ".zshrc" ".vimrc" ".tmux.conf" ".ssh/" ".ipython/" ".gitmodules" ".gitignore" ".gitconfig" ".git/" ".emacs~" ".emacs.d/" ".emacs" ".bashrc" ".abbrev_defs" "../" "./")
 
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-02_TypesOperatorsAndExpressions/notes/" (22145 53011 0 0) "2.12-PrecedenceAndOrderOfEvaluation.md" "2.11-ConditionalExpressions.md" "2.10-AssignmentOperatorsAndExpressions.md" "2.09-BitwiseOperators.md" "2.08-IncrementAndDecrementOperators.md" "2.07-TypeConversions.md" "2.06-RelationalAndLogicalOperators.md" "2.05-ArithmeticOperators.md" "2.04-Declarations.md" "2.03-Constants.md" "2.02-DataTypesAndSizes.md" "2.01-VariableNames.md" "../" "./")
 
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-02_TypesOperatorsAndExpressions/" (22120 36198 0 0) "programs/" "notes/" "../" "./")
-
- ("/Users/jdashel/devel/" (22159 64966 0 0) "pyker/" "linux-2.6.32.69.tar.xz" "linux-2.6.32.69/" "env/" "base16-iterm2/" "../" "./")
-
- ("/Users/jdashel/org/" (22155 12896 0 0) "OrgTutorial.org~" "OrgTutorial.org" "../" "./")
 
  ("/Users/jdashel/roswell/" (22157 31599 0 0) "whoisit" "who_sudod.sh" "who_funcd_again" "who_funcd" "what_is_constant.c" "valgrind/" "try_not_super.sh" "truth.c~" "truth.c" "terminated.c" "sudo_touch.sh" "su_func.sh" "ssh_login" "root_file" "nothing" "funcs.sh" "django/" "#terminated.c#" "../" "./")
 

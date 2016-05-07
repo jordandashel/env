@@ -1,0 +1,516 @@
+This is a file of the core functions and utilities of emacs that I
+want to remember.
+
+     C-p
+C-b       C-f
+     C-n
+
+# Navigation
+
+C-a (M-x move-beginning-of-line) move to beginning of line
+
+C-e (M-x move-end-of-line) move to end of line
+
+M-m (M-x back-to-indentation) move to first non-whitespace char on
+line
+
+M-f (M-x forward-word) move forward by word
+
+M-b (M-x backward-word) move backward by word
+
+C-M-f (M-x forward-sexp) move forward by s-exp
+
+C-M-f (M-x backward-sexp) move backward by s-exp
+
+C-M-d (M-x ) move into next balanced expression
+
+C-M-u (M-x ) move out into next balanced expression
+
+C-M-n (M-x forward-list) move forward to next list within a balanced
+expression
+
+C-M-p (M-x backward-list) move backward to next list within a balanced
+expression
+
+M-{ (M-x backward-paragraph) move backward a paragraph
+
+M-} (M-x forward-paragraph) move forward a paragraph
+
+C-M-a (M-x beginning-of-defun) move to beginning of defun
+
+C-M-e (M-x end-of-defun) move to end of defun
+
+C-v (M-x scroll-up-command) scroll down one page
+
+M-v (M-x scroll-down-command) scroll up a page
+
+C-M-v (M-x scroll-other-window) scroll down other window
+
+C-M-S-v (M-x scroll-other-window-down) scroll up other window
+
+M-> (M-x end-of-buffer) move to bottom of buffer
+
+M-< (M-x beginning-of-buffer) move to top of buffer
+
+C-u C-<SPC> () return to last mark
+
+M-g M-g (M-x goto-line) go to line number
+
+M-r (M-x move-to-window-line-top-bottom) reposition point to top,
+middle, bottom
+
+C-l (M-x recenter-top-bottom) scroll buffer to top, middle, bottom
+(zz in vim)
+
+
+
+
+
+# Help
+
+C-h i (M-x info) info manual
+
+C-h a (M-x apropos-command) search documentation for commands
+
+C-h m (M-x describe-mode) display docs for current mode (major +
+minor)
+
+C-h f (M-x describe-function) describe a function
+
+C-h k (M-x describe-key) describe what a key binding does
+
+... C-h () append to a command for the full list of bindings in a map
+    	C-x 8 C-h  ->  display all of the commands mapped to C-x 8 C-h ...
+
+
+
+# Universal Argument
+
+C-u () universal argument; shorthand for 4
+
+C-- (M--) negative argument
+
+C-0 to C-9 (M-0 to M-9) Digit argument 0 to 9
+
+
+
+# Text Editing
+
+C-/ (M-x undo) undo
+
+
+
+# Buffers
+
+C-x b (M-x switch-to-buffer) switch between buffers
+
+C-x C-b (M-x list-buffers) list all buffers
+
+C-x k (M-x kill-buffer) kill a buffer
+
+
+
+# Window Management
+
+C-x 0 (M-x delete-window) delete active window
+
+C-x 1 (M-x delete-other-windows) delete other windows
+
+C-x 2 (M-x split-window-below) split window below
+
+C-x 3 (M-x split-window-right) split window right
+
+C-x o (M-x other-window) switch active window
+
+C-c <left> (M-x winner-undo) [winner-mode] undo window changes
+
+C-c <right> (M-x winner-redo) [winner-mode] restore a previous window config
+
+S-<left> , S-<right> , S-<up> , S-<down> [windmove] move through windows
+
+C-x 4 C-f (M-x find-file-other-window) find file for next window
+
+C-x 4 d (M-x dired-other-window) open dired in next window
+
+C-x 4 C-o (M-x display-buffer) display buffer in other window
+
+C-x 4 b (M-x switch-buffer-other-window) switch to another buffer in
+another window
+
+C-x 4 0 (M-x kill-buffer-and-window) kill buffer in other window
+
+
+# Bookmarks and Registers
+
+C-x r m (M-x bookmark-set) set a bookmark
+
+C-x r l (M-x bookmark-bmenu-list) list bookmarks
+
+C-x r b (M-x bookmark-jump) jump to a bookmark
+
+C-x r s (M-x copy-to-register) store region in register
+
+C-x r i (M-x insert-register) insert content of register
+
+
+
+# Selections and Regions
+
+C-<SPC> (M-x set-mark-command) set the mark and toggle the region
+
+C-u C-<SPC> () jump to mark, repeated calls go through the mark ring
+
+C-x C-x (M-x exchange-point-and-mark) exchange point and mark and
+reactivate last region
+
+
+
+# Setting the mark
+
+M-h (M-x mark-paragraph) mark the next paragraph
+
+C-x h (M-x mark-whole-buffer) mark entire buffer
+
+C-M-h (M-x mark-defun) mark next defun
+
+M-@ (M-x subword-mark) mark next word
+
+C-M-<SPC> , C-M-@ (M-x mark-sexp) mark next sexp
+
+C-<SPC> , C-g (M-x set-mark-command) deactivate region
+
+
+
+# Searching and indexing
+
+C-s (M-x isearch-forward) begin incremental search
+
+C-r (M-x isearch-backward) begin backward incremental search
+
+C-M-s (M-x isearch-forward-regexp) begin regexp incremental search
+
+C-M-r (M-x isearch-backward-regexp) begin backward incremental search
+
+RET () pick selected match
+
+C-g (M-x keyboard-quit) exit isearch
+
+C-s/C-r ...
+
+	... M-n () move to next item in search history
+
+	... M-p () move to previous item in search history
+
+	... C-M-i () complete search string against history
+
+	... C-w () add word at point to search string
+
+	... C-M-y () add character at point to search string
+
+	... M-s C-e () add rest of line to search string
+
+	... C-y () yank from clipboard to search string
+
+	... M-s c () toggle case sensitivity
+
+	... M-s o () activate occur
+
+C-s C-s () begin isearch against last search term
+
+C-r C-r () begin backward isearch against last search string
+
+M-s w (M-x isearch-forward-word) isearch forward for word
+
+C-M-% (M-x query-replace-regexp) query regexp and replace
+
+M-% (M-x query-replace) query search and replace
+
+
+
+# Occur
+
+M-s o (M-x occur) show usages in current buffer
+
+Within occur buffer
+
+       ... M-n , M-p () next and previous occurrence
+
+       ... < , > () beginning and end of buffer
+
+       ... g () revert buffer and refresh results
+
+       ... q () quit occur mode
+
+       ... e () switch to occur edit mode
+
+       ... C-c C-c () Exit occur edit mode and apply changes
+
+       ... M-g M-n (M-x next-error) jump to next item
+
+       ... M-g M-p (M-x previous-error) jump to previous item
+
+# Imenu
+
+M-i (M-x imenu) jump between important items
+
+# Helm
+
+C-x c ... () prefix for helm commands
+
+helm keys:
+
+	... RET () primary action
+
+	... C-e () secondary action
+
+	... C-j () tertiary action
+
+	... TAB () switch to action selector
+
+	... C-n , C-p () next and previous candidate
+
+	... M-< , M-> () beginning and end of completion list
+
+C-x c b (M-x helm-resume) resume last helm command
+
+C-x c / (M-x helm-find) invoke `find` on active buffer's cwd
+
+C-x c a (M-x helm-apropros) completes `M-x apropos` results
+
+C-x c m (M-x helm-man-woman) completion engine for `man`
+
+C-x c i (M-x helm-semantic-or-imenu) lists completions sourced from
+`M-x imenu` or semantic
+
+C-x c r (M-x helm-regexp) interactive regexp builder
+
+C-x c h r (M-x helm-info-emacs) search emacs topics in `M-x info`
+
+C-x c M-x (M-x helm-M-x) list completions sourced from `M-x`
+
+C-x c M-s o (M-x helm-occur) use helm to match `M-x occur` patterns
+
+C-x c C-c g (M-x helm-gid) show matches from google suggest
+
+
+
+# Ido
+
+within a file/dir ido prompt...
+
+       	  ... C-s , C-r () move to next and previous match
+
+	  ... TAB () traditional non-ido completion
+
+	  ... RET () open selected match
+
+	  ... C-d () open `M-x dired` buffer in current directory
+
+	  ... // () go to root directory /
+
+	  ... ~/ () go to home directory
+
+	  ... Backspace () delete a character or go up a directory
+
+within a buffer ido prompt...
+
+       	 ... C-s and C-r () move to next and previous match
+
+	 ... TAB () traditional non-ido completion
+
+	 ... RET () switch active buffer to selected match
+
+
+
+# Grep
+
+(M-x grep) prompts for arguments to pass to grep
+
+(M-x grep-find) prompts for arguments to pass to grep and find
+
+(M-x lgrep) prompts for query and glob pattern to search for with grep
+
+(M-x rgrep) prompts for query and glob pattern then recursively
+searches with grep and find
+
+(M-x rzgrep) like `M-x grep` but searches compressed gzip files
+
+---
+
+# Killing and Yanking
+
+C-d (M-x delete-char) delete character
+
+M-d , C-<BKSP> (M-x kill-word) kill word
+
+C-k (M-x kill-line) kill rest of line
+
+M-k (M-x kill-sentence) kill sentence
+
+C-M-k (M-x kill-sexp) kill sexp
+
+C-S-<BKSP> (M-x kill-whole-line) kill current line
+
+C-w (M-x kill-region) kill region
+
+M-w (M-x kill-ring-save) copy to kill ring
+
+C-M-w (M-x append-next-kill) append kill
+
+C-y (M-x yank) yank last kill
+
+M-y (M-x yank-pop) cycle through kill ring, replacing yanked text
+
+C-t (M-x transpose-chars) transpose characters
+
+M-t (M-x transpose-words) transpose words
+
+C-M-t (M-x transpose-sexp) transpose sexps
+
+C-x C-t (M-x transpose-lines) transpose lines
+
+M-z (M-x zap-to-char) delete to char
+
+
+
+# Case Changing
+
+M-c (M-x capitalize-word) capitalize next word
+
+M-u (M-x upcase-word) uppercase next word
+
+M-l (M-x downcase-word) lowercase next word
+
+
+
+# Keyboard Macros
+
+F3 (M-x kmacro-start-macro-or-insert-counter) start macro recording or
+insert counter value
+
+F4 (M-x kmacro-end-or-call-macro) stop macro recording or play last
+macro
+
+C-x ( , C-x ) () start and end macro recording
+
+C-x e () play last macro
+
+C-0 F4 () play last macro until end of buffer or error
+
+C-x C-k e (M-x edit-kbe-macro) edit last macro
+
+
+
+# VC
+
+C-x v ... () prefix key for vc
+
+C-x v d (M-x vc-dir) show vc status for current dir
+
+C-x v = (M-x vc-diff) display diffs between file revs
+
+C-x v g (M-x vc-annotate) blame/annotate current file
+
+C-x v v (M-x vc-next-action) do next logical action
+
+C-x v l (M-x vc-print-log) print commit log
+
+
+# Other
+
+C-r () enter recursive edit [isearch, search+replace, macros]
+
+C-M-c (M-x exit-recursive-edit) exit recursive edit
+
+C-x a l (M-x add-mode-abbrev) add mode-specific abbrev
+
+C-x a g (M-x add-global-abbrev) add global abbrev
+
+M-/ (M-x hippie-expand) expand word at point
+
+M-$ (M-x ispell-word) check spelling of word at point
+
+C-x C-r (M-x find-file-read-only) open read-only version of file
+
+C-x C-q (M-x read-only-mode) toggle read-only
+
+
+
+# Dired
+
+^ () go up a directory
+
+q () quit dired
+
+m () mark active
+
+u () unmark active
+
+U () unmark everything
+
+d () flag for deletion
+
+* . () mark files by extension
+
+* & () mark files by regexp
+
+marked file operations
+
+       g () refresh buffer
+
+       + () create a sub-dir
+
+       C () copy marked
+
+       O () chown marked
+
+       M () chmod marked
+
+       D () delete marked
+
+
+
+# Shell commands
+
+M-| (M-| shell-command-on-region) run a shell command on region
+
+C-u M-| () replaces region with output from M-|
+
+
+
+# Compiling
+
+M-x compile () run a command and tracks errors
+
+M-x recompile () re-run last command
+
+M-g M-n , M-g M-p () jump to next/previous error
+
+
+
+# Shells
+
+M-x shell () wrapper around shell
+
+M-x eshell () elisp implemented shell
+
+M-x ansi-term () terminal emulator
+
+
+
+# Org-mode
+
+C-c C-t (M-x org-todo) set an item as TODO or mark TODO item as finished
+
+C-c C-o (M-x org-open-at-point) open link at point
+
+C-c l (M-x org-store-link) store a link to a file 
+
+C-c C-l (M-x org-insert-link) insert a link to a file
+
+C-c a (M-x org-agenda) view items scheduled for this week
+
+C-c a t (M-x org-todo-list) view all todos
+
+C-c C-s (M-x org-schedule) insert a date
+

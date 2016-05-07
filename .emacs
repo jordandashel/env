@@ -192,22 +192,26 @@
 (require 'org)
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
-(setq org-long-done t)
+(setq org-log-done 'time)
 
 ;; Re-builder
 ;(require 're-builder)
 ;(setq reb-re-syntax 'string)
 
 ;; Evil customizations
+(require 'evil)
 (setq evil-shift-width 8)
 (setq evil-default-cursor 'box)
 (setq evil-insert-state-cursor 'box)
-(require 'evil)
+(define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
+(define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
+
 (define-key evil-normal-state-map " " 'evil-ex)
 ;; Evil modes
 (cl-loop for (mode . state) in '((inferior-emacs-lisp-mode . emacs)
 			      (markdown-mode . normal)
 			      (git-commit-mode . insert)
+			      (org-mode . emacs)
 			      (shell-mode . emacs)
 			      (term-mode . emacs)
 			      (help-mode . emacs)
@@ -248,3 +252,27 @@ If SUBMODE is not provided, use `LANG-mode' by default."
 
 ;; Theme
 (require 'monokai-theme)
+
+(require 'flycheck)
+(global-flycheck-mode)
+
+(require 'speed-type)
+
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-mode-bullets 1)))
+
+(require 'discover-my-major)
+(global-set-key (kbd "C-h C-m") 'discover-my-major)
+(global-set-key (kbd "C-h M-m") 'discover-my-mode)
+
+(require 'rainbow-mode)
+
+;(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+(require 'auto-complete)
+(ac-config-default)
+
+(setq inferior-lisp-program (executable-find "/usr/local/bin/sbcl"))
+
+(global-set-key (kbd "C-c d") 'define-word-at-point)
+(global-set-key (kbd "C-c D") 'define-word)

@@ -5,3 +5,5 @@ Session.vim
 *~
 .ropeproject/*
 a.out
+.DS_Store
+*#*

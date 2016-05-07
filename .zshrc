@@ -132,3 +132,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # add virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper.sh
 
+alias home="ssh jdashel@24.56.244.32"
+alias fabjd="fab deploy:host=jdashel@jordandashel.com"
+alias dfun="python manage.py test functional_tests"
