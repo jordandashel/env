@@ -132,6 +132,10 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # add virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper.sh
 
-alias home="ssh jdashel@24.56.244.32"
+if [[ -e ~/.zsh_private ]]; then
+	source ~/.zsh_private
+fi
+
 alias fabjd="fab deploy:host=jdashel@jordandashel.com"
 alias dfun="python manage.py test functional_tests"
+alias amz="ssh -i ~/.ssh/MyFirstKey.pem ec2-user@52.207.246.4"
