@@ -7,16 +7,6 @@
 ./strutils 
 ./strutils 
 ./strutils 
-./strutils 
-./strutils 
-./strutils 
-./strutils 
-./strutils 
-./strutils 
-./strutils 
-./strutils 
-./strutils 
-./strutils 
 ls
 expr 2 3 +
 ./expr 2 3 +
@@ -126,3 +116,13 @@ cc ex_5-10.c -o expr
 ./expr 1 2 +
 ./expr 1 2 +
 ./expr 1 2 +
+ls
+echo "echo one\necho two" > sample
+cat sample 
+cd devel/bashutils/
+ls
+debug.sh sample
+./debug.sh sample
+chmod +x debug.sh 
+ls
+./debug.sh sample

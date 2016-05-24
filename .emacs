@@ -193,6 +193,7 @@
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done 'time)
+(setq org-startup-indented t)
 
 ;; Re-builder
 ;(require 're-builder)
@@ -271,6 +272,10 @@ If SUBMODE is not provided, use `LANG-mode' by default."
 
 (require 'auto-complete)
 (ac-config-default)
+
+(global-set-key (kbd "C-c n") 'nosetests-all)
+(require 'nose)
+(defvar nose-use-verbose nil)
 
 (setq inferior-lisp-program (executable-find "/usr/local/bin/sbcl"))
 
