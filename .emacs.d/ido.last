@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/jdashel/devel/pyker/" . "tests/")
  ("/Users/jdashel/devel/tree_review/trees/" . "templates/")
  ("/Users/jdashel/devel/tree_review/" . "trees/")
  ("/Users/jdashel/devel/k+r/" . "ch_5/")
@@ -27,11 +28,13 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/jdashel/devel/ctci/"
  "/Users/jdashel/"
+ "/Users/jdashel/devel/pyker/tests/"
+ "/Users/jdashel/devel/"
  "/Users/jdashel/devel/pyker/"
  "/Users/jdashel/org/"
  "/Users/jdashel/devel/bashutils/"
- "/Users/jdashel/devel/"
  "/Users/jdashel/devel/homepage/me/templates/"
  "/Users/jdashel/devel/tree_review/trees/templates/"
  "/Users/jdashel/devel/homepage/me/"
@@ -60,31 +63,37 @@
 
 ;; ----- ido-work-file-list -----
 (
+ ".gitignore"
  ".emacs"
+ "ch01_strings_and_arrays.py"
+ "test_ch01_strings_and_arrays.py"
+ "test_01_strings_and_arrays.py"
+ "card_tests.py"
+ "test_ch1_arrays-and-strings.py"
+ "ch1_arrays-and-strings"
  "pyker.py"
  "interview_prep.org"
- "general.org"
- "sample"
- "debug.sh"
- "huntsman.txt"
- "about-me.html"
- "index.html"
- "views.py"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/jdashel/" (22339 44930 0 0) "VirtualBox VMs/" "tmux-2.0.tar.gz" "tmux-2.0/" "tmp" "stranger~" "stranger" "sample.md~" "sample.md" "roswell/" "Public/" "Pictures/" "org/" "notes" "Music/" "Movies/" "Library/" "huntsman.txt~" "huntsman.txt" "homepage_settings.py" "emacs-ref" "edu/" "Dropbox/" "Downloads/" "Documents/" "djangotut/" "devel/" "Desktop/" "core-emacs~" "Applications/" "__pycache__/" ".zshrc" ".zsh_private" ".zsh_history" ".zprofile" ".zcompdump-Jordan’s MacBook Pro-5.0.8" ".virtualenvs/" ".vimrc" ".viminfo" ".vimgolf/" ".vim/" ".Trash/" ".tmux.conf" ".subversion/" ".ssh/" ".sqlite_history" ".spacemacs" ".slime/" ".python_history" ".oracle_jre_usage/" ".oh-my-zsh/" ".lesshst" ".ispell_english" ".ipython/" ".idlerc/" ".gitignore" ".gitconfig" ".gem/" ".fontconfig/" ".emacs~" ".emacs.d_bac/" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".abbrev_defs" "#sample.md#" "../" "./")
+
+ ("/Users/jdashel/devel/ctci/" (22339 45707 0 0) "test_ch01_strings_and_arrays.pyc" "test_ch01_strings_and_arrays.py" "ch01_strings_and_arrays.pyc" "ch01_strings_and_arrays.py" "__pycache__/" ".git/" "../" "./")
+
+ ("/Users/jdashel/devel/pyker/tests/" (22069 27542 0 0) "table_tests.py" "pyker_tests.py" "player_tests.py" "deck_tests.py" "dealer_tests.py" "card_tests.py" "__pycache__/" ".pyker_tests.py.swp" "../" "./")
+
+ ("/Users/jdashel/devel/ctci/ch01_arrays-and-strings/" (22339 42623 0 0) "../" "./")
+
+ ("/Users/jdashel/devel/bashutils/" (22331 28882 0 0) "sample" "debug.sh" "../" "./")
+
  ("/Users/jdashel/devel/pyker/" (22102 2264 0 0) "tests/" "table.py" "pyker.py" "player.py" "lib/" "include/" "deck.py" "dealer.py" "card.py" "bin/" "__pycache__/" ".ropeproject/" ".Python" ".gitignore" ".git/" "../" "./")
 
  ("/Users/jdashel/devel/env/" (22331 21356 0 0) "switchmacs" "setup_functions.sh" "README.md" "powerline-zsh/" "pl_fonts/" "no_place_like_home.sh" "gitignore/" "ftplugin/" "emacs-ref" "colortest" ".zshrc" ".vimrc" ".tmux.conf" ".ssh/" ".ipython/" ".gitmodules" ".gitignore" ".gitconfig" ".git/" ".emacs~" ".emacs.d/" ".emacs" ".bashrc" ".abbrev_defs" "../" "./")
 
  ("/Users/jdashel/devel/" (22334 16061 0 0) "tree_review/" "TDDpy/" "superlists/" "static/" "pyker/" "linux-2.6.32.69.tar.xz" "linux-2.6.32.69/" "k+r/" "homepage/" "env/" "database/" "ctci/" "bashutils/" "base16-iterm2/" "../" "./")
 
- ("/Users/jdashel/" (22335 38965 0 0) "VirtualBox VMs/" "tmux-2.0.tar.gz" "tmux-2.0/" "tmp" "stranger~" "stranger" "sample.md~" "sample.md" "roswell/" "Public/" "Pictures/" "org/" "notes" "Music/" "Movies/" "Library/" "huntsman.txt~" "huntsman.txt" "homepage_settings.py" "emacs-ref" "edu/" "Dropbox/" "Downloads/" "Documents/" "djangotut/" "devel/" "Desktop/" "core-emacs~" "Applications/" "__pycache__/" ".zshrc" ".zsh_history" ".zprofile" ".zcompdump-Jordan’s MacBook Pro-5.0.8" ".virtualenvs/" ".vimrc" ".viminfo" ".vimgolf/" ".vim/" ".Trash/" ".tmux.conf" ".subversion/" ".ssh/" ".sqlite_history" ".spacemacs" ".slime/" ".python_history" ".oracle_jre_usage/" ".oh-my-zsh/" ".lesshst" ".ispell_english" ".ipython/" ".idlerc/" ".gitignore" ".gitconfig" ".gem/" ".fontconfig/" ".emacs~" ".emacs.d_bac/" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".abbrev_defs" "#sample.md#" "../" "./")
-
  ("/Users/jdashel/org/" (22339 41094 0 0) "org_ref.txt" "org-mode-map.xcf" "org-mode-map.png" "interview_prep.org~" "interview_prep.org" "homepage.org~" "homepage.org" "general.org~" "general.org" "../" "./")
-
- ("/Users/jdashel/devel/bashutils/" (22321 16270 0 0) "sample" "debug.sh~" "debug.sh" "../" "./")
 
  ("/Users/jdashel/devel/k+r/ch_5/" (22294 47074 0 0) "strutils" "strend" "strcat" "expr" "ex_5-10.c~" "ex_5-10.c" "ex_5-05.c~" "ex_5-05.c" "ex_5-04.c~" "ex_5-04.c" "ex_5-03.c~" "ex_5-03.c" "../" "./")
 

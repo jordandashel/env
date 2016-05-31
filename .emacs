@@ -58,6 +58,7 @@
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
  '(pos-tip-background-color "#A6E22E")
  '(pos-tip-foreground-color "#272822")
+ '(python-shell-interpreter "python3")
  '(sentence-end-double-space nil)
  '(shift-select-mode nil)
  '(smartrep-mode-line-active-bg (solarized-color-blend "#859900" "#073642" 0.2))
@@ -118,6 +119,7 @@
 
 ;; Allow C-x C-u for quick undos
 (define-key global-map "\C-x\C-u" 'undo)
+
 
 ;; Default flymode
 (setq-default flyspell-mode t)
@@ -281,3 +283,6 @@ If SUBMODE is not provided, use `LANG-mode' by default."
 
 (global-set-key (kbd "C-c d") 'define-word-at-point)
 (global-set-key (kbd "C-c D") 'define-word)
+
+;; fontify code in code blocks
+(setq org-src-fontify-natively t)
