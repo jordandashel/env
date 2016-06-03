@@ -2,6 +2,8 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/jdashel/.emacs.d/elpa/" . "powerline-20160601.724/")
+ ("/Users/jdashel/.emacs.d/" . "elpa/")
  ("/Users/jdashel/devel/pyker/" . "tests/")
  ("/Users/jdashel/devel/tree_review/trees/" . "templates/")
  ("/Users/jdashel/devel/tree_review/" . "trees/")
@@ -13,7 +15,7 @@
  ("/Users/jdashel/djangotut/" . "mysite/")
  ("/Users/jdashel/devel/superlists/" . "lists/")
  ("/Users/jdashel/devel/homepage/" . "me/")
- ("/Users/jdashel/devel/" . "pyker/")
+ ("/Users/jdashel/devel/" . "homepage/")
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/programs/" . "calc/")
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/" . "programs/")
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-02_TypesOperatorsAndExpressions/" . "notes/")
@@ -28,17 +30,19 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/jdashel/devel/ctci/"
  "/Users/jdashel/"
+ "/Users/jdashel/devel/homepage/"
+ "/Users/jdashel/devel/homepage/me/"
+ "/Users/jdashel/.emacs.d/elpa/powerline-20160601.724/"
+ "/Users/jdashel/org/"
+ "/Users/jdashel/devel/env/"
+ "/Users/jdashel/devel/ctci/"
  "/Users/jdashel/devel/pyker/tests/"
  "/Users/jdashel/devel/"
  "/Users/jdashel/devel/pyker/"
- "/Users/jdashel/org/"
  "/Users/jdashel/devel/bashutils/"
  "/Users/jdashel/devel/homepage/me/templates/"
  "/Users/jdashel/devel/tree_review/trees/templates/"
- "/Users/jdashel/devel/homepage/me/"
- "/Users/jdashel/devel/homepage/"
  "/Users/jdashel/devel/tree_review/trees/"
  "/Users/jdashel/devel/homepage/homepage/"
  "/Users/jdashel/devel/tree_review/tree_review/"
@@ -63,23 +67,39 @@
 
 ;; ----- ido-work-file-list -----
 (
- ".gitignore"
  ".emacs"
+ "README.md"
+ "views.py"
+ "powerline.el"
+ "pycon.org"
+ ".abbrev_defs"
+ "emacs-ref"
+ "org_ref.txt"
+ ".gitignore"
  "ch01_strings_and_arrays.py"
- "test_ch01_strings_and_arrays.py"
- "test_01_strings_and_arrays.py"
- "card_tests.py"
- "test_ch1_arrays-and-strings.py"
- "ch1_arrays-and-strings"
- "pyker.py"
- "interview_prep.org"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/jdashel/" (22339 44930 0 0) "VirtualBox VMs/" "tmux-2.0.tar.gz" "tmux-2.0/" "tmp" "stranger~" "stranger" "sample.md~" "sample.md" "roswell/" "Public/" "Pictures/" "org/" "notes" "Music/" "Movies/" "Library/" "huntsman.txt~" "huntsman.txt" "homepage_settings.py" "emacs-ref" "edu/" "Dropbox/" "Downloads/" "Documents/" "djangotut/" "devel/" "Desktop/" "core-emacs~" "Applications/" "__pycache__/" ".zshrc" ".zsh_private" ".zsh_history" ".zprofile" ".zcompdump-Jordan’s MacBook Pro-5.0.8" ".virtualenvs/" ".vimrc" ".viminfo" ".vimgolf/" ".vim/" ".Trash/" ".tmux.conf" ".subversion/" ".ssh/" ".sqlite_history" ".spacemacs" ".slime/" ".python_history" ".oracle_jre_usage/" ".oh-my-zsh/" ".lesshst" ".ispell_english" ".ipython/" ".idlerc/" ".gitignore" ".gitconfig" ".gem/" ".fontconfig/" ".emacs~" ".emacs.d_bac/" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".abbrev_defs" "#sample.md#" "../" "./")
+ ("/Users/jdashel/devel/homepage/" (22351 48522 0 0) "static/" "requirements.txt" "README.md" "me/" "manage.py" "homepage/" "functional_tests/" "deploy_tools/" ".gitignore" ".git/" "../" "./")
 
- ("/Users/jdashel/devel/ctci/" (22339 45707 0 0) "test_ch01_strings_and_arrays.pyc" "test_ch01_strings_and_arrays.py" "ch01_strings_and_arrays.pyc" "ch01_strings_and_arrays.py" "__pycache__/" ".git/" "../" "./")
+ ("/Users/jdashel/devel/homepage/me/" (22351 48399 0 0) "views.py~" "views.py" "tests.py~" "tests.py" "templates/" "static/" "models.py" "migrations/" "forms.py~" "forms.py" "exp.py" "apps.py" "admin.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/env/" (22351 47766 0 0) "switchmacs" "setup_functions.sh" "README.md" "powerline-zsh/" "pl_fonts/" "no_place_like_home.sh" "gitignore/" "ftplugin/" "emacs-ref" "colortest" ".zshrc" ".vimrc" ".tmux.conf" ".ssh/" ".ipython/" ".gitmodules" ".gitignore" ".gitconfig" ".git/" ".emacs~" ".emacs.d/" ".emacs" ".bashrc" ".abbrev_defs" "../" "./")
+
+ ("/Users/jdashel/" (22351 46946 0 0) "VirtualBox VMs/" "tmux-2.0.tar.gz" "tmux-2.0/" "tmp" "stranger~" "stranger" "sample.md~" "sample.md" "roswell/" "Public/" "Pictures/" "org/" "notes" "Music/" "Movies/" "Library/" "huntsman.txt~" "huntsman.txt" "homepage_settings.py" "emacs-ref" "edu/" "Dropbox/" "Downloads/" "Documents/" "djangotut/" "devel/" "Desktop/" "core-emacs~" "Applications/" "__pycache__/" ".zshrc" ".zsh_private" ".zsh_history" ".zprofile" ".zcompdump-Jordan’s MacBook Pro-5.0.8" ".virtualenvs/" ".vimrc" ".viminfo" ".vimgolf/" ".vim/" ".Trash/" ".tmux.conf" ".subversion/" ".ssh/" ".sqlite_history" ".spacemacs" ".slime/" ".python_history" ".oracle_jre_usage/" ".oh-my-zsh/" ".lesshst" ".ispell_english" ".ipython/" ".idlerc/" ".gitignore" ".gitconfig" ".gem/" ".fontconfig/" ".emacs~" ".emacs.d_bac/" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".abbrev_defs" "#sample.md#" "../" "./")
+
+ ("/Users/jdashel/.emacs.d/" (22351 46127 0 0) "SessionDesktop.el" "ido.last~" "ido.last" "eshell/" "elpa/" "auto-save-list/" "ac-comphist.dat" "../" "./")
+
+ ("/Users/jdashel/.emacs.d/elpa/powerline-20160601.724/" (22351 30874 0 0) "powerline.elc" "powerline.el" "powerline-themes.elc" "powerline-themes.el" "powerline-separators.elc" "powerline-separators.el" "powerline-pkg.el" "powerline-autoloads.el~" "powerline-autoloads.el" "../" "./")
+
+ ("/Users/jdashel/.emacs.d/elpa/" (22351 30884 0 0) "zenburn-theme-20160416.1011/" "zenburn-theme-20160117.1119/" "with-editor-20160408.201/" "with-editor-20160128.1201/" "wc-mode-20131121.826/" "undo-tree-20140509.522/" "speed-type-20150120.2034/" "spacemacs-theme-20160411.725/" "spacemacs-theme-20160121.1243/" "solarized-theme-20160419.827/" "solarized-theme-20160106.15/" "slime-20160419.858/" "slime-20100404.1/" "seq-2.15/" "rainbow-mode-0.12/" "rainbow-delimiters-20150320.17/" "powerline-evil-20151112.710/" "powerline-20160601.724/" "popup-20160409.2133/" "pkg-info-20150517.443/" "org-bullets-20140918.1137/" "nose-20140520.948/" "mustard-theme-20141115.2302/" "monokai-theme-20160419.1444/" "mmm-mode-20150828.1716/" "markdown-mode-20160409.650/" "markdown-mode-20160121.528/" "makey-20131231.630/" "magit-readme.txt" "magit-popup-20160414.251/" "magit-popup-20160130.649/" "magit-20160418.1513/" "magit-20160130.649/" "macrostep-20151213.145/" "link-20140717.2029/" "let-alist-1.0.4/" "highlight-20151231.1337/" "helm-core-20160419.641/" "helm-core-20160201.100/" "helm-20160419.938/" "helm-20160201.2209/" "goto-chg-20131228.659/" "git-commit-20160414.251/" "git-commit-20160130.649/" "flycheck-20160419.712/" "flycheck-20160129.311/" "farmhouse-theme-20150506.2127/" "evil-visual-mark-mode-20150202.1000/" "evil-surround-20160331.821/" "evil-surround-20160128.1028/" "evil-20160411.618/" "evil-20160201.326/" "epl-20150517.433/" "emacs-xkcd-1.0/" "dracula-theme-20160228.1913/" "discover-my-major-20160108.1041/" "discover-20140103.1339/" "dictionary-20140717.2029/" "define-word-20150709.1223/" "dash-20160306.1222/" "connection-20140717.2029/" "auto-complete-20160416.604/" "async-20160223.146/" "async-20160108.1249/" "archives/" "arbitools-readme.txt" "ample-theme-20150814.1101/" "alda-mode-readme.txt" "aggressive-indent-20160115.1414/" "../" "./")
+
+ ("/Users/jdashel/org/" (22351 29289 0 0) "pycon.org~" "pycon.org" "org_ref.txt" "org-mode-map.xcf" "org-mode-map.png" "interview_prep.org~" "interview_prep.org" "homepage.org~" "homepage.org" "general.org~" "general.org" "../" "./")
+
+ ("/Users/jdashel/Documents/" (22247 5378 0 0) "pnta_time/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/jdashel/devel/ctci/" (22339 46579 0 0) "test_ch01_strings_and_arrays.pyc" "test_ch01_strings_and_arrays.py" "ch01_strings_and_arrays.pyc" "ch01_strings_and_arrays.py" "__pycache__/" ".gitignore" ".git/" "../" "./")
 
  ("/Users/jdashel/devel/pyker/tests/" (22069 27542 0 0) "table_tests.py" "pyker_tests.py" "player_tests.py" "deck_tests.py" "dealer_tests.py" "card_tests.py" "__pycache__/" ".pyker_tests.py.swp" "../" "./")
 
@@ -89,11 +109,7 @@
 
  ("/Users/jdashel/devel/pyker/" (22102 2264 0 0) "tests/" "table.py" "pyker.py" "player.py" "lib/" "include/" "deck.py" "dealer.py" "card.py" "bin/" "__pycache__/" ".ropeproject/" ".Python" ".gitignore" ".git/" "../" "./")
 
- ("/Users/jdashel/devel/env/" (22331 21356 0 0) "switchmacs" "setup_functions.sh" "README.md" "powerline-zsh/" "pl_fonts/" "no_place_like_home.sh" "gitignore/" "ftplugin/" "emacs-ref" "colortest" ".zshrc" ".vimrc" ".tmux.conf" ".ssh/" ".ipython/" ".gitmodules" ".gitignore" ".gitconfig" ".git/" ".emacs~" ".emacs.d/" ".emacs" ".bashrc" ".abbrev_defs" "../" "./")
-
  ("/Users/jdashel/devel/" (22334 16061 0 0) "tree_review/" "TDDpy/" "superlists/" "static/" "pyker/" "linux-2.6.32.69.tar.xz" "linux-2.6.32.69/" "k+r/" "homepage/" "env/" "database/" "ctci/" "bashutils/" "base16-iterm2/" "../" "./")
-
- ("/Users/jdashel/org/" (22339 41094 0 0) "org_ref.txt" "org-mode-map.xcf" "org-mode-map.png" "interview_prep.org~" "interview_prep.org" "homepage.org~" "homepage.org" "general.org~" "general.org" "../" "./")
 
  ("/Users/jdashel/devel/k+r/ch_5/" (22294 47074 0 0) "strutils" "strend" "strcat" "expr" "ex_5-10.c~" "ex_5-10.c" "ex_5-05.c~" "ex_5-05.c" "ex_5-04.c~" "ex_5-04.c" "ex_5-03.c~" "ex_5-03.c" "../" "./")
 
@@ -106,10 +122,6 @@
  ("/Users/jdashel/devel/tree_review/tree_review/" (22276 32588 0 0) "wsgi.py" "urls.py" "settings.py" "__pycache__/" "__init__.py" "../" "./")
 
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/programs/" (22265 60607 0 0) "revised" "ex_3-03.c" "ex_3-02.c" "ex_3-01__revised.c" "ex_3-01__classic.c" "ex_3-01.c" "classic" "../" "./")
-
- ("/Users/jdashel/devel/homepage/" (22261 29229 0 0) "static/" "requirements.txt" "me/" "manage.py" "homepage/" "functional_tests/" "deploy_tools/" ".gitignore" ".git/" "../" "./")
-
- ("/Users/jdashel/devel/homepage/me/" (22261 52200 0 0) "views.py~" "views.py" "tests.py~" "tests.py" "templates/" "static/" "models.py" "migrations/" "forms.py~" "forms.py" "exp.py" "apps.py" "admin.py" "__pycache__/" "__init__.py" "../" "./")
 
  ("/Users/jdashel/devel/homepage/me/templates/" (22261 65248 0 0) "home.html~" "home.html" "experience.html~" "experience.html" "contact_template.txt~" "contact_template.txt" "contact.html~" "contact.html" "contact-success.html~" "contact-success.html" "about-me.html~" "about-me.html" "../" "./")
 
@@ -164,10 +176,6 @@
  ("/Users/jdashel/roswell/" (22157 31599 0 0) "whoisit" "who_sudod.sh" "who_funcd_again" "who_funcd" "what_is_constant.c" "valgrind/" "try_not_super.sh" "truth.c~" "truth.c" "terminated.c" "sudo_touch.sh" "su_func.sh" "ssh_login" "root_file" "nothing" "funcs.sh" "django/" "#terminated.c#" "../" "./")
 
  ("/Users/jdashel/edu/" (22157 29276 0 0) "README.md" "books/" ".git/" "../" "./")
-
- ("/Users/jdashel/.emacs.d/" (22157 24969 0 0) "ido.last~" "ido.last" "elpa/" "auto-save-list/" "../" "./")
-
- ("/Users/jdashel/.emacs.d/elpa/" (22157 27943 0 0) "zenburn-theme-20160103.1612/" "with-editor-20160101.32/" "undo-tree-20140509.522/" "solarized-theme-20160103.1614/" "powerline-20151008.1449/" "mustard-theme-20141115.2302/" "monokai-theme-20160104.1312/" "mmm-mode-20150828.1716/" "markdown-mode-20160105.2049/" "makey-20131231.630/" "magit-readme.txt" "magit-popup-20160101.32/" "magit-20160105.1035/" "helm-core-20151231.1143/" "helm-20160103.2317/" "goto-chg-20131228.659/" "git-commit-20160101.32/" "farmhouse-theme-20150506.2127/" "evil-visual-mark-mode-20150202.1000/" "evil-surround-20151210.1218/" "evil-20151128.1102/" "dracula-theme-20151109.845/" "discover-20140103.1339/" "dash-20151216.1315/" "async-20151228.2255/" "archives/" "../" "./")
 
  ("/Users/jdashel/.emacs.d/elpa/mmm-mode-20150828.1716/" (22157 27948 0 0) "mmm.info" "mmm-vars.elc" "mmm-vars.el" "mmm-utils.elc" "mmm-utils.el" "mmm-univ.elc" "mmm-univ.el" "mmm-sample.elc" "mmm-sample.el" "mmm-rpm.elc" "mmm-rpm.el" "mmm-region.elc" "mmm-region.el" "mmm-noweb.elc" "mmm-noweb.el" "mmm-myghty.elc" "mmm-myghty.el" "mmm-mode.elc" "mmm-mode.el" "mmm-mode-pkg.el" "mmm-mode-autoloads.el~" "mmm-mode-autoloads.el" "mmm-mason.elc" "mmm-mason.el" "mmm-erb.elc" "mmm-erb.el" "mmm-defaults.elc" "mmm-defaults.el" "mmm-cweb.elc" "mmm-cweb.el" "mmm-compat.elc" "mmm-compat.el" "mmm-cmds.elc" "mmm-cmds.el" "mmm-class.elc" "mmm-class.el" "mmm-auto.elc" "mmm-auto.el" "dir" "../" "./")
 

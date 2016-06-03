@@ -65,6 +65,42 @@ C-l 		(M-x recenter-top-bottom) scroll buffer to top, middle, bottom
 		(zz in vim)
 
 ================================================================================
+ Killing and Yanking
+================================================================================
+
+C-d 		(M-x delete-char) delete character
+
+M-d , C-<BKSP> 	(M-x kill-word) kill word
+
+C-k 		(M-x kill-line) kill rest of line
+
+M-k 		(M-x kill-sentence) kill sentence
+
+C-M-k 		(M-x kill-sexp) kill sexp
+
+C-S-<BKSP> 	(M-x kill-whole-line) kill current line
+
+C-w 		(M-x kill-region) kill region
+
+M-w 		(M-x kill-ring-save) copy to kill ring
+
+C-M-w 		(M-x append-next-kill) append kill
+
+C-y 		(M-x yank) yank last kill
+
+M-y 		(M-x yank-pop) cycle through kill ring, replacing yanked text
+
+C-t 		(M-x transpose-chars) transpose characters
+
+M-t 		(M-x transpose-words) transpose words
+
+C-M-t 		(M-x transpose-sexp) transpose sexps
+
+C-x C-t 	(M-x transpose-lines) transpose lines
+
+M-z 		(M-x zap-to-char) delete to char
+
+================================================================================
  Help
 ================================================================================
 
@@ -135,7 +171,7 @@ C-x 4 d 	(M-x dired-other-window) open dired in next window
 C-x 4 C-o 	(M-x display-buffer) display buffer in other window
 
 C-x 4 b 	(M-x switch-buffer-other-window) switch to another buffer in
-    		another window
+   		another window
 
 C-x 4 0 	(M-x kill-buffer-and-window) kill buffer in other window
 
@@ -339,42 +375,6 @@ within a buffer ido prompt...
 searches with grep and find
 
 (M-x rzgrep) like `M-x grep` but searches compressed gzip files
-
-================================================================================
- Killing and Yanking
-================================================================================
-
-C-d 		(M-x delete-char) delete character
-
-M-d , C-<BKSP> 	(M-x kill-word) kill word
-
-C-k 		(M-x kill-line) kill rest of line
-
-M-k 		(M-x kill-sentence) kill sentence
-
-C-M-k 		(M-x kill-sexp) kill sexp
-
-C-S-<BKSP> 	(M-x kill-whole-line) kill current line
-
-C-w 		(M-x kill-region) kill region
-
-M-w 		(M-x kill-ring-save) copy to kill ring
-
-C-M-w 		(M-x append-next-kill) append kill
-
-C-y 		(M-x yank) yank last kill
-
-M-y 		(M-x yank-pop) cycle through kill ring, replacing yanked text
-
-C-t 		(M-x transpose-chars) transpose characters
-
-M-t 		(M-x transpose-words) transpose words
-
-C-M-t 		(M-x transpose-sexp) transpose sexps
-
-C-x C-t 	(M-x transpose-lines) transpose lines
-
-M-z 		(M-x zap-to-char) delete to char
 
 ================================================================================
  Case Changing
