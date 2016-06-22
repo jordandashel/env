@@ -45,7 +45,6 @@
 
 (define-abbrev-table 'global-abbrev-table
   '(
-    ("object" "obj" nil 1)
     ("teh" "the" nil 3)
    ))
 

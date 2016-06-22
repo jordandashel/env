@@ -178,7 +178,10 @@
 			      (markdown-mode . normal)
 			      (git-commit-mode . insert)
 			      (org-mode . emacs)
+			      (info-mode . emacs)
 			      (shell-mode . emacs)
+			      (eshell-mode . emacs)
+			      (eww-mode . emacs)
 			      (term-mode . emacs)
 			      (help-mode . emacs)
 			      (dired-mode . emacs))
@@ -249,3 +252,8 @@ If SUBMODE is not provided, use `LANG-mode' by default."
 
 ;; fontify code in code blocks
 (setq org-src-fontify-natively t)
+
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))

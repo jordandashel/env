@@ -1,0 +1,25 @@
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-Security-Policy: default-src 'none'; img-src data:; style-src 'unsafe-inline'
+Content-Type: image/svg+xml
+Last-Modified: Mon, 20 Jun 2016 21:38:41 GMT
+Server: github-camo (9a76538e)
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-Xss-Protection: 1; mode=block
+X-GitHub-Request-Id: 17EB2F1D:3500:11BF04:5768718F
+Content-Length: 754
+Accept-Ranges: bytes
+Date: Mon, 20 Jun 2016 22:43:28 GMT
+Via: 1.1 varnish
+Age: 0
+Connection: keep-alive
+X-Served-By: cache-sjc3127-SJC
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1466462608.769553,VS0,VE80
+X-Fastly-Request-ID: c491bd352e8e765b7f11ea7b734bb8e3578e0496
+Timing-Allow-Origin: https://github.com
+
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="20"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><mask id="a"><rect width="140" height="20" rx="3" fill="#fff"/></mask><g mask="url(#a)"><path fill="#555" d="M0 0h43v20H0z"/><path fill="#922793" d="M43 0h97v20H43z"/><path fill="url(#b)" d="M0 0h140v20H0z"/></g><g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11"><text x="21.5" y="15" fill="#010101" fill-opacity=".3">melpa</text><text x="21.5" y="14">melpa</text><text x="90.5" y="15" fill="#010101" fill-opacity=".3">20150902.1035</text><text x="90.5" y="14">20150902.1035</text></g></svg>

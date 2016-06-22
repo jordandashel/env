@@ -337,6 +337,35 @@ C-x c C-c g 	(M-x helm-gid) show matches from google suggest
  Ido
 ================================================================================
 
+C-b	() revert to old `switch-buffer` completion engine
+
+C-f	() revert to old `find-file` completion engine
+
+C-d	() open dired buffer in current dir
+
+C-a	() toggle showing ignored files
+
+C-c	() toggle ignore case
+
+C-p	() toggle prefix matching; input matches only beginning
+
+C-s	() move to next match
+
+C-r	() move to previous match
+
+C-t	() toggle match by emacs regex
+
+C-SPC	() restrict to anything matching current input
+
+//	() go to /
+
+~/	() go to ~
+
+M-d	() search for input in all sub dirs of current dir
+
+M-m	() make sub dir in current dir
+
+
 within a file/dir ido prompt...
 
        	  ... C-s , C-r () move to next and previous match

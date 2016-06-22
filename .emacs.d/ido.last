@@ -2,6 +2,19 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/jdashel/devel/tfsc/blog/" . "migrations/")
+ ("/Users/jdashel/devel/ORGanizer/sample_files/" . "default_files/")
+ ("/Users/jdashel/devel/ORGanizer/" . "t/")
+ ("/Users/jdashel/devel/tfsc/" . "blog/")
+ ("/Users/jdashel/devel/unittest_backups/" . "tests/")
+ ("/Users/jdashel/devel/homepage/static/" . "me/")
+ ("/Users/jdashel/devel/django_testing/" . "static_test/")
+ ("/Users/jdashel/devel/django/docs/ref/" . "forms/")
+ ("/Users/jdashel/devel/django/docs/" . "ref/")
+ ("/Users/jdashel/devel/django/django/" . "forms/")
+ ("/Users/jdashel/devel/django/tests/forms_tests/" . "tests/")
+ ("/Users/jdashel/devel/django/tests/" . "forms_tests/")
+ ("/Users/jdashel/devel/django/" . "docs/")
  ("/Users/jdashel/.emacs.d/elpa/" . "powerline-20160601.724/")
  ("/Users/jdashel/.emacs.d/" . "elpa/")
  ("/Users/jdashel/devel/pyker/" . "tests/")
@@ -14,8 +27,8 @@
  ("/Users/jdashel/djangotut/mysite/" . "polls/")
  ("/Users/jdashel/djangotut/" . "mysite/")
  ("/Users/jdashel/devel/superlists/" . "lists/")
- ("/Users/jdashel/devel/homepage/" . "me/")
- ("/Users/jdashel/devel/" . "homepage/")
+ ("/Users/jdashel/devel/homepage/" . "functional_tests/")
+ ("/Users/jdashel/devel/" . "ORGanizer/")
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/programs/" . "calc/")
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/" . "programs/")
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-02_TypesOperatorsAndExpressions/" . "notes/")
@@ -25,26 +38,49 @@
  ("/Users/jdashel/edu/books/" . "The_C_Programming_Language/")
  ("/Users/jdashel/edu/" . "books/")
  ("/Users/" . "jdashel/")
- ("/Users/jdashel/" . "devel/")
+ ("/Users/jdashel/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/jdashel/devel/ORGanizer/t/"
+ "/Users/jdashel/devel/ORGanizer/lib/"
+ "/Users/jdashel/devel/perl/"
+ "/Users/jdashel/devel/ORGanizer/"
+ "/Users/jdashel/devel/tfsc/blog/migrations/"
+ "/Users/jdashel/devel/tfsc/blog/templates/"
+ "/Users/jdashel/devel/tfsc/blog/"
+ "/Users/jdashel/devel/tfsc/tfsc/"
+ "/Users/jdashel/devel/ORGanizer/sample_files/default_files/"
+ "/Users/jdashel/devel/ORGanizer/sample_files/before/"
  "/Users/jdashel/"
- "/Users/jdashel/devel/homepage/"
- "/Users/jdashel/devel/homepage/me/"
- "/Users/jdashel/.emacs.d/elpa/powerline-20160601.724/"
+ "/Users/jdashel/devel/ORGanizer/sample_files/after/"
+ "/Users/jdashel/devel/ctci/"
+ "/Users/jdashel/devel/ORGanizer/sample_files/"
+ "/Users/jdashel/devel/"
  "/Users/jdashel/org/"
  "/Users/jdashel/devel/env/"
- "/Users/jdashel/devel/ctci/"
+ "/usr/local/Cellar/emacs-mac/emacs-24.5-z-mac-5.13/share/emacs/24.5/etc/"
+ "/Users/jdashel/devel/tfsc/"
+ "/Users/jdashel/devel/tfsc/functional_tests/"
+ "/Users/jdashel/devel/homepage/me/templates/"
+ "/Users/jdashel/devel/homepage/static/me/"
+ "/Users/jdashel/devel/homepage/homepage/"
+ "/Users/jdashel/devel/homepage/me/"
+ "/Users/jdashel/devel/homepage/"
+ "/Users/jdashel/devel/unittest_backups/tests/"
  "/Users/jdashel/devel/pyker/tests/"
- "/Users/jdashel/devel/"
+ "/Users/jdashel/devel/unittest_backups/"
+ "/Users/jdashel/devel/django_testing/static_test/"
+ "/Users/jdashel/devel/django_testing/django_testing/"
+ "/Users/jdashel/devel/django/docs/ref/forms/"
+ "/Users/jdashel/devel/django/django/forms/"
+ "/Users/jdashel/devel/django/tests/forms_tests/tests/"
+ "/Users/jdashel/.emacs.d/elpa/powerline-20160601.724/"
  "/Users/jdashel/devel/pyker/"
  "/Users/jdashel/devel/bashutils/"
- "/Users/jdashel/devel/homepage/me/templates/"
  "/Users/jdashel/devel/tree_review/trees/templates/"
  "/Users/jdashel/devel/tree_review/trees/"
- "/Users/jdashel/devel/homepage/homepage/"
  "/Users/jdashel/devel/tree_review/tree_review/"
  "/Users/jdashel/devel/k+r/ch_5/"
  "/Users/jdashel/devel/homepage/deploy_tools/"
@@ -57,49 +93,137 @@
  "/Users/jdashel/djangotut/mysite/polls/"
  "/Users/jdashel/djangotut/mysite/mysite/"
  "/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/programs/calc/"
- "/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/notes/"
- "/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/programs/"
- "/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/notes/"
- "/Users/jdashel/edu/books/The_C_Programming_Language/ch-02_TypesOperatorsAndExpressions/notes/"
- "/Users/jdashel/roswell/"
- "/Users/jdashel/.org/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- ".emacs"
- "README.md"
- "views.py"
- "powerline.el"
- "pycon.org"
- ".abbrev_defs"
- "emacs-ref"
- "org_ref.txt"
- ".gitignore"
- "ch01_strings_and_arrays.py"
+ "migrator_test.t"
+ "Tree.pm"
+ "Node.pm"
+ "functional_test.t"
+ "hello.pl"
+ "organize.pl"
+ "run_all_tests.sh"
+ "tree_test.t"
+ "0001_initial.py"
+ "category.html"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/jdashel/devel/homepage/" (22351 48522 0 0) "static/" "requirements.txt" "README.md" "me/" "manage.py" "homepage/" "functional_tests/" "deploy_tools/" ".gitignore" ".git/" "../" "./")
+ ("/Users/jdashel/devel/ORGanizer/t/" (22376 20963 0 0) "tree_test.t" "migrator_test.t" "functional_test.t" ".#migrator_test.t" "../" "./")
 
- ("/Users/jdashel/devel/homepage/me/" (22351 48399 0 0) "views.py~" "views.py" "tests.py~" "tests.py" "templates/" "static/" "models.py" "migrations/" "forms.py~" "forms.py" "exp.py" "apps.py" "admin.py" "__pycache__/" "__init__.py" "../" "./")
+ ("/Users/jdashel/devel/ORGanizer/lib/" (22376 20174 0 0) "Tree.pm" "Migrator.pm~" "Migrator.pm" ".#Migrator.pm" "#Migrator.pm#" "../" "./")
 
- ("/Users/jdashel/devel/env/" (22351 47766 0 0) "switchmacs" "setup_functions.sh" "README.md" "powerline-zsh/" "pl_fonts/" "no_place_like_home.sh" "gitignore/" "ftplugin/" "emacs-ref" "colortest" ".zshrc" ".vimrc" ".tmux.conf" ".ssh/" ".ipython/" ".gitmodules" ".gitignore" ".gitconfig" ".git/" ".emacs~" ".emacs.d/" ".emacs" ".bashrc" ".abbrev_defs" "../" "./")
+ ("/Users/jdashel/devel/env/" (22375 10133 0 0) "switchmacs" "setup_functions.sh" "README.md" "powerline-zsh/" "pl_fonts/" "no_place_like_home.sh" "gitignore/" "ftplugin/" "emacs-ref" "colortest" ".zshrc" ".vimrc" ".tmux.conf" ".ssh/" ".ipython/" ".gitmodules" ".gitignore" ".gitconfig" ".git/" ".emacs~" ".emacs.d/" ".emacs" ".bashrc" ".abbrev_defs" "../" "./")
 
- ("/Users/jdashel/" (22351 46946 0 0) "VirtualBox VMs/" "tmux-2.0.tar.gz" "tmux-2.0/" "tmp" "stranger~" "stranger" "sample.md~" "sample.md" "roswell/" "Public/" "Pictures/" "org/" "notes" "Music/" "Movies/" "Library/" "huntsman.txt~" "huntsman.txt" "homepage_settings.py" "emacs-ref" "edu/" "Dropbox/" "Downloads/" "Documents/" "djangotut/" "devel/" "Desktop/" "core-emacs~" "Applications/" "__pycache__/" ".zshrc" ".zsh_private" ".zsh_history" ".zprofile" ".zcompdump-Jordan’s MacBook Pro-5.0.8" ".virtualenvs/" ".vimrc" ".viminfo" ".vimgolf/" ".vim/" ".Trash/" ".tmux.conf" ".subversion/" ".ssh/" ".sqlite_history" ".spacemacs" ".slime/" ".python_history" ".oracle_jre_usage/" ".oh-my-zsh/" ".lesshst" ".ispell_english" ".ipython/" ".idlerc/" ".gitignore" ".gitconfig" ".gem/" ".fontconfig/" ".emacs~" ".emacs.d_bac/" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".abbrev_defs" "#sample.md#" "../" "./")
+ ("/Users/jdashel/" (22375 18079 0 0) "VirtualBox VMs/" "tmux-2.0.tar.gz" "tmux-2.0/" "tmp" "stranger~" "stranger" "sample.md~" "sample.md" "roswell/" "Public/" "Pictures/" "org/" "notes" "Music/" "Movies/" "Library/" "huntsman.txt~" "huntsman.txt" "homepage_settings.py" "F Blues (Play-Along)-Bg-Ea7aCb1E.webm" "emacs-ref" "edu/" "Dropbox/" "Downloads/" "Documents/" "djangotut/" "df_osx/" "devel/" "Desktop/" "core-emacs~" "Applications/" "__pycache__/" ".zshrc" ".zsh_private" ".zsh_history" ".zprofile" ".zcompdump-Jordan’s MacBook Pro-5.0.8" ".virtualenvs/" ".vimrc" ".viminfo" ".vimgolf/" ".vim/" ".Trash/" ".tmux.conf" ".subversion/" ".ssh/" ".sqlite_history" ".spacemacs" ".slime/" ".python_history" ".oracle_jre_usage/" ".oh-my-zsh/" ".lesshst" ".ispell_english" ".ipython/" ".idlerc/" ".gitignore" ".gitconfig" ".gem/" ".fontconfig/" ".emacs~" ".emacs.d_bac/" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".cookiecutters/" ".cookiecutter_replay/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".abbrev_defs" "#sample.md#" "../" "./")
 
- ("/Users/jdashel/.emacs.d/" (22351 46127 0 0) "SessionDesktop.el" "ido.last~" "ido.last" "eshell/" "elpa/" "auto-save-list/" "ac-comphist.dat" "../" "./")
+ ("/Users/jdashel/devel/ORGanizer/sample_files/before/" (22374 50852 0 0) "sample.org" "../" "./")
 
- ("/Users/jdashel/.emacs.d/elpa/powerline-20160601.724/" (22351 30874 0 0) "powerline.elc" "powerline.el" "powerline-themes.elc" "powerline-themes.el" "powerline-separators.elc" "powerline-separators.el" "powerline-pkg.el" "powerline-autoloads.el~" "powerline-autoloads.el" "../" "./")
+ ("/Users/jdashel/devel/ORGanizer/sample_files/default_files/" (22374 52031 0 0) "exp_sample_after.org" "exp_sample.org" "../" "./")
+
+ ("/Users/jdashel/devel/tfsc/blog/templates/" (22374 52031 0 0) "view_post.html" "index.html" "home.html" "category.html" "base.html" "../" "./")
+
+ ("/Users/jdashel/devel/ORGanizer/" (22374 50767 0 0) "t/" "sample_files/" "run_all_tests.sh" "organize.pl" "lib/" ".git/" "../" "./")
+
+ ("/Users/jdashel/devel/tfsc/" (22372 13908 0 0) "tfsc/" "manage.py" "functional_tests.py" "db.sqlite3" "blog/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/jdashel/devel/tfsc/blog/" (22372 13985 0 0) "views.py" "tests.py" "templates/" "models.py" "migrations/" "apps.py" "admin.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/tfsc/blog/migrations/" (22372 12330 0 0) "__pycache__/" "__init__.py" "0001_initial.py" "../" "./")
+
+ ("/Users/jdashel/devel/tfsc/tfsc/" (22372 12183 0 0) "wsgi.py" "urls.py" "settings.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/org/" (22368 42229 0 0) "pycon.org~" "pycon.org" "org_ref.txt" "org-mode-map.xcf" "org-mode-map.png" "interview_prep.org~" "interview_prep.org" "homepage.org~" "homepage.org" "general.org~" "general.org" "../" "./")
+
+ ("/Users/jdashel/devel/ctci/" (22368 42227 0 0) "test_ch02_linked_lists.py" "test_ch01_strings_and_arrays.pyc" "test_ch01_strings_and_arrays.py" "ch02_linked_lists.py~" "ch02_linked_lists.py" "ch01_strings_and_arrays.pyc" "ch01_strings_and_arrays.py" "__pycache__/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/jdashel/devel/ORGanizer/sample_files/after/" (22371 7601 0 0) "../" "./")
+
+ ("/Users/jdashel/devel/ORGanizer/sample_files/" (22371 7176 0 0) "default_files/" "before/" "after/" "../" "./")
+
+ ("/Users/jdashel/.emacs.d/" (22351 49677 0 0) "SessionDesktop.el" "ido.last~" "ido.last" "eshell/" "elpa/" "auto-save-list/" "ac-comphist.dat" "../" "./")
+
+ ("/Users/jdashel/devel/" (22368 20508 0 0) "unstable_hp/" "unittest_backups/" "tree_review/" "tfsc/" "TDDpy/" "superlists/" "static/" "pyker/" "perl/" "ORGanizer/" "linux-2.6.32.69.tar.xz" "linux-2.6.32.69/" "k+r/" "homepage/" "env/" "django_testing/" "django/" "database/" "ctci/" "bashutils/" "base16-iterm2/" "../" "./")
+
+ ("/Users/jdashel/devel/perl/" (22368 8803 0 0) "hello.pl~" "hello.pl" "../" "./")
+
+ ("/usr/local/" (22362 5839 0 0) "share/" "selenium/" "README.md" "opt/" "man/" "LICENSE.txt" "Library/" "lib/" "include/" "Frameworks/" "etc/" "CODEOFCONDUCT.md" "Cellar/" "bin/" ".yardopts" ".travis.yml" ".gitignore" ".github/" ".git/" "../" "./")
+
+ ("/usr/local/Cellar/" (22362 5942 0 0) "zeromq/" "xz/" "wget/" "vim/" "valgrind/" "tree/" "sqlite/" "sl/" "sip/" "sbcl/" "readline/" "python3/" "python/" "pyqt/" "pkg-config/" "pixman/" "pango/" "pandoc/" "openssl/" "nmap/" "nettle/" "macvim/" "lynx/" "libxml2/" "libtool/" "libtiff/" "libtasn1/" "libsigsegv/" "librsvg/" "libpng/" "libffi/" "libevent/" "libcroco/" "jpeg/" "ispell/" "imagemagick/" "icu4c/" "harfbuzz/" "gobject-introspection/" "gnutls/" "gmp/" "git/" "gettext/" "gdk-pixbuf/" "gdbm/" "gdb/" "freetype/" "fontconfig/" "emacs-mac/" "curl/" "cscope/" "cmake/" "clozure-cl/" "clisp/" "cairo/" "bash-completion/" "automake/" "autoenv/" "autoconf/" "aspell/" "../" "./")
+
+ ("/usr/local/Cellar/emacs-mac/" (22155 5217 0 0) "emacs-24.5-z-mac-5.13/" ".DS_Store" "../" "./")
+
+ ("/usr/local/Cellar/emacs-mac/emacs-24.5-z-mac-5.13/" (22155 5222 0 0) "var/" "share/" "README" "libexec/" "INSTALL_RECEIPT.json" "Emacs.app/" "COPYING" "ChangeLog" "bin/" ".DS_Store" "../" "./")
+
+ ("/usr/local/Cellar/emacs-mac/emacs-24.5-z-mac-5.13/share/" (22154 63807 0 0) "man/" "info/" "icons/" "emacs/" "applications/" "../" "./")
+
+ ("/usr/local/Cellar/emacs-mac/emacs-24.5-z-mac-5.13/share/emacs/" (22154 64627 0 0) "site-lisp/" "24.5/" "../" "./")
+
+ ("/usr/local/Cellar/emacs-mac/emacs-24.5-z-mac-5.13/share/emacs/24.5/" (22154 64627 0 0) "site-lisp/" "lisp/" "etc/" "../" "./")
+
+ ("/usr/local/Cellar/emacs-mac/emacs-24.5-z-mac-5.13/share/emacs/24.5/etc/" (22154 64636 0 0) "yow.lines" "WHY-FREE" "tutorials/" "TODO" "themes/" "THE-GNU-PROJECT" "TERMS" "srecode/" "spook.lines" "ses-example.ses" "schema/" "rgb.txt" "refcards/" "README" "publicsuffix.txt" "ps-prin1.ps" "ps-prin0.ps" "PROBLEMS" "package-keyring.gpg" "ORG-NEWS" "org/" "ORDERS" "NXML-NEWS" "nxml/" "NEXTSTEP" "NEWS.23" "NEWS.22" "NEWS.21" "NEWS.20" "NEWS.19" "NEWS.18" "NEWS.1-17" "NEWS" "MORE.STUFF" "MH-E-NEWS" "MACHINES" "LINUX-GNU" "JOKES" "images/" "HELLO" "grep.txt" "gnus-tut.txt" "GNUS-NEWS" "gnus/" "GNU" "future-bug" "FTP" "forms/" "ETAGS.README" "ETAGS.EBNF" "ERC-NEWS" "enriched.txt" "emacs.icon" "emacs.desktop" "emacs.appdata.xml" "emacs-buffer.gdb" "edt-user.el" "e/" "DOC" "DISTRIB" "DEVEL.HUMOR" "DEBUG" "COPYING" "CONTRIBUTE" "compilation.txt" "charsets/" "CENSORSHIP" "CALC-NEWS" "AUTHORS" "../" "./")
+
+ ("/Users/" (22362 6120 0 0) "Shared/" "jdashel/" "Guest/" ".localized" "../" "./")
+
+ ("/usr/" (22362 6249 0 0) "X11R6/" "X11/" "standalone/" "share/" "sbin/" "local/" "libexec/" "lib/" "include/" "bin/" "adic/" "../" "./")
+
+ ("/usr/share/" (22049 27718 0 0) "zsh/" "zoneinfo/" "vim/" "uucp/" "ucupdate/" "tokenizer/" "thermald.bundle/" "texinfo/" "terminfo/" "tabset/" "snmp/" "skel/" "screen/" "sandbox/" "ri/" "pmenergy/" "php/" "misc/" "mecabra/" "man/" "locale/" "langid/" "kpep/" "kdrl.bundle/" "java/" "info/" "icu/" "httpd/" "hiutil/" "groff/" "germantok/" "ftpd/" "file/" "examples/" "emacs/" "doc/" "dict/" "current-os.sdk/" "cups/" "CSI/" "cracklib/" "CoreDuetDaemonConfig.bundle/" "calendar/" "apr-1/" "../" "./")
+
+ ("/usr/share/info/" (22351 43263 0 0) "woman" "widget" "viper" "vip" "uucp.info-8" "uucp.info-7" "uucp.info-6" "uucp.info-5" "uucp.info-4" "uucp.info-3" "uucp.info-2" "uucp.info-1" "uucp.info" "url" "tramp" "texinfo-3" "texinfo-2" "texinfo-1" "texinfo" "speedbar" "smtpmail" "sieve" "ses" "screen.info-5" "screen.info-4" "screen.info-3" "screen.info-2" "screen.info-1" "screen.info" "sc" "reftex" "rcirc" "pgg" "pcl-cvs" "org-2" "org-1" "org" "newsticker" "mh-e-2" "mh-e-1" "mh-e" "message" "info.info" "info-stnd.info" "info" "idlwave" "groff-3" "groff-2" "groff-1" "groff" "gnus-5" "gnus-4" "gnus-3" "gnus-2" "gnus-1" "gnus" "forms" "flymake" "eudc" "eshell" "erc" "emacs-mime" "emacs-8" "emacs-7" "emacs-6" "emacs-5" "emacs-4" "emacs-3" "emacs-2" "emacs-1" "emacs" "elisp-9" "elisp-8" "elisp-7" "elisp-6" "elisp-5" "elisp-4" "elisp-3" "elisp-2" "elisp-10" "elisp-1" "elisp" "eintr-3" "eintr-2" "eintr-1" "eintr" "efaq" "ediff" "ebrowse" "dired-x" "dir" "diff.info" "dc.info" "cl" "ccmode-1" "ccmode" "calc-6" "calc-5" "calc-4" "calc-3" "calc-2" "calc-1" "calc" "bc.info" "bash.info" "autotype" "ada-mode" "../" "./")
+
+ ("/Users/jdashel/devel/tfsc/functional_tests/" (22354 10489 0 0) "functional_tests.py" "../" "./")
+
+ ("/Users/jdashel/devel/django/docs/ref/forms/" (22352 51858 0 0) "widgets.txt" "validation.txt" "models.txt" "index.txt" "formsets.txt" "fields.txt" "api.txt" "../" "./")
+
+ ("/Users/jdashel/devel/django_testing/static_test/" (22352 51844 0 0) "views.py~" "views.py" "urls.py" "tests.py" "models.py" "migrations/" "apps.py" "admin.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/unittest_backups/" (22352 52520 0 0) "tests/" "funky.py" "__pycache__/" "../" "./")
+
+ ("/Users/jdashel/devel/unittest_backups/tests/" (22354 477 0 0) "test_is_funky.py~" "test_is_funky.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/homepage/" (22354 7148 0 0) "static/" "requirements.txt" "README.md" "me/" "manage.py" "homepage/" "functional_tests/" "deploy_tools/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/jdashel/devel/homepage/me/" (22354 6751 0 0) "views.py~" "views.py" "tests.py~" "tests.py" "templates/" "static/" "models.py" "migrations/" "forms.py~" "forms.py" "exp.py" "apps.py" "admin.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/homepage/me/templates/" (22354 6871 0 0) "home.html~" "home.html" "experience.html~" "experience.html" "contact_template.txt~" "contact_template.txt" "contact.html~" "contact.html" "contact-success.html~" "contact-success.html" "about-me.html~" "about-me.html" "../" "./")
+
+ ("/Users/jdashel/devel/homepage/static/me/" (22354 5252 0 0) "static/" "img/" "exp.json~" "exp.json" "css/" "bootstrap/" "bio.json" ".DS_Store" "../" "./")
+
+ ("/Users/jdashel/devel/homepage/me/static/" (22354 2639 0 0) "img/" "../" "./")
+
+ ("/Users/jdashel/devel/homepage/homepage/" (22354 2543 0 0) "wsgi.py" "urls.py" "settings.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/.emacs.d/elpa/powerline-20160601.724/" (22351 44273 0 0) "powerline.elc" "powerline.el" "powerline-themes.elc" "powerline-themes.el" "powerline-separators.elc" "powerline-separators.el" "powerline-pkg.el" "powerline-autoloads.el~" "powerline-autoloads.el" "../" "./")
+
+ ("/Users/jdashel/devel/django/tests/forms_tests/tests/" (22352 28312 0 0) "tests.py" "test_widgets.py" "test_validators.py" "test_utils.py" "test_regressions.py" "test_media.py" "test_input_formats.py" "test_formsets.py" "test_forms.py" "test_error_messages.py" "filepath_test_files/" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/django/django/forms/" (22352 28312 0 0) "widgets.py" "utils.py" "models.py" "formsets.py" "forms.py" "fields.py" "extras/" "boundfield.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/django_testing/django_testing/" (22352 41288 0 0) "wsgi.py" "urls.py" "settings.py~" "settings.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/homepage/static/" (22352 33277 0 0) "me/" "../" "./")
+
+ ("/Users/jdashel/devel/django_testing/" (22352 31455 0 0) "static_test/" "manage.py" "django_testing/" "db.sqlite3" "../" "./")
+
+ ("/Users/jdashel/devel/django/" (22352 28312 0 0) "tests/" "setup.py" "setup.cfg" "scripts/" "README.rst" "package.json" "MANIFEST.in" "LICENSE.python" "LICENSE" "js_tests/" "INSTALL" "Gruntfile.js" "extras/" "docs/" "Django.egg-info/" "django/" "CONTRIBUTING.rst" "AUTHORS" "24788.diff" ".tx/" ".hgignore" ".gitignore" ".gitattributes" ".git/" ".eslintrc" ".eslintignore" ".editorconfig" "../" "./")
+
+ ("/Users/jdashel/devel/django/docs/" (22352 28312 0 0) "topics/" "spelling_wordlist" "releases/" "ref/" "README" "misc/" "man/" "Makefile" "make.bat" "intro/" "internals/" "index.txt" "howto/" "glossary.txt" "faq/" "contents.txt" "conf.py" "_theme/" "_ext/" "../" "./")
+
+ ("/Users/jdashel/devel/django/docs/ref/" (22352 28312 0 0) "views.txt" "validators.txt" "utils.txt" "urls.txt" "urlresolvers.txt" "unicode.txt" "templates/" "template-response.txt" "signals.txt" "settings.txt" "schema-editor.txt" "request-response.txt" "models/" "migration-operations.txt" "middleware.txt" "index.txt" "forms/" "files/" "exceptions.txt" "django-admin.txt" "databases.txt" "csrf.txt" "contrib/" "clickjacking.txt" "class-based-views/" "checks.txt" "applications.txt" "../" "./")
+
+ ("/Users/jdashel/devel/django/django/" (22352 26877 0 0) "views/" "utils/" "test/" "templatetags/" "template/" "shortcuts.py" "middleware/" "http/" "forms/" "dispatch/" "db/" "core/" "contrib/" "conf/" "bin/" "apps/" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/django/Django.egg-info/" (22352 26878 0 0) "top_level.txt" "SOURCES.txt" "requires.txt" "PKG-INFO" "not-zip-safe" "entry_points.txt" "dependency_links.txt" "../" "./")
+
+ ("/Users/jdashel/devel/django/tests/forms_tests/" (22352 26890 0 0) "views.py" "urls.py" "tests/" "templates/" "models.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/jdashel/devel/django/tests/" (22352 26889 0 0) "wsgi/" "webdesign_tests/" "view_tests/" "version/" "validators/" "validation/" "utils_tests/" "user_commands/" "urls.py" "urlpatterns_reverse/" "update_only_fields/" "update/" "unmanaged_models/" "transactions/" "timezones/" "test_utils/" "test_sqlite.py" "test_runner_deprecation_app/" "test_runner/" "test_exceptions/" "test_discovery_sample2/" "test_discovery_sample/" "test_client_regress/" "test_client/" "templates/" "template_tests/" "template_loader/" "template_backends/" "syndication_tests/" "swappable_models/" "string_lookup/" "str/" "staticfiles_tests/" "sites_tests/" "sites_framework/" "sitemaps_tests/" "signing/" "signed_cookies_tests/" "signals/" "shortcuts/" "settings_tests/" "sessions_tests/" "servers/" "serializers_regress/" "serializers/" "select_related_regress/" "select_related_onetoone/" "select_related/" "select_for_update/" "schema/" "save_delete_hooks/" "runtests.py" "reverse_lookup/" "responses/" "resolve_url/" "reserved_names/" "requirements/" "requests/" "redirects_tests/" "README.rst" "raw_query/" "queryset_pickle/" "queries/" "proxy_models/" "proxy_model_inheritance/" "properties/" "project_template/" "prefetch_related/" "postgres_tests/" "pagination/" "ordering/" "order_with_respect_to/" "or_lookups/" "one_to_one/" "null_queries/" "null_fk_ordering/" "null_fk/" "no_models/" "nested_foreign_keys/" "mutually_referential/" "multiple_database/" "modeladmin/" "model_validation/" "model_regress/" "model_permalink/" "model_package/" "model_options/" "model_meta/" "model_inheritance_regress/" "model_inheritance/" "model_formsets_regress/" "model_formsets/" "model_forms/" "model_fields/" "migrations2/" "migrations/" "migration_test_data_persistence/" "migrate_signals/" "middleware_exceptions/" "middleware/" "messages_tests/" "max_lengths/" "many_to_one_null/" "many_to_one/" "many_to_many/" "managers_regress/" "mail/" "m2o_recursive/" "m2m_through_regress/" "m2m_through/" "m2m_signals/" "m2m_regress/" "m2m_recursive/" "m2m_multiple/" "m2m_intermediary/" "m2m_and_m2o/" "lookup/" "logging_tests/" "known_related_objects/" "invalid_models_tests/" "introspection/" "inspectdb/" "inline_formsets/" "indexes/" "import_error_package/" "i18n/" "humanize_tests/" "httpwrappers/" "http_utils/" "handlers/" "gis_tests/" "get_or_create/" "get_object_or_404/" "get_earliest_or_latest/" "generic_views/" "generic_relations_regress/" "generic_relations/" "generic_inline_admin/" "from_db_value/" "forms_tests/" "foreign_object/" "force_insert_update/" "flatpages_tests/" "fixtures_regress/" "fixtures_model_package/" "fixtures/" "files/" "file_uploads/" "file_storage/" "field_subclassing/" "field_defaults/" "field_deconstruction/" "extra_regress/" "expressions_case/" "expressions/" "empty/" "distinct_on_fields/" "dispatch/" "deprecation/" "delete_regress/" "delete/" "defer_regress/" "defer/" "decorators/" "dbshell/" "db_typecasts/" "db_functions/" "datetimes/" "dates/" "datatypes/" "custom_pk/" "custom_migration_operations/" "custom_methods/" "custom_managers/" "custom_lookups/" "custom_columns/" "csrf_tests/" "createsuperuser/" "context_processors/" "contenttypes_tests/" "conditional_processing/" "choices/" "check_framework/" "cache/" "bulk_create/" "builtin_server/" "basic/" "bash_completion/" "base/" "backends/" "auth_tests/" "apps/" "app_loading/" "annotations/" "aggregation_regress/" "aggregation/" "admin_widgets/" "admin_views/" "admin_utils/" "admin_scripts/" "admin_registration/" "admin_ordering/" "admin_inlines/" "admin_filters/" "admin_docs/" "admin_custom_urls/" "admin_checks/" "admin_changelist/" "admin_autodiscover/" "absolute_url_overrides/" "__pycache__/" ".coveragerc" "../" "./")
 
  ("/Users/jdashel/.emacs.d/elpa/" (22351 30884 0 0) "zenburn-theme-20160416.1011/" "zenburn-theme-20160117.1119/" "with-editor-20160408.201/" "with-editor-20160128.1201/" "wc-mode-20131121.826/" "undo-tree-20140509.522/" "speed-type-20150120.2034/" "spacemacs-theme-20160411.725/" "spacemacs-theme-20160121.1243/" "solarized-theme-20160419.827/" "solarized-theme-20160106.15/" "slime-20160419.858/" "slime-20100404.1/" "seq-2.15/" "rainbow-mode-0.12/" "rainbow-delimiters-20150320.17/" "powerline-evil-20151112.710/" "powerline-20160601.724/" "popup-20160409.2133/" "pkg-info-20150517.443/" "org-bullets-20140918.1137/" "nose-20140520.948/" "mustard-theme-20141115.2302/" "monokai-theme-20160419.1444/" "mmm-mode-20150828.1716/" "markdown-mode-20160409.650/" "markdown-mode-20160121.528/" "makey-20131231.630/" "magit-readme.txt" "magit-popup-20160414.251/" "magit-popup-20160130.649/" "magit-20160418.1513/" "magit-20160130.649/" "macrostep-20151213.145/" "link-20140717.2029/" "let-alist-1.0.4/" "highlight-20151231.1337/" "helm-core-20160419.641/" "helm-core-20160201.100/" "helm-20160419.938/" "helm-20160201.2209/" "goto-chg-20131228.659/" "git-commit-20160414.251/" "git-commit-20160130.649/" "flycheck-20160419.712/" "flycheck-20160129.311/" "farmhouse-theme-20150506.2127/" "evil-visual-mark-mode-20150202.1000/" "evil-surround-20160331.821/" "evil-surround-20160128.1028/" "evil-20160411.618/" "evil-20160201.326/" "epl-20150517.433/" "emacs-xkcd-1.0/" "dracula-theme-20160228.1913/" "discover-my-major-20160108.1041/" "discover-20140103.1339/" "dictionary-20140717.2029/" "define-word-20150709.1223/" "dash-20160306.1222/" "connection-20140717.2029/" "auto-complete-20160416.604/" "async-20160223.146/" "async-20160108.1249/" "archives/" "arbitools-readme.txt" "ample-theme-20150814.1101/" "alda-mode-readme.txt" "aggressive-indent-20160115.1414/" "../" "./")
 
- ("/Users/jdashel/org/" (22351 29289 0 0) "pycon.org~" "pycon.org" "org_ref.txt" "org-mode-map.xcf" "org-mode-map.png" "interview_prep.org~" "interview_prep.org" "homepage.org~" "homepage.org" "general.org~" "general.org" "../" "./")
-
  ("/Users/jdashel/Documents/" (22247 5378 0 0) "pnta_time/" ".localized" ".DS_Store" "../" "./")
-
- ("/Users/jdashel/devel/ctci/" (22339 46579 0 0) "test_ch01_strings_and_arrays.pyc" "test_ch01_strings_and_arrays.py" "ch01_strings_and_arrays.pyc" "ch01_strings_and_arrays.py" "__pycache__/" ".gitignore" ".git/" "../" "./")
 
  ("/Users/jdashel/devel/pyker/tests/" (22069 27542 0 0) "table_tests.py" "pyker_tests.py" "player_tests.py" "deck_tests.py" "dealer_tests.py" "card_tests.py" "__pycache__/" ".pyker_tests.py.swp" "../" "./")
 
@@ -108,8 +232,6 @@
  ("/Users/jdashel/devel/bashutils/" (22331 28882 0 0) "sample" "debug.sh" "../" "./")
 
  ("/Users/jdashel/devel/pyker/" (22102 2264 0 0) "tests/" "table.py" "pyker.py" "player.py" "lib/" "include/" "deck.py" "dealer.py" "card.py" "bin/" "__pycache__/" ".ropeproject/" ".Python" ".gitignore" ".git/" "../" "./")
-
- ("/Users/jdashel/devel/" (22334 16061 0 0) "tree_review/" "TDDpy/" "superlists/" "static/" "pyker/" "linux-2.6.32.69.tar.xz" "linux-2.6.32.69/" "k+r/" "homepage/" "env/" "database/" "ctci/" "bashutils/" "base16-iterm2/" "../" "./")
 
  ("/Users/jdashel/devel/k+r/ch_5/" (22294 47074 0 0) "strutils" "strend" "strcat" "expr" "ex_5-10.c~" "ex_5-10.c" "ex_5-05.c~" "ex_5-05.c" "ex_5-04.c~" "ex_5-04.c" "ex_5-03.c~" "ex_5-03.c" "../" "./")
 
@@ -123,21 +245,15 @@
 
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/programs/" (22265 60607 0 0) "revised" "ex_3-03.c" "ex_3-02.c" "ex_3-01__revised.c" "ex_3-01__classic.c" "ex_3-01.c" "classic" "../" "./")
 
- ("/Users/jdashel/devel/homepage/me/templates/" (22261 65248 0 0) "home.html~" "home.html" "experience.html~" "experience.html" "contact_template.txt~" "contact_template.txt" "contact.html~" "contact.html" "contact-success.html~" "contact-success.html" "about-me.html~" "about-me.html" "../" "./")
-
  ("/Users/jdashel/devel/homepage/me/static/css/" (22261 52757 0 0) "home.css~" "home.css" "general.css~" "general.css" "experience.css" "contact.css" "about-me.css~" "about-me.css" "../" "./")
 
  ("/Users/jdashel/devel/homepage/functional_tests/" (22239 7679 0 0) "tests.py~" "tests.py" "__pycache__/" "../" "./")
-
- ("/Users/jdashel/devel/homepage/homepage/" (22261 52744 0 0) "wsgi.py" "urls.py" "settings.py" "__pycache__/" "__init__.py" "../" "./")
 
  ("/Users/jdashel/devel/homepage/deploy_tools/" (22242 17421 0 0) "fabfile.pyc" "fabfile.py" "../" "./")
 
  ("/Users/jdashel/devel/k+r/ch_1/" (22265 60906 0 0) "samplefiles/" "ex_1-24.c" "ex_1-23.c" "ex_1-22.c" "ex_1-21.c" "ex_1-20.c" "ex_1-19.c" "ex_1-18.c" "ex_1-17.c" "ex_1-16.c" "ex_1-15.c" "ex_1-14.c" "ex_1-13_vert.c" "ex_1-13_horiz.c" "ex_1-12.c" "ex_1-10.c" "ex_1-09.c" "ex_1-08.c" "ex_1-07.c" "ex_1-06.c" "ex_1-05.c" "ex_1-04.c" "ex_1-03.c" "ex_1-01.c" "a.out" "../" "./")
 
  ("/Users/jdashel/devel/k+r/" (22265 60976 0 0) "ch_5/" "ch_4/" "ch_3/" "ch_2/" "ch_1/" ".git/" "../" "./")
-
- ("/Users/jdashel/devel/homepage/me/static/" (22223 62977 0 0) "css/" "bootstrap/" "../" "./")
 
  ("/Users/jdashel/devel/superlists/lists/templates/" (22213 29263 0 0) "list.html" "home.html" "../" "./")
 
@@ -182,8 +298,6 @@
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/" (22146 55268 0 0) "programs/" "notes/" "../" "./")
 
  ("/Users/jdashel/edu/books/" (22082 16851 0 0) "The_C_Programming_Language/" "../" "./")
-
- ("/Users/" (22034 557 0 0) "Shared/" "jdashel/" "Guest/" ".localized" "../" "./")
 
  ("/Users/jdashel/.org/" (22155 11018 0 0) "OrgTutorial.org" "#OrgTutorial.org#" "../" "./")
 )
