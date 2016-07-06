@@ -56,7 +56,7 @@ plugins=(git bundler command-not-found gem python randquote ruby sudo web-search
 # User configuration
 
 # use virtualenvwrapper
-source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
 
 export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -94,7 +94,7 @@ alias tmux="TERM=screen-256color tmux"
 alias gitl="git log --oneline | head"
 
 # # Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/base16-chalk.dark.sh"
+BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-chalk.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 let base16colorspace=256
 
@@ -130,7 +130,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # }
 
 # add virtualenvwrapper
-source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
 
 if [[ -e ~/.zsh_private ]]; then
 	source ~/.zsh_private
