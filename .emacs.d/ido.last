@@ -2,6 +2,16 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/jdashel/devel/cookbooks/daptiv_site/" . "recipes/")
+ ("/Users/jdashel/devel/learn-chef/cookbooks/webserver_test/test/integration/default/" . "inspec/")
+ ("/Users/jdashel/devel/learn-chef/cookbooks/webserver_test/test/integration/" . "default/")
+ ("/Users/jdashel/devel/learn-chef/cookbooks/webserver_test/test/" . "integration/")
+ ("/Users/jdashel/devel/learn-chef/cookbooks/webserver_test/" . "recipes/")
+ ("/Users/jdashel/devel/cookbooks/" . "daptiv_site/")
+ ("/Users/jdashel/devel/daptiv_site/" . "recipes/")
+ ("/Users/jdashel/devel/learn-chef/cookbooks/awesome_customers_rhel/" . "attributes/")
+ ("/Users/jdashel/devel/learn-chef/cookbooks/" . "awesome_customers_rhel/")
+ ("/Users/jdashel/devel/learn-chef/" . "cookbooks/")
  ("/Users/jdashel/devel/tfsc/blog/" . "migrations/")
  ("/Users/jdashel/devel/ORGanizer/sample_files/" . "default_files/")
  ("/Users/jdashel/devel/ORGanizer/" . "t/")
@@ -28,7 +38,7 @@
  ("/Users/jdashel/djangotut/" . "mysite/")
  ("/Users/jdashel/devel/superlists/" . "lists/")
  ("/Users/jdashel/devel/homepage/" . "functional_tests/")
- ("/Users/jdashel/devel/" . "ORGanizer/")
+ ("/Users/jdashel/devel/" . "cookbooks/")
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/programs/" . "calc/")
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/" . "programs/")
  ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-02_TypesOperatorsAndExpressions/" . "notes/")
@@ -38,11 +48,22 @@
  ("/Users/jdashel/edu/books/" . "The_C_Programming_Language/")
  ("/Users/jdashel/edu/" . "books/")
  ("/Users/" . "jdashel/")
- ("/Users/jdashel/" . ".emacs.d/")
+ ("/Users/jdashel/" . "devel/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/jdashel/devel/cookbooks/daptiv_site/recipes/"
+ "/Users/jdashel/devel/cookbooks/daptiv_site/attributes/"
+ "/Users/jdashel/"
+ "/Users/jdashel/devel/learn-chef/cookbooks/awesome_customers_rhel/attributes/"
+ "/Users/jdashel/devel/learn-chef/cookbooks/awesome_customers_rhel/recipes/"
+ "/Users/jdashel/devel/learn-chef/cookbooks/webserver_test/recipes/"
+ "/Users/jdashel/devel/learn-chef/cookbooks/webserver_test/test/integration/default/inspec/"
+ "/Users/jdashel/devel/daptiv_site/recipes/"
+ "/Users/jdashel/.chef/"
+ "/Users/jdashel/devel/daptiv_site/"
+ "/Users/jdashel/org/"
  "/Users/jdashel/devel/ORGanizer/t/"
  "/Users/jdashel/devel/ORGanizer/lib/"
  "/Users/jdashel/devel/perl/"
@@ -53,12 +74,10 @@
  "/Users/jdashel/devel/tfsc/tfsc/"
  "/Users/jdashel/devel/ORGanizer/sample_files/default_files/"
  "/Users/jdashel/devel/ORGanizer/sample_files/before/"
- "/Users/jdashel/"
  "/Users/jdashel/devel/ORGanizer/sample_files/after/"
  "/Users/jdashel/devel/ctci/"
  "/Users/jdashel/devel/ORGanizer/sample_files/"
  "/Users/jdashel/devel/"
- "/Users/jdashel/org/"
  "/Users/jdashel/devel/env/"
  "/usr/local/Cellar/emacs-mac/emacs-24.5-z-mac-5.13/share/emacs/24.5/etc/"
  "/Users/jdashel/devel/tfsc/"
@@ -84,40 +103,75 @@
  "/Users/jdashel/devel/tree_review/tree_review/"
  "/Users/jdashel/devel/k+r/ch_5/"
  "/Users/jdashel/devel/homepage/deploy_tools/"
- "/Users/jdashel/devel/homepage/functional_tests/"
- "/Users/jdashel/devel/homepage/me/static/css/"
- "/Users/jdashel/devel/superlists/lists/templates/"
- "/Users/jdashel/devel/superlists/lists/"
- "/Users/jdashel/devel/superlists/functional_tests/"
- "/Users/jdashel/devel/superlists/superlists/"
- "/Users/jdashel/djangotut/mysite/polls/"
- "/Users/jdashel/djangotut/mysite/mysite/"
- "/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/programs/calc/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "migrator_test.t"
- "Tree.pm"
- "Node.pm"
- "functional_test.t"
- "hello.pl"
- "organize.pl"
- "run_all_tests.sh"
- "tree_test.t"
- "0001_initial.py"
- "category.html"
+ "templateagent.rb"
+ "default.rb"
+ ".emacs"
+ "default_spec.rb"
+ ".zshrc"
+ "ops_encrypted_data_bag_secret"
+ "daptiv-validator.pem"
+ "knife.rb"
+ "encrypted_data_bag_secret"
+ ".kitchen.yml"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/jdashel/devel/cookbooks/daptiv_site/recipes/" (22405 20153 0 0) "webtests.rb" "templateagenttests.rb" "templateagent.rb" "reportingtests.rb" "prereqs_webserver.rb" "prereqs.rb" "noop.rb" "integrationtests.rb" "integrationspecs.rb" "endtoendtests.rb" "default.rb" "dbdeploy.rb" "bin.rb" "../" "./")
+
+ ("/Users/jdashel/devel/cookbooks/daptiv_site/attributes/" (22405 20051 0 0) "templateagent.rb" "feature_flags.rb" "elasticsearch.rb" "default.rb" "db.rb" "cognos.rb" "bin.rb" "../" "./")
+
+ ("/Users/jdashel/devel/cookbooks/daptiv_site/" (22405 6935 0 0) "version.txt" "Vagrantfile" "test/" "templates/" "TAGS" "spec/" "resources/" "recipes/" "README.md" "rakefile" "providers/" "metadata.rb" "libraries/" "Gemfile.lock" "Gemfile" "chefignore" "CHANGELOG.md" "Berksfile.lock" "Berksfile" "attributes/" ".rspec" ".kitchen.yml" ".kitchen/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/jdashel/devel/learn-chef/cookbooks/awesome_customers_rhel/attributes/" (22405 17125 0 0) "default.rb" "../" "./")
+
+ ("/Users/jdashel/devel/learn-chef/cookbooks/awesome_customers_rhel/recipes/" (22405 6156 0 0) "web_user.rb" "web.rb" "firewall.rb" "default.rb" "database.rb" "../" "./")
+
+ ("/Users/jdashel/devel/learn-chef/cookbooks/awesome_customers_rhel/" (22399 60085 0 0) "test/" "templates/" "spec/" "recipes/" "README.md" "metadata.rb" "files/" "chefignore" "Berksfile.lock" "Berksfile" "attributes/" ".kitchen.yml" ".kitchen/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/jdashel/" (22405 5447 0 0) "VirtualBox VMs/" "Public/" "Pictures/" "org/" "Music/" "Movies/" "Library/" "Downloads/" "Documents/" "devel/" "Desktop/" "Applications/" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-SEAJDASHEL-5.0.8" ".vimrc" ".viminfo" ".vim/" ".vagrant.d/" ".Trash/" ".tmux.conf" ".ssh/" ".oh-my-zsh/" ".lesshst" ".ipython/" ".gitmodules" ".gitignore" ".gitconfig" ".gem/" ".emacs.d/" ".emacs" ".DS_Store" ".config/" ".chefdk/" ".chef/" ".CFUserTextEncoding" ".cache/" ".bundle/" ".berkshelf/" ".bashrc" ".bash_sessions/" ".bash_history" ".abbrev_defs" "../" "./")
+
+ ("/Users/jdashel/devel/learn-chef/cookbooks/webserver_test/test/integration/default/inspec/" (22405 5488 0 0) "default_spec.rb" "../" "./")
+
+ ("/Users/jdashel/devel/learn-chef/cookbooks/webserver_test/test/integration/default/" (22403 53204 0 0) "inspec/" "../" "./")
+
+ ("/Users/jdashel/devel/learn-chef/cookbooks/webserver_test/test/integration/" (22403 53255 0 0) "default/" "../" "./")
+
+ ("/Users/jdashel/devel/learn-chef/cookbooks/webserver_test/test/" (22403 52925 0 0) "integration/" "../" "./")
+
+ ("/Users/jdashel/devel/learn-chef/cookbooks/webserver_test/recipes/" (22405 5465 0 0) "default.rb" "../" "./")
+
+ ("/Users/jdashel/devel/learn-chef/cookbooks/webserver_test/" (22403 54704 0 0) "test/" "spec/" "recipes/" "README.md" "metadata.rb" "chefignore" "Berksfile.lock" "Berksfile" ".kitchen.yml" ".kitchen/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/jdashel/devel/learn-chef/cookbooks/" (22403 52925 0 0) "webserver_test/" "motd_rhel/" "learn_chef_httpd/" "awesome_customers_rhel/" "../" "./")
+
+ ("/Users/jdashel/devel/learn-chef/" (22405 5447 0 0) "TAGS" "cookbooks/" ".kitchen/" ".chef/" "../" "./")
+
+ ("/Users/jdashel/devel/cookbooks/chef-repo/" (22405 5358 0 0) "testfiles/" "templates/" "teamcity_environments.jpg" "TAGS" "sounds/" "services/" "roles/" "README.md" "README.chef.md" "Rakefile" "plugins/" "personalorg.setup.md" "nodelists/" "helpful_commands.txt" "Gemfile.lock" "Gemfile" "features/" "environments/" "data_bags/" "daptiv_chef_workflow.md" "cookbook_snippets.txt" "config/" "chefignore" "certificates/" ".gitmodules" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/jdashel/devel/cookbooks/" (22405 4879 0 0) "daptiv_site/" "chef-repo/" "../" "./")
+
+ ("/Users/jdashel/devel/" (22405 4879 0 0) "learn-chef/" "env/" "e2/" "cookbooks/" ".DS_Store" "../" "./")
+
+ ("/Users/jdashel/devel/env/" (22404 11724 0 0) "switchmacs" "setup_functions.sh" "README.md" "powerline-zsh/" "pl_fonts/" "no_place_like_home.sh" "gitignore/" "ftplugin/" "emacs-ref" "colortest" ".zshrc" ".vimrc" ".tmux.conf" ".ipython/" ".gitmodules" ".gitignore" ".gitconfig" ".git/" ".emacs.d/" ".emacs" ".DS_Store" ".bashrc" ".abbrev_defs" "../" "./")
+
+ ("/Users/jdashel/.chef/" (22404 8905 0 0) "ops_encrypted_data_bag_secret" "knife.rb" "jdashel.pem" "encrypted_data_bag_secret" "daptiv-validator.pem" "../" "./")
+
+ ("/Users/jdashel/org/" (22404 6953 0 0) "todo.org" "chef.org" "../" "./")
+
+ ("/Users/jdashel/devel/daptiv_site/recipes/" (22404 7078 0 0) "webtests.rb" "templateagenttests.rb" "templateagent.rb" "reportingtests.rb" "prereqs_webserver.rb" "prereqs.rb" "noop.rb" "integrationtests.rb" "integrationspecs.rb" "endtoendtests.rb" "default.rb" "dbdeploy.rb" "bin.rb" "../" "./")
+
+ ("/Users/jdashel/devel/daptiv_site/" (22404 6783 0 0) "Vagrantfile" "test/" "templates/" "spec/" "resources/" "recipes/" "README.md" "rakefile" "providers/" "metadata.rb" "libraries/" "Gemfile.lock" "Gemfile" "chefignore" "CHANGELOG.md" "Berksfile" "attributes/" ".rspec" ".kitchen.yml" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/jdashel/.emacs.d/elpa/powerline-20160601.724/" (22396 4338 0 0) "powerline.elc" "powerline.el" "powerline-themes.elc" "powerline-themes.el" "powerline-separators.elc" "powerline-separators.el" "powerline-pkg.el" "powerline-autoloads.el" "../" "./")
+
  ("/Users/jdashel/devel/ORGanizer/t/" (22376 20963 0 0) "tree_test.t" "migrator_test.t" "functional_test.t" ".#migrator_test.t" "../" "./")
 
  ("/Users/jdashel/devel/ORGanizer/lib/" (22376 20174 0 0) "Tree.pm" "Migrator.pm~" "Migrator.pm" ".#Migrator.pm" "#Migrator.pm#" "../" "./")
-
- ("/Users/jdashel/devel/env/" (22375 10133 0 0) "switchmacs" "setup_functions.sh" "README.md" "powerline-zsh/" "pl_fonts/" "no_place_like_home.sh" "gitignore/" "ftplugin/" "emacs-ref" "colortest" ".zshrc" ".vimrc" ".tmux.conf" ".ssh/" ".ipython/" ".gitmodules" ".gitignore" ".gitconfig" ".git/" ".emacs~" ".emacs.d/" ".emacs" ".bashrc" ".abbrev_defs" "../" "./")
-
- ("/Users/jdashel/" (22375 18079 0 0) "VirtualBox VMs/" "tmux-2.0.tar.gz" "tmux-2.0/" "tmp" "stranger~" "stranger" "sample.md~" "sample.md" "roswell/" "Public/" "Pictures/" "org/" "notes" "Music/" "Movies/" "Library/" "huntsman.txt~" "huntsman.txt" "homepage_settings.py" "F Blues (Play-Along)-Bg-Ea7aCb1E.webm" "emacs-ref" "edu/" "Dropbox/" "Downloads/" "Documents/" "djangotut/" "df_osx/" "devel/" "Desktop/" "core-emacs~" "Applications/" "__pycache__/" ".zshrc" ".zsh_private" ".zsh_history" ".zprofile" ".zcompdump-Jordan’s MacBook Pro-5.0.8" ".virtualenvs/" ".vimrc" ".viminfo" ".vimgolf/" ".vim/" ".Trash/" ".tmux.conf" ".subversion/" ".ssh/" ".sqlite_history" ".spacemacs" ".slime/" ".python_history" ".oracle_jre_usage/" ".oh-my-zsh/" ".lesshst" ".ispell_english" ".ipython/" ".idlerc/" ".gitignore" ".gitconfig" ".gem/" ".fontconfig/" ".emacs~" ".emacs.d_bac/" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".cookiecutters/" ".cookiecutter_replay/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".abbrev_defs" "#sample.md#" "../" "./")
 
  ("/Users/jdashel/devel/ORGanizer/sample_files/before/" (22374 50852 0 0) "sample.org" "../" "./")
 
@@ -135,8 +189,6 @@
 
  ("/Users/jdashel/devel/tfsc/tfsc/" (22372 12183 0 0) "wsgi.py" "urls.py" "settings.py" "__pycache__/" "__init__.py" "../" "./")
 
- ("/Users/jdashel/org/" (22368 42229 0 0) "pycon.org~" "pycon.org" "org_ref.txt" "org-mode-map.xcf" "org-mode-map.png" "interview_prep.org~" "interview_prep.org" "homepage.org~" "homepage.org" "general.org~" "general.org" "../" "./")
-
  ("/Users/jdashel/devel/ctci/" (22368 42227 0 0) "test_ch02_linked_lists.py" "test_ch01_strings_and_arrays.pyc" "test_ch01_strings_and_arrays.py" "ch02_linked_lists.py~" "ch02_linked_lists.py" "ch01_strings_and_arrays.pyc" "ch01_strings_and_arrays.py" "__pycache__/" ".gitignore" ".git/" "../" "./")
 
  ("/Users/jdashel/devel/ORGanizer/sample_files/after/" (22371 7601 0 0) "../" "./")
@@ -144,8 +196,6 @@
  ("/Users/jdashel/devel/ORGanizer/sample_files/" (22371 7176 0 0) "default_files/" "before/" "after/" "../" "./")
 
  ("/Users/jdashel/.emacs.d/" (22351 49677 0 0) "SessionDesktop.el" "ido.last~" "ido.last" "eshell/" "elpa/" "auto-save-list/" "ac-comphist.dat" "../" "./")
-
- ("/Users/jdashel/devel/" (22368 20508 0 0) "unstable_hp/" "unittest_backups/" "tree_review/" "tfsc/" "TDDpy/" "superlists/" "static/" "pyker/" "perl/" "ORGanizer/" "linux-2.6.32.69.tar.xz" "linux-2.6.32.69/" "k+r/" "homepage/" "env/" "django_testing/" "django/" "database/" "ctci/" "bashutils/" "base16-iterm2/" "../" "./")
 
  ("/Users/jdashel/devel/perl/" (22368 8803 0 0) "hello.pl~" "hello.pl" "../" "./")
 
@@ -194,8 +244,6 @@
  ("/Users/jdashel/devel/homepage/me/static/" (22354 2639 0 0) "img/" "../" "./")
 
  ("/Users/jdashel/devel/homepage/homepage/" (22354 2543 0 0) "wsgi.py" "urls.py" "settings.py" "__pycache__/" "__init__.py" "../" "./")
-
- ("/Users/jdashel/.emacs.d/elpa/powerline-20160601.724/" (22351 44273 0 0) "powerline.elc" "powerline.el" "powerline-themes.elc" "powerline-themes.el" "powerline-separators.elc" "powerline-separators.el" "powerline-pkg.el" "powerline-autoloads.el~" "powerline-autoloads.el" "../" "./")
 
  ("/Users/jdashel/devel/django/tests/forms_tests/tests/" (22352 28312 0 0) "tests.py" "test_widgets.py" "test_validators.py" "test_utils.py" "test_regressions.py" "test_media.py" "test_input_formats.py" "test_formsets.py" "test_forms.py" "test_error_messages.py" "filepath_test_files/" "__pycache__/" "__init__.py" "../" "./")
 
@@ -272,34 +320,6 @@
  ("/Users/jdashel/djangotut/" (22208 9565 0 0) "mysite/" ".DS_Store" "../" "./")
 
  ("/Users/jdashel/devel/superlists/superlists/" (22213 28886 0 0) "wsgi.py" "urls.py" "settings.py" "__pycache__/" "__init__.py" "../" "./")
-
- ("/Users/jdashel/devel/superlists/" (22213 19155 0 0) "superlists/" "manage.py" "lists/" "functional_tests/" "db.sqlite3" ".gitignore" ".git/" "../" "./")
-
- ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/programs/" (22176 12712 0 0) "calc/" "../" "./")
-
- ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/notes/" (22176 12696 0 0) "4.03-ExternalVariables.md" "4.02-FunctionReturningNonIntegers.md~" "4.02-FunctionReturningNonIntegers.md" "4.01-BasicsOfFunctions.md~" "4.01-BasicsOfFunctions.md" "../" "./")
-
- ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-04_FunctionsAndProgramStructure/" (22169 47429 0 0) "programs/" "notes/" "../" "./")
-
- ("/Users/jdashel/edu/books/The_C_Programming_Language/" (22169 47418 0 0) "thoughts.txt" "ch-04_FunctionsAndProgramStructure/" "ch-03_ControlFlow/" "ch-02_TypesOperatorsAndExpressions/" "ch-01_ATutorialIntroduction/" "../" "./")
-
- ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/notes/" (22169 22620 0 0) "3.05-Loops.md~" "3.05-Loops.md" "3.04-Switch.md~" "3.04-Switch.md" "3.03-ElseIf.md" "3.02-IfElse.md" "3.01-StatementsAndBlocks.md" "../" "./")
-
- ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-02_TypesOperatorsAndExpressions/notes/" (22145 53011 0 0) "2.12-PrecedenceAndOrderOfEvaluation.md" "2.11-ConditionalExpressions.md" "2.10-AssignmentOperatorsAndExpressions.md" "2.09-BitwiseOperators.md" "2.08-IncrementAndDecrementOperators.md" "2.07-TypeConversions.md" "2.06-RelationalAndLogicalOperators.md" "2.05-ArithmeticOperators.md" "2.04-Declarations.md" "2.03-Constants.md" "2.02-DataTypesAndSizes.md" "2.01-VariableNames.md" "../" "./")
-
- ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-02_TypesOperatorsAndExpressions/" (22120 36198 0 0) "programs/" "notes/" "../" "./")
-
- ("/Users/jdashel/roswell/" (22157 31599 0 0) "whoisit" "who_sudod.sh" "who_funcd_again" "who_funcd" "what_is_constant.c" "valgrind/" "try_not_super.sh" "truth.c~" "truth.c" "terminated.c" "sudo_touch.sh" "su_func.sh" "ssh_login" "root_file" "nothing" "funcs.sh" "django/" "#terminated.c#" "../" "./")
-
- ("/Users/jdashel/edu/" (22157 29276 0 0) "README.md" "books/" ".git/" "../" "./")
-
- ("/Users/jdashel/.emacs.d/elpa/mmm-mode-20150828.1716/" (22157 27948 0 0) "mmm.info" "mmm-vars.elc" "mmm-vars.el" "mmm-utils.elc" "mmm-utils.el" "mmm-univ.elc" "mmm-univ.el" "mmm-sample.elc" "mmm-sample.el" "mmm-rpm.elc" "mmm-rpm.el" "mmm-region.elc" "mmm-region.el" "mmm-noweb.elc" "mmm-noweb.el" "mmm-myghty.elc" "mmm-myghty.el" "mmm-mode.elc" "mmm-mode.el" "mmm-mode-pkg.el" "mmm-mode-autoloads.el~" "mmm-mode-autoloads.el" "mmm-mason.elc" "mmm-mason.el" "mmm-erb.elc" "mmm-erb.el" "mmm-defaults.elc" "mmm-defaults.el" "mmm-cweb.elc" "mmm-cweb.el" "mmm-compat.elc" "mmm-compat.el" "mmm-cmds.elc" "mmm-cmds.el" "mmm-class.elc" "mmm-class.el" "mmm-auto.elc" "mmm-auto.el" "dir" "../" "./")
-
- ("/Users/jdashel/edu/books/The_C_Programming_Language/ch-03_ControlFlow/" (22146 55268 0 0) "programs/" "notes/" "../" "./")
-
- ("/Users/jdashel/edu/books/" (22082 16851 0 0) "The_C_Programming_Language/" "../" "./")
-
- ("/Users/jdashel/.org/" (22155 11018 0 0) "OrgTutorial.org" "#OrgTutorial.org#" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----
