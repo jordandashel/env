@@ -435,3 +435,6 @@ set autochdir
 nmap <F8> :TagbarToggle<CR>
 
 nnoremap <leader>l :colorscheme PaperColor<CR>:AirlineTheme tomorrow<CR>
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
