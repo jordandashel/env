@@ -1,0 +1,4 @@
+- % will jump to the close of the next pair
+  eg: def _my-func(param, param):
+      <%>
+      def my-func(param, param)_:
