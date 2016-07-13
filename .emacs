@@ -216,6 +216,11 @@
 			      (shell-mode . emacs)
 			      (eshell-mode . emacs)
 			      (eww-mode . emacs)
+			      (comint-mode . emacs)
+			      (lisp-mode . emacs)
+			      (calendar-mode . emacs)
+			      (inferior-lisp-mode . emacs)
+			      (diary-mode . emacs)
 			      (term-mode . emacs)
 			      (help-mode . emacs)
 			      (dired-mode . emacs))
@@ -305,7 +310,7 @@ If SUBMODE is not provided, use `LANG-mode' by default."
 (require 'nose)
 (defvar nose-use-verbose nil)
 
-(setq inferior-lisp-program (executable-find "/usr/local/bin/sbcl"))
+(setq inferior-lisp-program (executable-find "/usr/bin/clisp"))
 
 (global-set-key (kbd "C-c d") 'define-word-at-point)
 (global-set-key (kbd "C-c D") 'define-word)

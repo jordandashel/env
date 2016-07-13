@@ -1,4 +1,28 @@
-((("load-theme" .
+((("append_node" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("set_next_node" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("get_next_node" .
+   [0 0 0 0 0 1 1 1 0 0 0 0 0])
+  ("prev_vals" .
+   [3 0 0 0 0 0 0 0 0])
+  ("get_head_node" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("lst" .
+   [2 0 0])
+  ("remove_dups" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("value" .
+   [5 0 0 0 0])
+  ("head_node" .
+   [0 0 0 0 0 0 0 0 1])
+  ("prev_node" .
+   [0 0 0 0 1 0 0 0 0])
+  ("node" .
+   [8 0 0 0])
+  ("next_node" .
+   [7 0 0 0 0 0 0 0 2])
+  ("load-theme" .
    [1 0 0 0 0 0 0 0 0 0])
   ("airline-themes" .
    [0 0 0 0 1 0 0 0 0 0 0 0 0 1])
@@ -89,7 +113,7 @@
   ("chars" .
    [1 0 0 0 0])
   ("append" .
-   [2 0 0 0 0 0])
+   [4 0 0 0 0 0])
   ("secret_key_file" .
    [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("SECRET_KEY" .

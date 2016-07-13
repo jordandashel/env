@@ -555,3 +555,28 @@ C-c a 		(M-x org-agenda) view items scheduled for this week
 C-c a t 	(M-x org-todo-list) view all todos
 
 C-c C-s 	(M-x org-schedule) insert a date
+
+================================================================================
+ Calendar & Diary
+================================================================================
+
+g d 	(M-x calendar-goto-date) goto specific date
+
+o	(M-x calendar-other-month) bring selected month to middle of screen
+
+a	(M-x list-calendar-holidays) display holidays for current section
+	of the calendar
+
+i d	(M-x insert-diary-entry) add a diary entry
+
+i w	(M-x insert-weekly-diary-entry) add a weekly diary entry
+
+i c	(M-x diary-insert-cyclic-entry) insert an entry that occurs at
+  	regular intervals
+
+i m	(M-x insert-monthly-diary-entry) add an entry for something
+  	that occurs on the same day every month
+
+d	(M-x diary-view-entries) view entries for a day
+
+s	(M-x diary-show-all-entries) view diary file
