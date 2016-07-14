@@ -53,6 +53,7 @@
  '(ido-enable-flex-matching t)
  '(ido-mode (quote both) nil (ido))
  '(magit-diff-use-overlays nil)
+ '(neo-persist-show nil)
  '(nrepl-message-colors
    (quote
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
@@ -221,7 +222,9 @@
 			      (calendar-mode . emacs)
 			      (inferior-lisp-mode . emacs)
 			      (diary-mode . emacs)
+			      (neotree-mode . emacs)
 			      (term-mode . emacs)
+			      (minesweeper-mode . emacs)
 			      (help-mode . emacs)
 			      (dired-mode . emacs))
       do (evil-set-initial-state mode state))
@@ -322,3 +325,8 @@ If SUBMODE is not provided, use `LANG-mode' by default."
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
+
+(global-set-key (kbd "M-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "M-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "M-<down>") 'shrink-window)
+(global-set-key (kbd "M-<up>") 'enlarge-window)
