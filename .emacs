@@ -27,6 +27,7 @@
  '(evil-want-C-u-scroll t)
  '(evil-want-Y-yank-to-eol t)
  '(fci-rule-color "#49483E")
+ '(helm-dash-browser-func (quote eww))
  '(highlight-changes-colors (quote ("#FD5FF0" "#AE81FF")))
  '(highlight-symbol-colors
    (--map
