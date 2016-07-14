@@ -20,13 +20,62 @@
  '(cua-normal-cursor-color "#839496")
  '(cua-overwrite-cursor-color "#b58900")
  '(cua-read-only-cursor-color "#859900")
- '(custom-enabled-themes (quote (smart-mode-line-dark)))
+ '(custom-enabled-themes nil)
  '(custom-safe-themes
    (quote
-    ("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "1e3b2c9e7e84bb886739604eae91a9afbdfb2e269936ec5dd4a9d3b7a943af7f" "f9d34593e9dd14b2d798494609aa0fddca618145a5d4b8a1819283bc5b7a2bfd" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "a802c77b818597cc90e10d56e5b66945c57776f036482a033866f5f506257bca" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "70340909b0f7e75b91e66a02aa3ad61f3106071a1a4e717d5cdabd8087b47ec4" "8f0334c430540bf45dbcbc06184a2e8cb01145f0ae1027ce6b1c40876144c0c9" "8e7ca85479dab486e15e0119f2948ba7ffcaa0ef161b3facb8103fb06f93b428" "beeb5ac6b65fcccfe434071d4624ff0308b5968bf2f0c01b567d212bcaf66054" "51277c9add74612c7624a276e1ee3c7d89b2f38b1609eed6759965f9d4254369" "fbcdb6b7890d0ec1708fa21ab08eb0cc16a8b7611bb6517b722eba3891dfc9dd" "e87a2bd5abc8448f8676365692e908b709b93f2d3869c42a4371223aab7d9cf8" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "e8825f26af32403c5ad8bc983f8610a4a4786eb55e3a363fa9acb48e0677fe7e" "df3e05e16180d77732ceab47a43f2fcdb099714c1c47e91e8089d2fcf5882ea3" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "8577da1641ed4bdf255341ca92e3d0e49c9f4d574458f09ce78159690442cade" "405b0ac2ac4667c5dab77b36e3dd87a603ea4717914e30fcf334983f79cfd87e" "38ba6a938d67a452aeb1dada9d7cdeca4d9f18114e9fc8ed2b972573138d4664" "cdd26fa6a8c6706c9009db659d2dffd7f4b0350f9cc94e5df657fa295fffec71" "dd4db38519d2ad7eb9e2f30bc03fba61a7af49a185edfd44e020aa5345e3dca7" "0fb6369323495c40b31820ec59167ac4c40773c3b952c264dd8651a3b704f6b5" default)))
+    ("5999e12c8070b9090a2a1bbcd02ec28906e150bb2cdce5ace4f965c76cf30476" "a0feb1322de9e26a4d209d1cfa236deaf64662bb604fa513cca6a057ddf0ef64" "04dd0236a367865e591927a3810f178e8d33c372ad5bfef48b5ce90d4b476481" "70b5e506efe625e6a9cf71ddd5dbbf35b960229f32637676647bef873485df09" "959a77d21e6f15c5c63d360da73281fdc40db3e9f94e310fc1e8213f665d0278" "c4465c56ee0cac519dd6ab6249c7fd5bb2c7f7f78ba2875d28a50d3c20a59473" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "1e3b2c9e7e84bb886739604eae91a9afbdfb2e269936ec5dd4a9d3b7a943af7f" "f9d34593e9dd14b2d798494609aa0fddca618145a5d4b8a1819283bc5b7a2bfd" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "a802c77b818597cc90e10d56e5b66945c57776f036482a033866f5f506257bca" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "70340909b0f7e75b91e66a02aa3ad61f3106071a1a4e717d5cdabd8087b47ec4" "8f0334c430540bf45dbcbc06184a2e8cb01145f0ae1027ce6b1c40876144c0c9" "8e7ca85479dab486e15e0119f2948ba7ffcaa0ef161b3facb8103fb06f93b428" "beeb5ac6b65fcccfe434071d4624ff0308b5968bf2f0c01b567d212bcaf66054" "51277c9add74612c7624a276e1ee3c7d89b2f38b1609eed6759965f9d4254369" "fbcdb6b7890d0ec1708fa21ab08eb0cc16a8b7611bb6517b722eba3891dfc9dd" "e87a2bd5abc8448f8676365692e908b709b93f2d3869c42a4371223aab7d9cf8" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "e8825f26af32403c5ad8bc983f8610a4a4786eb55e3a363fa9acb48e0677fe7e" "df3e05e16180d77732ceab47a43f2fcdb099714c1c47e91e8089d2fcf5882ea3" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "8577da1641ed4bdf255341ca92e3d0e49c9f4d574458f09ce78159690442cade" "405b0ac2ac4667c5dab77b36e3dd87a603ea4717914e30fcf334983f79cfd87e" "38ba6a938d67a452aeb1dada9d7cdeca4d9f18114e9fc8ed2b972573138d4664" "cdd26fa6a8c6706c9009db659d2dffd7f4b0350f9cc94e5df657fa295fffec71" "dd4db38519d2ad7eb9e2f30bc03fba61a7af49a185edfd44e020aa5345e3dca7" "0fb6369323495c40b31820ec59167ac4c40773c3b952c264dd8651a3b704f6b5" default)))
+ '(diary-entry-marker (quote font-lock-variable-name-face))
+ '(emms-mode-line-icon-image-cache
+   (quote
+    (image :type xpm :ascent center :data "/* XPM */
+static char *note[] = {
+/* width height num_colors chars_per_pixel */
+\"    10   11        2            1\",
+/* colors */
+\". c #1fb3b3\",
+\"# c None s None\",
+/* pixels */
+\"###...####\",
+\"###.#...##\",
+\"###.###...\",
+\"###.#####.\",
+\"###.#####.\",
+\"#...#####.\",
+\"....#####.\",
+\"#..######.\",
+\"#######...\",
+\"######....\",
+\"#######..#\" };")))
  '(evil-want-C-u-scroll t)
  '(evil-want-Y-yank-to-eol t)
  '(fci-rule-color "#49483E")
+ '(flycheck-checkers
+   (quote
+    (ada-gnat asciidoc c/c++-clang c/c++-gcc c/c++-cppcheck cfengine coffee coffee-coffeelint coq css-csslint d-dmd emacs-lisp emacs-lisp-checkdoc erlang eruby-erubis fortran-gfortran go-gofmt go-golint go-vet go-build go-test go-errcheck groovy haml handlebars haskell-stack-ghc haskell-ghc haskell-hlint html-tidy jade javascript-eslint javascript-jshint javascript-gjslint javascript-jscs javascript-standard json-jsonlint json-python-json less luacheck lua perl perl-perlcritic php php-phpmd php-phpcs processing puppet-parser puppet-lint python-flake8 python-pylint python-pycompile r-lintr racket rpm-rpmlint rst-sphinx rst ruby-rubocop ruby-rubylint ruby ruby-jruby rust-cargo rust sass scala scala-scalastyle scss-lint scss sh-bash sh-posix-dash sh-posix-bash sh-zsh sh-shellcheck slim sql-sqlint tex-chktex tex-lacheck texinfo verilog-verilator xml-xmlstarlet xml-xmllint yaml-jsyaml yaml-ruby)))
+ '(gnus-logo-colors (quote ("#528d8d" "#c0c0c0")))
+ '(gnus-mode-line-image-cache
+   (quote
+    (image :type xpm :ascent center :data "/* XPM */
+static char *gnus-pointer[] = {
+/* width height num_colors chars_per_pixel */
+\"    18    13        2            1\",
+/* colors */
+\". c #1fb3b3\",
+\"# c None s None\",
+/* pixels */
+\"##################\",
+\"######..##..######\",
+\"#####........#####\",
+\"#.##.##..##...####\",
+\"#...####.###...##.\",
+\"#..###.######.....\",
+\"#####.########...#\",
+\"###########.######\",
+\"####.###.#..######\",
+\"######..###.######\",
+\"###....####.######\",
+\"###..######.######\",
+\"###########.######\" };")))
  '(helm-dash-browser-func (quote eww))
  '(highlight-changes-colors (quote ("#FD5FF0" "#AE81FF")))
  '(highlight-symbol-colors
@@ -54,6 +103,109 @@
  '(ido-enable-flex-matching t)
  '(ido-mode (quote both) nil (ido))
  '(magit-diff-use-overlays nil)
+ '(mode-icons
+   (quote
+    (("\\`CSS\\'" "css" xpm)
+     ("\\`Coffee\\'" "coffee" xpm-bw)
+     ("\\`Compilation\\'" "compile" xpm)
+     ("\\`Emacs-Lisp\\'" "emacs" xpm)
+     ("\\`Lisp Interaction\\'" "emacs" xpm)
+     ("\\`HTML\\'" "html" xpm)
+     ("\\`Haml\\'" "haml" xpm)
+     ("\\`Image\\[imagemagick\\]\\'" "svg" xpm)
+     ("\\`Inf-Ruby\\'" "infruby" xpm)
+     ("\\`Java[Ss]cript\\'" "js" xpm)
+     ("\\`Lisp\\'" "cl" xpm)
+     ("\\`nXML\\'" "xml" xpm)
+     ("\\`Org\\'" "org" xpm)
+     ("\\`PHP\\(\\|/.*\\)\\'" "php" xpm)
+     ("\\`Projectile Rails Server\\'" "rails" xpm)
+     ("\\`Python\\'" "python" xpm)
+     ("\\`\\(Enh\\)?Ruby\\'" "ruby" xpm)
+     ("\\`ESS\\[S\\]\\'" "R" xpm)
+     ("\\`ESS\\[SAS\\]\\'" "sas" xpm)
+     ("\\`ESS\\[BUGS\\]\\'" 61832 FontAwesome)
+     ("\\`iESS\\'" "R" xpm)
+     ("\\`SCSS\\'" "sass" xpm)
+     ("\\`Sass\\'" "sass" xpm)
+     ("\\`Scheme" "scheme" xpm-bw)
+     ("\\`Shell-script" "bash" xpm-bw)
+     ("\\`Slim" "slim" xpm-bw)
+     ("\\`Snippet" "yas" xpm)
+     ("\\`Term\\'" "term" xpm)
+     ("\\`Web\\'" "html" xpm)
+     ("\\`XML\\'" "xml" xpm)
+     ("\\`YAML\\'" "yaml" xpm)
+     ("\\` ?YASnippet\\'" "yas" xpm)
+     ("\\` ?yas\\'" "yas" xpm)
+     ("\\` ?hs\\'" "hs" xpm)
+     ("\\`Markdown\\'" 61641 github-octicons)
+     ("\\`GFM\\'" 61641 github-octicons)
+     ("\\`Scala\\'" 61787 font-mfizz)
+     ("\\`Magit\\'" 61906 FontAwesome)
+     ("\\` Pulls\\'" 61586 FontAwesome)
+     ("\\`Zip-Archive\\'" 61894 FontAwesome)
+     ("\\` ARev\\'" 61473 FontAwesome)
+     ("\\`Calc\\(ulator\\)?\\'" 61932 FontAwesome)
+     ("\\`Debug.*\\'" 61832 FontAwesome)
+     ("\\`Debug.*\\'" 61832 FontAwesome)
+     ("\\`Calendar\\'" 61555 FontAwesome)
+     ("\\`Help\\'" 61529 FontAwesome)
+     ("\\`WoMan\\'" 61530 FontAwesome)
+     ("\\`C\\(/.*\\|\\)\\'" 61703 font-mfizz)
+     ("\\`Custom\\'" 61459 FontAwesome)
+     ("\\`Go\\'" "go" xpm)
+     ("\\` ?Rbow\\'" "rainbow" xpm)
+     ("\\` ?ICY\\'" "icy" xpm)
+     ("\\` ?Golden\\'" "golden" xpm-bw)
+     ("\\`BibTeX\\'\\'" "bibtex" xpm-bw)
+     ("\\`C[+][+]\\(/.*\\|\\)\\'" 61708 font-mfizz)
+     ("\\`C[#]\\(/.*\\|\\)\\'" 61709 font-mfizz)
+     ("\\`Elixir\\'" 61717 font-mfizz)
+     ("\\`Erlang\\'" 61718 font-mfizz)
+     ("\\`Haskell\\'" 61734 font-mfizz)
+     ("\\`Clojure\\'" 61706 font-mfizz)
+     ("\\`Java\\(/.*\\|\\)\\'" 61739 font-mfizz)
+     ("\\`C?Perl\\'" 61768 font-mfizz)
+     ("\\`Octave\\'" "octave" xpm)
+     ("\\`AHK\\'" "autohotkey" xpm)
+     ("\\`Info\\'" 61530 FontAwesome)
+     ("\\` ?Narrow\\'" 61542 FontAwesome)
+     ("\\`Dockerfile\\'" "docker" xpm)
+     ("\\`Spacemacs buffer\\'" "spacemacs" png)
+     ("\\` ?emoji\\'" "emoji" png)
+     (read-only 61475 FontAwesome)
+     (writable 61596 FontAwesome)
+     (save 61639 FontAwesome)
+     (saved "" nil)
+     (modified-outside 61553 FontAwesome)
+     (steal 61979 FontAwesome)
+     (apple 60095 IcoMoon-Free)
+     (apple 61817 FontAwesome)
+     (win 61818 FontAwesome)
+     (unix 60093 IcoMoon-Free)
+     (unix 61798 font-mfizz)
+     (unix 61820 FontAwesome)
+     (undecided 61736 FontAwesome)
+     ("Text\\'" 61686 FontAwesome)
+     ("\\` ?company\\'" 61869 FontAwesome)
+     ("\\` ?AC\\'" 61838 FontAwesome)
+     ("\\` ?Fly\\'" 59922 IcoMoon-Free)
+     ("\\` ?Ergo" 61724 FontAwesome)
+     ("\\` ?drag\\'" 61511 FontAwesome)
+     ("\\` ?Helm\\'" "helm" xpm-bw)
+     ("\\`Messages\\'" 62075 FontAwesome)
+     ("\\`Conf" 61918 FontAwesome)
+     ("\\`Fundamental\\'" 61462 FontAwesome)
+     ("\\`Javascript-IDE\\'" "js" xpm)
+     ("\\` Undo-Tree\\'" ":palm_tree:" emoji)
+     ("\\`LaTeX\\'" "tex" ext)
+     ("\\`Image\\[xpm\\]\\'" "xpm" ext)
+     ("\\`Image\\[png\\]\\'" "png" ext)
+     ("\\` ?AI\\'" 61500 FontAwesome)
+     ("\\` ?Isearch\\'" 61442)
+     ("\\` ?\\(?:ElDoc\\|Anzu\\|SP\\|Guide\\|PgLn\\|Undo-Tree\\|Ergo.*\\|,\\|Isearch\\|Ind\\)\\'" nil nil))))
+ '(mode-icons-mode t)
  '(neo-persist-show nil)
  '(nrepl-message-colors
    (quote
@@ -112,7 +264,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Monaco" :foundry "nil" :slant normal :weight normal :height 141 :width normal)))))
+ '(default ((((class color) (min-colors 4096)) (:foreground "#5f5f5f" :background "#fdfde7")) (((class color) (min-colors 256)) (:foreground "#5f5f5f" :background "#fdfde7")) (((class color) (min-colors 89)) (:foreground "#5f5f5f" :background "#fdfde7")))))
 
 (package-initialize)
 
@@ -303,7 +455,7 @@ If SUBMODE is not provided, use `LANG-mode' by default."
 (global-set-key (kbd "C-h C-m") 'discover-my-major)
 (global-set-key (kbd "C-h M-m") 'discover-my-mode)
 
-(require 'rainbow-mode)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 ;(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
@@ -313,6 +465,8 @@ If SUBMODE is not provided, use `LANG-mode' by default."
 (global-set-key (kbd "C-c n") 'nosetests-all)
 (require 'nose)
 (defvar nose-use-verbose nil)
+
+(require 'rainbow-delimiters)
 
 (remove-hook 'enh-ruby-mode-hook 'erm-define-faces)
 (autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
@@ -336,7 +490,10 @@ If SUBMODE is not provided, use `LANG-mode' by default."
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
+(mode-icons-mode) 
+
 (global-set-key (kbd "M-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "M-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "M-<down>") 'shrink-window)
 (global-set-key (kbd "M-<up>") 'enlarge-window)
+
