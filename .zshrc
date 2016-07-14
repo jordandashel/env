@@ -139,3 +139,13 @@ fi
 alias fabjd="fab deploy:host=jdashel@jordandashel.com"
 alias dfun="python manage.py test functional_tests"
 alias amz="ssh -i ~/.ssh/MyFirstKey.pem ec2-user@52.207.246.4"
+
+# Make some cool aliases
+# /Alias Smith and Jones/
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gsh="git stash"
+alias gpop="git stash pop"
+alias v="vim" # Can we _get_ any lazier?
+
