@@ -9,4 +9,5 @@ a.out
 *#*
 TAGS
 ido.last
-.emacs.d/url/cookies
+.emacs.d/url/*
+.emacs.d/ac-comphist.dat
