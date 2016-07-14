@@ -144,6 +144,8 @@ alias amz="ssh -i ~/.ssh/MyFirstKey.pem ec2-user@52.207.246.4"
 # /Alias Smith and Jones/
 alias gs="git status"
 alias ga="git add"
+alias gp="git push"
+alias gpom="git push origin master"
 alias gc="git commit"
 alias gsh="git stash"
 alias gpop="git stash pop"
