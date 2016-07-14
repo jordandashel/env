@@ -151,3 +151,4 @@ alias gsh="git stash"
 alias gpop="git stash pop"
 alias v="vim" # Can we _get_ any lazier?
 
+eval "$(thefuck --alias)"
