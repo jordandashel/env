@@ -314,6 +314,8 @@ If SUBMODE is not provided, use `LANG-mode' by default."
 (require 'nose)
 (defvar nose-use-verbose nil)
 
+(autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
+
 (setq inferior-lisp-program (executable-find "/usr/bin/clisp"))
 
 (global-set-key (kbd "C-c d") 'define-word-at-point)
