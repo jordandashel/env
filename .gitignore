@@ -10,4 +10,5 @@ a.out
 TAGS
 ido.last
 .emacs.d/url/*
-.emacs.d/ac-comphist.dat
+.emacs.d/xkcd/
+ac-comphist.dat
