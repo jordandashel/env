@@ -1,6 +1,5 @@
 ./expr 2 3 *
 ./expr 2 3 *
-./expr 2 3 *
 ./expr 2 3 "*"
 ./expr "2 3 *"
 '/expr 2 3 *'
@@ -126,3 +125,4 @@ t/migrator_test.t
 t/migrator_test.t 
 t/migrator_test.t 
 t/migrator_test.t 
+ls
