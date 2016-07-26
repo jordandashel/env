@@ -1,14 +1,12 @@
 comp.emacs: 1-97387
-gnu.emacs.help: 1-206131
+gnu.emacs.help: 1-206137
 alt.religion.emacs: 1-7106
-comp.lang.python: 1-836375
-comp.linux!
+comp.lang.python: 1-836384
 comp.lang.perl: 1-34721
-comp.programming: 1-280300
+comp.programming: 1-280301
 comp.os.linux.misc: 1-757592
 rec.arts.movies.past-films: 1-803130
-rec.arts.movies.current-films: 1-1265526
-rec.arts.tv: 1-2719498
+rec.arts.movies.current-films: 1-1265531
 talk.bizarre: 1-264468
 alt.zines: 1-75176
 rec.music: 1-4778
