@@ -136,6 +136,10 @@ if [[ -e ~/.zsh_private ]]; then
 	source ~/.zsh_private
 fi
 
+if [[ -e ~/.zsh_local ]]; then
+	source ~/.zsh_local
+fi
+
 alias fabjd="fab deploy:host=jdashel@jordandashel.com"
 alias dfun="python manage.py test functional_tests"
 alias amz="ssh -i ~/.ssh/MyFirstKey.pem ec2-user@52.207.246.4"
@@ -144,11 +148,14 @@ alias amz="ssh -i ~/.ssh/MyFirstKey.pem ec2-user@52.207.246.4"
 # /Alias Smith and Jones/
 alias gs="git status"
 alias ga="git add"
+alias gl="git log --oneline | head"
 alias gp="git push"
 alias gpom="git push origin master"
 alias gc="git commit"
 alias gsh="git stash"
 alias gpop="git stash pop"
+alias gdiff="git diff"
 alias v="vim" # Can we _get_ any lazier?
+alias e='emacsclient'
 
 eval "$(thefuck --alias)"
