@@ -48,6 +48,7 @@ Plugin 'klen/python-mode'
 Plugin 'mtth/scratch.vim'
 Plugin 'tpope/vim-speeddating'
 Plugin 'majutsushi/tagbar'
+Plugin 'easymotion/vim-easymotion'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
