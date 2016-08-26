@@ -27,11 +27,11 @@
 
 (require 'ace-window)
 (require 'auto-complete)
-(require 'avy)
 (require 'dired-x)
 (require 'discover)
 (require 'discover-my-major)
 (require 'evil)
+(require 'evil-commentary)
 (require 'evil-surround)
 (require 'flycheck)
 (require 'helm-config)
@@ -40,7 +40,21 @@
 (require 'nose)
 (require 'org)
 (require 'rainbow-delimiters)
-(require 'xkcd-mode)
+(require 'xkcd)
+(require 'org-bullets)
+
+
+;-------------------	   Hooks    	--------------------;
+
+; text-mode hooks
+;;; auto fill
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
+; prog mode
+;;; rainbow delims
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+; org hooks
+;;; unicode org bullets
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 ;-------------------	Key bindings	--------------------;
 
@@ -76,10 +90,12 @@
   (setq inferior-lisp-program (executable-find "/usr/local/bin/clisp"))
 )
 
+;; -- things to hide --
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+;; --------------------
 ;; default mode is text-mode
 (setq major-mode 'text-mode)
-;; lines wrap automatically in text mode
-(add-hook 'text-mode-hook 'turn-on-auto-fill)
 ;; turn on flycheck
 (setq-default flyspell-mode t)
 ;; enable ido
@@ -134,8 +150,6 @@
 (global-discover-mode 1)
 (global-set-key (kbd "C-h C-m") 'discover-my-major)
 (global-set-key (kbd "C-h M-m") 'discover-my-mode)
-;; rainbow delims
-(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 ;; configure auto complete
 (ac-config-default)
 ;; use dots in nose
@@ -171,12 +185,6 @@
     "* TODO %?\n  %i\n  %a")
    ("j" "Journal" entry (file+datetree "~/org/journal.org")
     "* %?\nEntered on %U\n  %i\n  %a"))))
-;; use unicode org bullets
-(use-package org-bullets
-:ensure t
-:init
-:config
-(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 ;; sentances have one space between them
 (setq entence-end-double-space nil)
 
