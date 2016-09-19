@@ -8,7 +8,9 @@ a.out
 .DS_Store
 *#*
 TAGS
+tags
 ido.last
 .emacs.d/url/*
 .emacs.d/xkcd/
 ac-comphist.dat
+.project
