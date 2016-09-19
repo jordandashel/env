@@ -94,7 +94,7 @@ alias tmux="TERM=screen-256color tmux"
 alias gitl="git log --oneline | head"
 
 # # Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-chalk.sh"
+BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-tomorrow.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 let base16colorspace=256
 
@@ -159,3 +159,4 @@ alias v="vim" # Can we _get_ any lazier?
 alias e='emacsclient'
 
 eval "$(thefuck --alias)"
+alias tree='tree -C'
