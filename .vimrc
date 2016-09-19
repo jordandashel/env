@@ -26,7 +26,6 @@ Plugin 'L9'
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
 
-Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
@@ -42,6 +41,8 @@ Plugin 'tpope/vim-sleuth'
 Plugin 'closetag.vim'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'felixhummel/setcolors.vim'
+"Plugin 'chriskempson/base16-vim'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-commentary'
 Plugin 'klen/python-mode'
@@ -49,6 +50,11 @@ Plugin 'mtth/scratch.vim'
 Plugin 'tpope/vim-speeddating'
 Plugin 'majutsushi/tagbar'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-easytags'
+Plugin 'tfnico/vim-gradle'
+Plugin 'mileszs/ack.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -207,6 +213,9 @@ set pastetoggle=<F11>
 " four characters wide.
 set shiftwidth=8
 set tabstop=8
+
+"colorscheme 1989
+colorscheme tomorrow
  
  
 "------------------------------------------------------------
@@ -274,10 +283,7 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 set t_Co=256
 let base16colorspace=256
 
-set background=dark
-" colorscheme base16-chalk
-colorscheme Tomorrow-Night-Eighties
-
+set background=light
 
 "Keeps visual selection after changing indent
 
@@ -291,7 +297,7 @@ if has("gui_running")
   if has("gui_gtk2")
     set guifont=Inconsolata\ 12
   elseif has("gui_macvim")
-    set guifont=Meslo\ LG\ S\ for\ Powerline:h11
+    set guifont=Meslo\ LG\ S\ for\ Powerline:h13
   elseif has("gui_win32")
     set guifont=Consolas:h11:cANSI
   endif
@@ -300,7 +306,7 @@ else
 endif
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme='bubblegum'
+let g:airline_theme='cool'
 
 let mapleader="\\"
 set showcmd
@@ -321,7 +327,7 @@ set incsearch
 
 
 " Show Whitespace
-set listchars=tab:\|.,eol:¬
+set listchars=tab:▸\ ,eol:¬
 "set list
 
 " WhiteSpace shortcut
@@ -361,65 +367,6 @@ nnoremap <C-B> :buffers<CR>:b<Space>
 " Easy close 
 nnoremap <F10> :cclose<CR>
 
-" -------------- python-mode settings ------------------
-
-" Turn on python-mode
-let g:pymode = 1
-" Use python3
-let g:pymode_python = 'python3'
-" Trim whitespace
-let g:pymode_trim_whitespaces = 1
-" Standard options
-let g:pymode_options = 1
-" line length limit
-let g:pymode_options_max_line_length = 79
-" visual marker for 80 col
-let g:pymode_options_colorcolumn = 1
-" quickfix window
-let g:pymode_quickfix_minheight = 3
-let g:pymode_quickfix_maxheight = 6
-" Don't really know what pymode indent does, but it might interfere with
-" ftplugin so I'm going to disable it
-let g:pymode_indent = 0
-" folding on
-let g:pymode_folding = 1
-" enable python motion
-let g:pymode_motion = 1
-" python documentation plugin, and bind it to 'K'
-let g:pymode_doc = 1
-let g:pymode_doc_bind = 'K'
-" python virtual env cooperation
-let g:pymode_virtualenv = 1
-" run current buffer/selection with <leader>p
-let g:pymode_run = 1
-let g:pymode_run_bind = '<leader>p'
-" allow breakpoint setting
-let g:pymode_breakpoint = 1
-let g:pymode_breakpoint_bind = '<leader>b'
-let g:pymode_breakpoint_cmd = ''
-" disable lint because I use syntastic
-let g:pymode_lint = 0
-" rope support
-let g:pymode_rope = 1
-let g:pymode_rope_regenerate_on_write = 0
-" don't need any completion
-let g:pymode_rope_completion = 0
-" go to definition
-let g:pymode_rope_goto_definition_bind = '<C-c>g'
-let g:pymode_rope_goto_definition_cmd = 'vnew'
-" refactoring
-let g:pymode_rope_rename_bind = '<C-c>rr'
-let g:pymode_rope_rename_module_bind = '<C-c>r1r'
-"organise imports
-let g:pymode_rope_organize_imports_bind = '<C-c>ro'
-" extract method/variable
-let g:pymode_rope_extract_method_bind = '<C-c>rm'
-let g:pymode_rope_extract_variable_bind = '<C-c>rl'
-" rename signature
-let g:pymode_rope_change_signature_bind = '<C-c>rs'
-" Python syntax
-let g:pymode_syntax = 1
-
 " Scratch set to markdown for fenced highlighting
 let g:scratch_filetype = 'markdown'
 let g:scratch_no_mappings = 1
@@ -435,7 +382,16 @@ set autochdir
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 
-nnoremap <leader>l :colorscheme PaperColor<CR>:AirlineTheme tomorrow<CR>
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
+
+nnoremap <leader>. :CtrlPTag<cr>
+
+" find the nearest tag file
+set tags=tags;/
+let g:easytags_dynamic_fies = 1
+
+nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
+nnoremap <silent> <buffer> <leader>d :JavaDocSearch<cr>
+nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
