@@ -278,7 +278,7 @@ set directory=~/tmp,.
 set backupdir=~/tmp,.
 
 " Source vimrc
-nnoremap <leader>sv :source $MYVIMRC<CR>
+nnoremap <leader>v :source $MYVIMRC<CR>
 
 set t_Co=256
 let base16colorspace=256
@@ -316,6 +316,7 @@ set showcmd
 " set timeoutlen=1500
 
 nnoremap <Space> :
+nnoremap <Space> :
 
 nnoremap <leader>nt :NERDTree /$HOME/devel/<Enter>
 
@@ -327,7 +328,7 @@ set incsearch
 
 
 " Show Whitespace
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ ,eol:¬,space:·
 "set list
 
 " WhiteSpace shortcut
@@ -395,3 +396,10 @@ let g:easytags_dynamic_fies = 1
 nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
 nnoremap <silent> <buffer> <leader>d :JavaDocSearch<cr>
 nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
+
+" Soft wrap lines with a single command (credit Drew Neil)
+command! -nargs=* Wrap set wrap linebreak nolist
+ 
+set nobackup
+
+nnoremap <leader>l :set list!<CR>
