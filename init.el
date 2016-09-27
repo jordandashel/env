@@ -17,6 +17,9 @@
 
 ;;; code:
 
+(if (file-readable-p "~/local-emacs-settings.el")
+    (load "~/local-emacs-settings.el"))
+
 ;-------------------	Packages	--------------------;
 
 (package-initialize)
@@ -90,6 +93,8 @@
   (setq inferior-lisp-program (executable-find "/usr/local/bin/clisp"))
 )
 
+;; -- always display columns --
+(column-number-mode)
 ;; -- things to hide --
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
@@ -192,6 +197,14 @@
 
 ;-------------------	Custom Funcs	--------------------;
 
+;; Set TODO to DONE when children are complete
+(defun org-summary-todo (n-done n-not-done)
+  "Switch entry to DONE when all subentries are done, to TODO otherwise."
+  (let (org-log-done org-log-states)   ; turn off logging
+    (org-todo (if (= n-not-done 0) "DONE" "TODO"))))
+
+(add-hook 'org-after-todo-statistics-hook 'org-summary-todo)
+
 ;; Search upwards for TAG table
 (defun find-file-upwards (file-to-find)
   "Recursively searches each parent directory starting from the default-directory.
@@ -215,9 +228,36 @@ or nil if not found."
     (visit-tags-table my-tags-file)))
 
 
-;; Local Variables:
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["#2d3743" "#ff4242" "#74af68" "#dbdb95" "#34cae2" "#008b8b" "#00ede1" "#e1e1e0"])
+ '(custom-enabled-themes (quote (deeper-blue)))
+ '(evil-want-C-u-scroll t)
+ '(evil-want-Y-yank-to-eol t)
+ '(org-file-apps
+   (quote
+    ((auto-mode . emacs)
+     ("\\.mm\\'" . default)
+     ("\\.x?html?\\'" . default)
+     ("\\.pdf\\'" . default)
+     (t . emacs)))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+ ;; Local Variables:
 ;; byte-compile-warnings: (not free-vars)
 ;; End:
+
+(diary)
 
 (provide 'init.el)
 ;;; init.el ends here
