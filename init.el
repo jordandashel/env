@@ -3,7 +3,7 @@
 ; Jordan Dashel's init.el version 1.0
 ;	replacing my now deprecated .emacs
 ;
-; This file is licenced under the GNU GPLv3
+; This file is licenced under the GNU GPLv3 ;-D
 
 ;;; commentary:
 
@@ -117,7 +117,7 @@
 (setq inhibit-startup-message t
       inhibit-startup-echo-area-message t)
 ;; org-mode settings
-(setq org-log-done 'time)
+;(setq org-log-done 'time)
 (setq org-startup-indented t)
 ;--> Evil customizations
 ;; (setq evil-shift-width 8)
@@ -196,6 +196,17 @@
 
 
 ;-------------------	Custom Funcs	--------------------;
+
+;; increment a number, like C-a in vim
+(defun increment-number-at-point ()
+  (interactive)
+  (skip-chars-backward "0-9")
+  (or (looking-at "[0-9]+")
+      (error "No number at point"))
+  (replace-match (number-to-string (1+ (string-to-number (match-string 0))))))
+
+(global-set-key (kbd "C-+") 'increment-number-at-point)
+
 
 ;; Set TODO to DONE when children are complete
 (defun org-summary-todo (n-done n-not-done)
