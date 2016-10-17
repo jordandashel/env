@@ -55,6 +55,8 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 Plugin 'tfnico/vim-gradle'
 Plugin 'mileszs/ack.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'sjl/gundo.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -318,7 +320,7 @@ set showcmd
 nnoremap <Space> :
 nnoremap <Space> :
 
-nnoremap <leader>nt :NERDTree /$HOME/devel/<Enter>
+nnoremap <leader>n :NERDTree<CR>
 
 " Incremental search
 
@@ -348,7 +350,7 @@ else
 endif
 
 " display syntastic errors
-nnoremap <F8> :Errors<CR>
+nnoremap <F12> :Errors<CR>
 
 " languages
 "let g:syntastic_javascript_checkers=['jshint']
@@ -383,6 +385,7 @@ set autochdir
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 
+nnoremap <F5> :GundoToggle<CR>
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
@@ -403,3 +406,7 @@ command! -nargs=* Wrap set wrap linebreak nolist
 set nobackup
 
 nnoremap <leader>l :set list!<CR>
+
+nnoremap <leader>c :nohl<CR>
+
+set scrolloff=5
