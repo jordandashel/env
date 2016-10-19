@@ -91,7 +91,10 @@
   ;; mac specific bin locations
   (setq ispell-program-name "/usr/local/bin/ispell")
   (setq inferior-lisp-program (executable-find "/usr/local/bin/clisp"))
-)
+  )
+
+;; -- disable TMM --
+(setq transient-mark-mode nil)
 
 ;; -- always display columns --
 (column-number-mode)
