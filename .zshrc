@@ -99,7 +99,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-tomorrow.sh"
 let base16colorspace=256
 
 export HISTCONTROL=ignoredups
-export HISTSIZE=1000
+export HISTSIZE=10000
 
 setopt braceccl
 
@@ -160,3 +160,12 @@ alias e='emacsclient'
 
 eval "$(thefuck --alias)"
 alias tree='tree -C'
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/aq35/.sdkman"
+[[ -s "/Users/aq35/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/aq35/.sdkman/bin/sdkman-init.sh"
+alias tnew="tmux new-session -s"
+alias agp="ag --pager less"
+alias tatt="tmux a -t"
+alias today='date "+%m/%d/%Y"'
+ed() { command ed -p\* "$@" ; }

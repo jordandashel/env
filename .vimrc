@@ -45,7 +45,6 @@ Plugin 'felixhummel/setcolors.vim'
 "Plugin 'chriskempson/base16-vim'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-commentary'
-Plugin 'klen/python-mode'
 Plugin 'mtth/scratch.vim'
 Plugin 'tpope/vim-speeddating'
 Plugin 'majutsushi/tagbar'
@@ -248,7 +247,6 @@ nnoremap k gk
 filetype plugin indent on
 
 " using ftplugin folder
-" autocmd FileType python setlocal shiftwidth=4 tabstop=4 expandtab
 " autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 noexpandtab
 " autocmd FileType html setlocal shiftwidth=2 tabstop=2 noexpandtab
 
@@ -328,7 +326,6 @@ set ignorecase
 set smartcase
 set incsearch
 
-
 " Show Whitespace
 set listchars=tab:▸\ ,eol:¬,space:·
 "set list
@@ -391,6 +388,9 @@ nnoremap <F5> :GundoToggle<CR>
 cmap w!! w !sudo tee > /dev/null %
 
 nnoremap <leader>. :CtrlPTag<cr>
+
+" ctrl p settings
+let g:ctrlp_by_filename = 1
 
 " find the nearest tag file
 set tags=tags;/

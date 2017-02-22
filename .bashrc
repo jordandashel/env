@@ -111,15 +111,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/base16-chalk.dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
-
-# add path to $PATH
-export PATH=~/bin:"$PATH"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-# add virtualenvwrapper
-source /usr/local/bin/virtualenvwrapper.sh

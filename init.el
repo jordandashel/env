@@ -93,6 +93,9 @@
   (setq inferior-lisp-program (executable-find "/usr/local/bin/clisp"))
   )
 
+;; fontify code in code blocks
+(setq org-src-fontify-natively t)
+
 ;; -- disable TMM --
 (setq transient-mark-mode nil)
 
@@ -260,7 +263,10 @@ or nil if not found."
      ("\\.mm\\'" . default)
      ("\\.x?html?\\'" . default)
      ("\\.pdf\\'" . default)
-     (t . emacs)))))
+     (t . emacs))))
+ '(package-selected-packages
+   (quote
+    (json-mode xkcd rainbow-delimiters org-bullets nose mode-icons markdown-mode magit helm goto-last-change flycheck evil-surround evil-commentary discover-my-major discover auto-complete ace-window))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

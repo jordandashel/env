@@ -14,3 +14,7 @@ ido.last
 .emacs.d/xkcd/
 ac-comphist.dat
 .project
+.classpath
+.gradle/
+.idea/
+
